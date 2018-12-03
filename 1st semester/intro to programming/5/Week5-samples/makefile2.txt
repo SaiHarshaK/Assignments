@@ -1,0 +1,6 @@
+testmath: testmath.c mymath.o
+	gcc -o testmath testmath.c mymath.o
+mymath.o: mymath.c mymath.h
+	gcc -c mymath.c 
+
+

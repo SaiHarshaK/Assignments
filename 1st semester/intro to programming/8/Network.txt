@@ -1,0 +1,16 @@
+Adleman 10: 16,21,23.
+Babbage 11: 12,24.
+Church 12: 11,13,15,16,24.
+Dijkstra 13: 12,15,19,23.
+Goldwasser 14: 19,21,23.
+Hoare 15: 12,13,17,20,24.
+Immerman 16: 10,12,18.
+Kolmogorov 17: 15,18,22.
+Levin 18: 16,17,19,22,25.
+Minsky 19: 13,14,18,21,22,24.
+Ritchie 20: 15,23,25.
+Rivest 21: 10,14,19.
+Shannon 22: 17,18,19.
+Tarjan 23: 10,13,14,20,25.
+Turing 24: 11,12,15,19.
+Warnock 25: 18,20,23.

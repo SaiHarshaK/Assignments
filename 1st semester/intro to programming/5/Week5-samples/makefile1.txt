@@ -1,0 +1,3 @@
+testmath: testmath.c mymath.c
+	gcc testmath.c mymath.c -o testmath
+
