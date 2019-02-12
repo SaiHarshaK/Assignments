@@ -1,0 +1,32 @@
+/*
+author: Sai Harsha Kottapalli
+About: assignment for operating systems 2. Check this file for instructions. 
+ */
+
+Instructions to follow: 
+
+1) Create a file "inp-params.txt" and add data to it in the following format: 
+
+    n(number of processes)
+    then n lines follow where ith line is :
+    pid[i] process_time[i] period[i] repetition[i]
+    
+    Example:
+    2
+    1 20 50 10
+    2 35 50 10
+
+
+2) Compile the required file using following command(example):
+    g++ Assign1-RMScs17btech11036.cpp -o rms
+
+
+3) Run the executable created using(example):
+    ./rms
+
+4) Check "RMS-Log.txt" file for logs of RMS and "EDF-Log.txt" file for logs of EDF.
+
+5) Check "RM-Stats.txt" file for stats of RMS and "EDF-Stats.txt" file for stats of EDF.
+
+6) Deadline miss stats are present in "RMS-Stats.txt" and "EDF-Stats.txt" for rms and edf respectively in the following format(example):
+    Process P5 crossed its deadline - 30. It will be removed.
