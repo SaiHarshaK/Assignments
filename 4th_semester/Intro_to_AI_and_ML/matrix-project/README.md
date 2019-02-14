@@ -18,3 +18,7 @@ Matrix Project for the course: EE1390 - Intro to AI and ML offered by Dr. G.V.V.
   * [frames](figures/frames) - contains frames of normal for various points chosen on parabola
   * [video](figures/output.mp4) - animated version of the above frames
   * [minimised t1](figures/minimisation.png) - Normal at minimum (t1)^2
+
+## Contributors
+* Sai Harsha Kottapalli
+* Abhishek Agarwal
