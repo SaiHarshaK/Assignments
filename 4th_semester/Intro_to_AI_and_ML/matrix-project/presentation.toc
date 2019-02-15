@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Problem Statement}{3}{0}{1}
-\beamer@sectionintoc {2}{Steps to solve the problem}{5}{0}{2}
-\beamer@sectionintoc {3}{Solution}{11}{0}{3}
-\beamer@sectionintoc {4}{Figures}{42}{0}{4}
+\beamer@sectionintoc {2}{Steps to solve the problem}{6}{0}{2}
+\beamer@sectionintoc {3}{Solution}{12}{0}{3}
+\beamer@sectionintoc {4}{Figures}{37}{0}{4}

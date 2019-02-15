@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.15)  14 FEB 2019 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.15)  15 FEB 2019 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,21 +979,37 @@ thkerncmss.
 ]
 [4
 
-] [5
+]
+</home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/matr
+ix-project/figures/frames/115.png, id=66, 578.16pt x 433.62pt>
+File: /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML
+/matrix-project/figures/frames/115.png Graphic file (type png)
+<use /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/
+matrix-project/figures/frames/115.png>
+Package pdftex.def Info: /home/harsha/Documents/gitLab/Assignments/4th_semester
+/Intro_to_AI_and_ML/matrix-project/figures/frames/115.png  used on input line 6
+5.
+(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+
+Overfull \vbox (18.98346pt too high) detected at line 65
+ []
+
+[5
+
+ </home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/mat
+rix-project/figures/frames/115.png>] [6
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 69.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 80.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 69.
+LaTeX Font Info:    No file OMScmss.fd. on input line 80.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 69.
+(Font)              for symbol `textbullet' on input line 80.
 
-[6
-
-] [7
+[7
 
 ] [8
 
@@ -1057,53 +1073,63 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 ]
 [37
 
-] [38
-
-] [39
-
-] [40
-
-] [41
-
-] [42
-
 ]
 </home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/matr
-ix-project/figures/minimisation.png, id=265, 578.16pt x 433.62pt>
+ix-project/figures/minimisation.png, id=245, 578.16pt x 433.62pt>
 File: /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML
 /matrix-project/figures/minimisation.png Graphic file (type png)
 <use /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/
 matrix-project/figures/minimisation.png>
 Package pdftex.def Info: /home/harsha/Documents/gitLab/Assignments/4th_semester
 /Intro_to_AI_and_ML/matrix-project/figures/minimisation.png  used on input line
- 318.
+ 302.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-Overfull \vbox (18.98346pt too high) detected at line 318
+Overfull \vbox (18.98346pt too high) detected at line 302
  []
 
-[43
+[38
 
  </home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/mat
 rix-project/figures/minimisation.png>]
-</home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/matr
-ix-project/figures/frames/115.png, id=275, 578.16pt x 433.62pt>
 File: /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML
 /matrix-project/figures/frames/115.png Graphic file (type png)
 <use /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/
 matrix-project/figures/frames/115.png>
 Package pdftex.def Info: /home/harsha/Documents/gitLab/Assignments/4th_semester
 /Intro_to_AI_and_ML/matrix-project/figures/frames/115.png  used on input line 3
-29.
+13.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
-
-Overfull \vbox (18.98346pt too high) detected at line 329
+pdfTeX warning (ext4): destination with the same identifier (name{Normal\040at\
+040minimum\040$t_1^2$}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.313 \end{frame}
+                 
+Overfull \vbox (18.98346pt too high) detected at line 313
  []
 
-[44
+[39
+
+]
+</home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/matr
+ix-project/figures/frames/1.png, id=258, 578.16pt x 433.62pt>
+File: /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML
+/matrix-project/figures/frames/1.png Graphic file (type png)
+<use /home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/
+matrix-project/figures/frames/1.png>
+Package pdftex.def Info: /home/harsha/Documents/gitLab/Assignments/4th_semester
+/Intro_to_AI_and_ML/matrix-project/figures/frames/1.png  used on input line 324
+.
+(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+
+Overfull \vbox (18.98346pt too high) detected at line 324
+ []
+
+[40
 
  </home/harsha/Documents/gitLab/Assignments/4th_semester/Intro_to_AI_and_ML/mat
-rix-project/figures/frames/115.png>] [45
+rix-project/figures/frames/1.png>] [41
 
 ]
 \tf@nav=\write6
@@ -1115,40 +1141,46 @@ rix-project/figures/frames/115.png>] [45
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 24960719817CCD2F87A4467E4271D97B;198.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  20885 strings out of 492639
- 412673 string characters out of 6135497
- 491185 words of memory out of 5000000
- 24209 multiletter control sequences out of 15000+600000
+ 413099 string characters out of 6135497
+ 489185 words of memory out of 5000000
+ 24214 multiletter control sequences out of 15000+600000
  16883 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,85p,1877b,696s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb>
-Output written on presentation.pdf (45 pages, 213444 bytes).
+pdfTeX warning (dest): name{Navigation42} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msam10.pfb>
+Output written on presentation.pdf (41 pages, 237949 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 97 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
