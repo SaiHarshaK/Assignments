@@ -1,4 +1,6 @@
 # A simple example of an animated plot
+# This code generates 240 frames of Normals to the Given Parabola
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
