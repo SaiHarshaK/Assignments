@@ -19,6 +19,11 @@ Matrix Project for the course: EE1390 - Intro to AI and ML offered by Dr. G.V.V.
   * [video](figures/output.mp4) - animated version of the above frames
   * [minimised t1](figures/minimisation.png) - Normal at minimum (t1)^2
 
+* Notes
+  * We rendered 240 frames of the Normal and the Parabola at various values of t and stitched them together using `ffmpeg -i %d.png output.mp4`.
+  * We similarly rendered the gif using `ffmpeg -i %d.png output.gif`.
+  
+
 ## Contributors
 * Sai Harsha Kottapalli
 * Abhishek Agarwal
