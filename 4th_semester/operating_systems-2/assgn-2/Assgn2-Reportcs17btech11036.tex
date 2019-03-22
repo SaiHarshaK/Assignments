@@ -1,4 +1,4 @@
-\title{Operating Systems–1: CS3523 2019\\
+\title{Operating Systems–2: CS3523 2019\\
 Programming Assignment 2: \\
 Implementing TAS, CAS and Bounded Waiting CAS
 Mutual Exclusion Algorithms \\
@@ -16,106 +16,126 @@ Report}
 The goal of this assignment is to implement TAS, CAS and Bounded Waiting with CAS
 mutual exclusion (ME) algorithms studied in the class. Implement these algorithms in C++.
 
-\section{Explanation of program}
+\section{Design of the Program :}
+We use three types of algo's as mentioned in the aim, to give access to critical section for threads.
+\subsection{Critical Section :}
+This part of the code should be accessed by only one thread at a time or as an atomic equivalent.
+We can avoid race conditions by making sure that no two processes enter their Critical Sections at the same time.
+\subsection{Entry Section :}
+This part of the code is accessible for all the threads. The job of this code is to make sure only one thread is given access to the critical section at a particular time.
+$\textbf{Note:}$ starvation might occur in case of TAS and CAS algorithm but in case of CAS-bounded algorithm all threads are given a chance to run fairly often when compared to previous algorithms.
+\subsection{Exit Section :}
+This part of the code is where the thread has successfully executed the critical section of the program, and will reset the lock so that other threads can now enter the critical section(if any) while this thread completed the remainder section parallelly.
+\subsection{Worst Time Taken:}
+This is defined as the maximum amount of time a thread has to wait after requesting access to the critical section and the access being granted.
+\subsection{Average Waiting Time :}
+This is defined as the amount of time each access to critical section takes after requesting for the same.
 
-\subsection{mmap()}
-mmap() creates a new mapping in the virtual address space of the calling process. \\
+\section{Explanation of program - Common Part}
 
-If addr is NULL, then the kernel chooses the (page-aligned) address at which to create the mapping. For the next parameter we provide length of the mapping.
-
-The prot argument describes the desired memory protection of the mapping (and must not conflict with the open mode of the file).\\
-PROT\textunderscore READ -  Pages may be read.\\
-PROT\textunderscore WRITE Pages may be written.
-
-The flags argument determines whether updates to the mapping are visible to other processes mapping the same region, and whether updates are carried through to the underlying file.\\
-MAP\textunderscore SHARED - Share this mapping.
-MAP\textunderscore ANONYMOUS - The mapping is not backed by any file i.e. the fd argument is ignored.
-
-As specified previously, fd argument is ignored. As some implementation require fd to be -1, we give that value.
-
-Offset will be zero.
-
-\subsection{fork()}
-
-The pid\textunderscore t  data type represents process IDs. Each process has it's own process identifier which is a unique integer. \\
-
-When we call fork() system call, a new process is created which has a copy of the address space of the original space. Here, the new process is the child process and the process which called fork() is referred to as parent process. \\
-
-In the program, the child process has a copy of variables (with its data) namely -  argc and argv, which are responsible for storing the number of arguments and the individual respectively. \\
-
-The child process pid for the process becomes 0 while that of the parent becomes non-zero.
-
-\subsection{wait()}
-The parent process issues a wait() system call to move itself off the ready queue until termination of the child.
-
-When the child process completes (by either implicitly or explicitly invoking exit()), the parent process resumes from the call to wait(), where it completes using the exit() system call. 
-
-\subsection{munmap()}
-
-The munmap() function shall remove any mappings for those entire pages containing any part of the address space of the process starting at addr(the ones decalred through mmap()) and continuing for sizeof(the data type) bytes.
-
-\subsection{Execution}
-
-We create three variables with the help of mmap which will be responsible to store the average, standard deviation and median of given input numbers.\\
-As the solution to this problem requires only a single program, the region of shared memory can be established before the child process is forked, allowing both the parent and child processes access to the region of shared memory.\\
-We get the input from the file as described in the instructions txt.\\
-With the help of fork() we more processes and use pid\textunderscore t to identify the process and assign work.
-Since, calculation of standard deviation requires the average value of input numbers, instead of calculating its value again, we wait until the process responsible for finding average is done using wait() (it only waits for pid[1]'s child since this is the only child of pid[1]  ).\\
-While the execution of the first two processes, the 3rd process finds the median of the given input numbers.
-Finally, we use wait() again so that all child processes are executed and written to output file.\\
-Then we use munmap to remove mappings we created using mmap.\\
-
-\section{Explanation of program(MultiThreaded)}
-
-\subsection{pthread\textunderscore t and pthread\textunderscore attr\textunderscore t}
-pthread\textunderscore t is an opaque type which acts as a handle for the new thread.It declares the identifier for the thread which is created.\\
-attributes is another opaque data type which allows you to fine tune various parameters, to use the defaults pass NULL.\\
-Each thread has a set of attributes,including stack size and scheduling information.\\
-So, thread\textunderscore attr\textunderscore t is responsible for representing the attributes of the thread.
-
-\subsection{pthread\textunderscore attr\textunderscore init()}
-
- The pthread\textunderscore attr\textunderscore init() function initializes the thread attributes object pointed to by attr with default attribute values.
-
-\subsection{pthread\textunderscore create()}
-
-The pthread\textunderscore create() function starts a new thread in the calling process.\\
-The attr argument points to a pthread\textunderscore attr\textunderscore t structure whose contents are used at thread creation time to determine attributes for the new thread using pthread\textunderscore attr\textunderscore init().
-pthread\textunderscore stores the ID of the new thread if the thread is successfully created.
-The next set of arguments is for the function to execute by the thread and its respective argument.
-
-\subsection{pthread\textunderscore join()}
-
-The pthread\textunderscore join() function waits for the thread specified by thread to terminate.\\
-If that thread has already terminated, then pthread\textunderscore join() returns immediately.
-
-\subsection{pthread\textunderscore exit()}
-
-The pthread\textunderscore exit() function terminates the calling thread and returns a value via retval that (if the thread is joinable) is available to another thread in the same process that calls pthread\textunderscore join().
-
-\subsection{Execution}
-
-We initialize three thread identifiers and its attribute holders.\\
-We get the input from the file as described in the instructions txt.\\
-We then create new threads to calculate average and median.
-Since, calculation of standard deviation requires the average value of input numbers, instead of calculating its value again, we wait until the threead responsible for finding average is done using pthread\textunderscore join() and then create another thread for finding standard deviation.\\
-Finally, we use pthread\textunderscore join() for tge remaining threads to successfully terminate the threads.\\
-Then we output to the output file as specified in instructions.\\
-
-\section{Comparision}
-
+\subsection{Header files used}
 \begin{itemize}
-\item The threads run in the same memory space while processes have seperate memory.
-So, we have to develop a mechanism for the processes to share variables using shared memory with the help of mmap.\\
-So Multiprocessing have larger memory footprint.\\
-
-\item Spawning processes is a bit slower than spawning threads as creating process is time consuming and resource intensive while creating threads is economical in both sense - time and resource.
-
+\item iostream\\
+Header that defines the standard input/output stream objects
+\item thread\\
+Used for implementing threads.\\
+It defines the class to represent individual threads of execution.\\
+A thread of execution is a sequence of instructions that can be executed concurrently with other such sequences in multithreading environments, while sharing a same address space.\\
+\item fstream\\
+Input/output stream class to operate on files.
+\item random\\
+This header introduces random number generation facilities.\\
+\item atomic\\
+Atomic types are types that acts like a wrapper around  a value whose access is guaranteed to not cause data races and can be used to synchronize memory accesses among different threads.
+\item cstdio\\
+Used for \textbf{sprintf}, that is, for the format in which the time has to be printed to the log file.
+\item unistd.h\\
+Used for miscellaneous symbolic constants and types, and declares miscellaneous functions - \\
+\textbf{localtime} - which is used to get a structure of time, with hours, minutes and seconds.\\
+\textbf{time} - For capturing current time which is processed by above command.
+\item string\\
+For processing strings.
 \end{itemize}
 
-\section{Graph}
+\subsection{getInput()}
+This is a helper function which helps in keeping the code modular.\\
+It reads the value of the following from the input file, specified in ReadMe.txt \\
+\begin{itemize}
+\item number of threads\\
+\item number of times each thread requires to access the critical section\\
+\item lambda1 and lambda2\\
+Represents the mean of value of two exponential distribution curves which is to be constructed.
+\end{itemize}
+
+\subsection{testCS()}
+The testCS function is responsible for the simulation of the critical, entry, exit and remainder section.We also use this function to calculate the average waiting time and worst time taken which is later used as the parameters for the comparisions for the three different algorithms mentioned in the aim.
+
+\subsection{currTime()}
+Takes input time$\textunderscore$t structure to generate the time in HH:MM:SS syntax and return this as a string.
+
+\subsection{Other important variables used}
+\begin{itemize}
+\item exponential$\textunderscore$distribution\\
+Produces random non-negative floating-point values x, distributed according to probability density function defined for exponential distribution about the constant rate given as a parameter.
+\item default$\textunderscore$random$\textunderscore$engine\\
+This is a random number engine class that generates pseudo-random numbers.
+\item waiting\\
+Dynamic array of bool type, based on number of threads given in input file.
+\item thread *th\\
+th is the pointer for storing the array of n threads.This will be useful for later calling join to properly exit the threads spawned previously.
+\end{itemize}
+
+\section{TAS}
+\begin{itemize}
+\item lock\\
+We use atomic$\langle$bool$\rangle$ and initiate this to \textbf{ATOMIC$\textunderscore$FLAG$\textunderscore$INIT}.
+\item exchange\\
+\textbf{syntax} - exchange( T$\textunderscore$desired, std::memory$\textunderscore$order order = std::memory$\textunderscore$order$\textunderscore$seq$\textunderscore$cst )\\
+Atomically replaces the underlying value with desired. The operation is read-modify-write operation. Memory is affected according to the value of order.\\
+We use this to implement our TAS algorithm.
+\item return value\\
+The value of the atomic variable before the call. 
+\end{itemize}
+
+\section{CAS and CAS-Bounded}
+\begin{itemize}
+\item lock\\
+We use atomic$\langle$int$\rangle$ and initiate this to \textbf{0}.\\
+\textbf{Note:} use lock(0) instead of lock = 0, as there are some issues with using the latter.
+\item compare$\textunderscore$exchange$\textunderscore$strong\\
+\textbf{syntax} - compare$\textunderscore$exchange$\textunderscore$strong( T\& expected, T$\textunderscore$desired)\\
+Atomically compares the object representation of *this with that of expected, and if those are bitwise-equal, replaces the former with desired (performs read-modify-write operation). Otherwise, loads the actual value stored in *this into expected (performs load operation).
+\item return value\\
+\textbf{true} if the underlying atomic value was successfully changed, \textbf{false} otherwise.
+\item \textbf{Note: }expected must always be reset to 0 after every iteration and the above command also change expected when required conditions are met.
+\end{itemize}
+\pagebreak
+\section{Comparision}
+\subsection{Graphs}
 \begin{figure}[ht!]
-\includegraphics[width=200mm]{graph.png}
-\caption{Comparision between time taken by MultiProcessing and Multithreading \label{overflow}}
+\includegraphics[width=150mm]{Average_Wait_Time.png}
+\caption{Comparision between Average time taken for accessing the critical section by the algorithms.}
 \end{figure}
+\begin{figure}[ht!]
+\includegraphics[width=150mm]{Worst_Wait_Time.png}
+\caption{Comparision between the worst time taken by the algorithms.}
+\end{figure}
+
+\pagebreak
+\subsection{Notes}
+\begin{itemize}
+\item Parameters used for test cases:\\
+n = 10, 20, 30, 40 , 50\\
+k = 10\\
+$\Lambda _1$ = 2 seconds
+$\Lambda _2$ = 2 seconds
+\item Each of the plotted points is the average of 5 testcases.\\
+\item With respect to Average waiting time
+Efficiency of algorithms:\\
+TAS $\approx$ CAS $>$ CAS-bounded.
+\item With respect to Worst time taken
+Efficiency of algorithms:\\
+CAS-Bounded $>$ TAS $>$ CAS
+\end{itemize}
+
 \end{document}

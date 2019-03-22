@@ -1,0 +1,4 @@
+Average waiting time for writers(ms): 11989.221430
+Average waiting time for readers(ms): 12301.840290
+Worst time for writers to enter CS(ms): 18841.611000
+Worst time for readers to enter CS(ms): 18298.801000
