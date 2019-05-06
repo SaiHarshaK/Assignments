@@ -248,6 +248,10 @@ int main() {
   sem_destroy(&out);
   sem_destroy(&wrt);
 
+  // delete the dynamic threads created.
+  delete [] th_r;
+  delete [] th_w;
+
   //close files
   log_file.close();
 

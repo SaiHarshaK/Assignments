@@ -1,0 +1,58 @@
+$ ps
+4096   4072   0  ffff8ac1f65be180  IN   0.0    4216    468  a.out
+4097   4048   0  ffff8ac1f65b8000  IN   0.0    4216    468  a.out
+
+$ ps -a
+PID: 4096   TASK: ffff8ac1f65be180  CPU: 0   COMMAND: "a.out"
+ARG: ./a.out
+ENV: XDG_SESSION_ID=5
+HOSTNAME=localhost.localdomain
+SELINUX_ROLE_REQUESTED=
+TERM=xterm-256color
+SHELL=/bin/bash
+HISTSIZE=1000
+SSH_CLIENT=192.168.56.101 49140 22
+SELINUX_USE_CURRENT_RANGE=
+SSH_TTY=/dev/pts/1
+USER=owner
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15
+...
+MAIL=/var/spool/mail/owner
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/owner/.local/bin:/home/owner/bin
+PWD=/home/owner
+LANG=en_US.UTF-8
+SELINUX_LEVEL_REQUESTED=
+HISTCONTROL=ignoredups
+SHLVL=1
+HOME=/home/owner
+LOGNAME=owner
+SSH_CONNECTION=192.168.56.101 49140 192.168.56.108 22
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+XDG_RUNTIME_DIR=/run/user/1000
+_=./a.out
+PID: 4097   TASK: ffff8ac1f65b8000  CPU: 0   COMMAND: "a.out"
+ARG: ./a.out
+ENV: XDG_SESSION_ID=4
+HOSTNAME=localhost.localdomain
+SELINUX_ROLE_REQUESTED=
+TERM=xterm-256color
+SHELL=/bin/bash
+HISTSIZE=1000
+SSH_CLIENT=192.168.56.101 49138 22
+SELINUX_USE_CURRENT_RANGE=
+SSH_TTY=/dev/pts/0
+USER=owner
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:...
+MAIL=/var/spool/mail/owner
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/owner/.local/bin:/home/owner/bin
+PWD=/home/owner
+LANG=en_US.UTF-8
+SELINUX_LEVEL_REQUESTED=
+HISTCONTROL=ignoredups
+SHLVL=1
+HOME=/home/owner
+LOGNAME=owner
+SSH_CONNECTION=192.168.56.101 49138 192.168.56.108 22
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+XDG_RUNTIME_DIR=/run/user/1000
+_=./a.out

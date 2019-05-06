@@ -1,0 +1,219 @@
+PID: 4097   TASK: ffff8ac1f65b8000  CPU: 0   COMMAND: "a.out"
+struct mm_struct {
+  mmap = 0xffff8ac1fcf8f288, 
+  mm_rb = {
+    rb_node = 0xffff8ac1fcf8f890
+  }, 
+  mmap_cache = 0xffff8ac1fcf8f5e8, 
+  get_unmapped_area = 0xffffffffb6230e90, 
+  unmap_area = 0xffffffffb63f0d20, 
+  mmap_base = 140235929944064, 
+  mmap_legacy_base = 47396740444160, 
+  task_size = 140737488351232, 
+  cached_hole_size = 0, 
+  free_area_cache = 140235929944064, 
+  highest_vm_end = 140735203500032, 
+  pgd = 0xffff8ac1fcbaa000, 
+  mm_users = {
+    counter = 1
+  }, 
+  mm_count = {
+    counter = 1
+  }, 
+  nr_ptes = {
+    counter = 7
+  }, 
+  map_count = 16, 
+  page_table_lock = {
+    {
+      rlock = {
+        raw_lock = {
+          val = {
+            counter = 0
+          }
+        }
+      }
+    }
+  }, 
+  mmap_sem = {
+    {
+      count = {
+        counter = 0
+      }, 
+      __UNIQUE_ID_rh_kabi_hide4 = {
+        count = 0
+      }, 
+      {<No data fields>}
+    }, 
+    wait_lock = {
+      raw_lock = {
+        val = {
+          counter = 0
+        }
+      }
+    }, 
+    osq = {
+      tail = {
+        counter = 0
+      }
+    }, 
+    wait_list = {
+      next = 0xffff8ac1fccf46c8
+    }, 
+    owner = 0x1
+  }, 
+  mmlist = {
+    next = 0xffff8ac1fccf46d8, 
+    prev = 0xffff8ac1fccf46d8
+  }, 
+  hiwater_rss = 89, 
+  hiwater_vm = 1057, 
+  total_vm = 1054, 
+  locked_vm = 0, 
+  pinned_vm = 0, 
+  shared_vm = 1007, 
+  exec_vm = 485, 
+  stack_vm = 33, 
+  def_flags = 0, 
+  start_code = 4194304, 
+  end_code = 4196212, 
+  start_data = 6295056, 
+  end_data = 6295604, 
+  start_brk = 20697088, 
+  brk = 20697088, 
+  start_stack = 140735203351296, 
+  arg_start = 140735203358439, 
+  arg_end = 140735203358447, 
+  env_start = 140735203358447, 
+  env_end = 140735203360752, 
+  saved_auxv = {33, 140735203491840, 16, 395049983, 6, 4096, 17, 100, 3, 4194368, 4, 56, 5, 9, 7, 140235927699456, 8, 0, 9, 4195472, 11, 1000, 12, 1000, 13, 1000, 14, 1000, 23, 0, 25, 140735203351849, 26, 0, 31, 140735203360752, 15, 140735203351865, 0, 0, 0, 0, 0, 0}, 
+  rss_stat = {
+    count = {{
+        counter = 68
+      }, {
+        counter = 19
+      }, {
+        counter = 0
+      }}
+  }, 
+  binfmt = 0xffffffffb6eb3800, 
+  cpu_vm_mask_var = 0xffff8ac1fccf4988, 
+  context = {
+    {
+      ldt = 0x0, 
+      __UNIQUE_ID_rh_kabi_hide5 = {
+        ldt = 0x0
+      }, 
+      {<No data fields>}
+    }, 
+    rh_reserved_size = 0, 
+    ia32_compat = 0, 
+    lock = {
+      count = {
+        counter = 1
+      }, 
+      wait_lock = {
+        {
+          rlock = {
+            raw_lock = {
+              val = {
+                counter = 0
+              }
+            }
+          }
+        }
+      }, 
+      wait_list = {
+        next = 0xffff8ac1fccf4928, 
+        prev = 0xffff8ac1fccf4928
+      }, 
+      owner = 0x0, 
+      {
+        osq = {
+          tail = {
+            counter = 0
+          }
+        }, 
+        __UNIQUE_ID_rh_kabi_hide3 = {
+          spin_mlock = 0x0
+        }, 
+        {<No data fields>}
+      }
+    }, 
+    vdso = 0x7fff77cfc000
+  }, 
+  flags = 205, 
+  core_state = 0x0, 
+  ioctx_lock = {
+    {
+      rlock = {
+        raw_lock = {
+          val = {
+            counter = 0
+          }
+        }
+      }
+    }
+  }, 
+  ioctx_list = {
+    first = 0x0
+  }, 
+  owner = 0xffff8ac1f65b8000, 
+  exe_file = 0xffff8ac1fcea0100, 
+  mmu_notifier_mm = 0x0, 
+  cpumask_allocation = {
+    bits = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+  }, 
+  numa_next_scan = 0, 
+  numa_scan_offset = 0, 
+  numa_scan_seq = 0, 
+  tlb_flush_pending = false, 
+  uprobes_state = {
+    xol_area = 0x0
+  }, 
+  rh_reserved1 = 0, 
+  rh_reserved2 = 0, 
+  {
+    bd_addr = 0xffffffffffffffff, 
+    __UNIQUE_ID_rh_kabi_hide9 = {
+      rh_reserved3 = 18446744073709551615
+    }, 
+    {<No data fields>}
+  }, 
+  {
+    mm_shmempages = {
+      counter = 0
+    }, 
+    __UNIQUE_ID_rh_kabi_hide10 = {
+      rh_reserved4 = 0
+    }, 
+    {<No data fields>}
+  }, 
+  {
+    hmm = 0x0, 
+    __UNIQUE_ID_rh_kabi_hide11 = {
+      rh_reserved5 = 0
+    }, 
+    {<No data fields>}
+  }, 
+  {
+    {
+      pkey_allocation_map = 0, 
+      execute_only_pkey = 0
+    }, 
+    __UNIQUE_ID_rh_kabi_hide12 = {
+      rh_reserved6 = 0
+    }, 
+    {<No data fields>}
+  }, 
+  {
+    membarrier_state = {
+      counter = 0
+    }, 
+    __UNIQUE_ID_rh_kabi_hide13 = {
+      rh_reserved7 = 0
+    }, 
+    {<No data fields>}
+  }, 
+  rh_reserved8 = 0
+}

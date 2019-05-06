@@ -1,0 +1,16 @@
+[root@localhost util]# ./runtest.sh
+PASS - Test 1 : Same process writing and reading using syscalls
+PASS - Test 2 : Same process writing and reading using mapping
+PASS - Test 3 : One process writing using syscall and other process reading using syscall
+PASS - Test 4 : One process writing using mapping and other process reading using mapping
+PASS - Test 5 : One process writing using mapping and other process reading using syscall
+PASS - Test 6 : One process writing using syscall and other process reading using mapping
+PASS - Test 7 : One process writing to one shm and other process reading from another shm
+
+
+* Also the example files created with mknod(245 is mykmod's major number)
+
+$ ls -la /tmp/
+crwx------.  1 root root 245, 5 Apr 23 04:32 myshm_1eA
+crwx------.  1 root root 245, 3 Apr 23 04:05 myshm_5nR
+...

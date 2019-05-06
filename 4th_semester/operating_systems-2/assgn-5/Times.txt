@@ -1,0 +1,2 @@
+Average waiting time for philosophers(ms): 0.804050
+Worst time taken for philosopher to eat(ms): 6.597000

@@ -1,0 +1,52 @@
+[root@localhost scp]# swapon -s
+Filename                                Type            Size    Used    Priority
+/dev/dm-1                               partition       839676  0       -2
+
+******************************************a part******************************************
+[owner@localhost scp]$ swapon -s
+Filename                                Type            Size    Used    Priority
+/dev/dm-1                               partition       839676  74728   -2
+
+# swapoff /dev/dm-1
+
+[owner@localhost scp]$ free -mh
+total        used        free      shared  buff/cache   available
+Mem:           863M         98M        682M        6.0M         82M        642M
+Swap:            0B          0B          0B
+
+
+[owner@localhost ~]$ vmstat -t 1
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu----- -----timestamp-----
+r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st                 EDT
+2  0      0 699648      0  84180   41  435   147   438   47   89  0  1 99  0  0 2019-04-22 12:43:21
+...
+0  0      0 185480      0  85172    0    0     0     0   24   23  1  1 98  0  0 2019-04-22 12:43:27
+0  0      0  82916      0  85172    0    0     0     0   28   27  0  0 100  0  0 2019-04-22 12:43:28
+0  0      0 698276      0  85172    0    0     0     0   25   36  0  0 100  0  0 2019-04-22 12:43:29
+0  0      0 698276      0  85172    0    0     0     0   18   23  0  1 99  0  0 2019-04-22 12:43:30
+
+$ ./a.out
+6
+Segmentation fault
+
+*******************************************b part**********************************************
+[owner@localhost scp]$ swapon /dev/dm-1
+[owner@localhost scp]$ free -mh
+total        used        free      shared  buff/cache   available
+Mem:           863M         98M        681M        6.0M         83M        641M
+Swap:          819M          0B        819M
+
+[owner@localhost ~]$ vmstat -t 1
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu----- -----timestamp-----
+r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st                 EDT
+3  0      0 698128      4  85144   38  406   138   409   45   85  0  1 99  0  0 2019-04-22 12:45:39
+1  0      0 624104      4  85144    0    0     0     0   33   29  0  0 100  0  0 2019-04-22 12:45:40
+...
+3  1 792576  47140      0  41256    0 84436     8 84436  744  117  0 11 84  5  0 2019-04-22 12:45:54
+1  0 805888  70620      0  38456    0 13328     0 13328  361   65  0  2 92  6  0 2019-04-22 12:45:55
+3  3  78224 819048      0  38992  280 33984 11196 33984  693  204  0 49  0 51  0 2019-04-22 12:45:57
+0  0  77028 808056      0  47864 2264    0  5662     0  246  250  0  7 22 72  0 2019-04-22 12:45:58
+
+$ ./a.out
+13
+Killed

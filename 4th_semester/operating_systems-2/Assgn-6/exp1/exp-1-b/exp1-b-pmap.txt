@@ -1,0 +1,39 @@
+$ pmap 4096 4097
+4096:   ./a.out
+0000000000400000      4K r-x-- a.out
+0000000000600000      4K r---- a.out
+0000000000601000      4K rw--- a.out
+00007fb2d62d8000   1800K r-x-- libc-2.17.so
+00007fb2d649a000   2048K ----- libc-2.17.so
+00007fb2d669a000     16K r---- libc-2.17.so
+00007fb2d669e000      8K rw--- libc-2.17.so
+00007fb2d66a0000     20K rw---   [ anon ]
+00007fb2d66a5000    136K r-x-- ld-2.17.so
+00007fb2d68bd000     12K rw---   [ anon ]
+00007fb2d68c3000     12K rw---   [ anon ]
+00007fb2d68c6000      4K r---- ld-2.17.so
+00007fb2d68c7000      4K rw--- ld-2.17.so
+00007fb2d68c8000      4K rw---   [ anon ]
+00007ffc062ab000    132K rw---   [ stack ]
+00007ffc06396000      8K r-x--   [ anon ]
+ffffffffff600000      4K r-x--   [ anon ]
+ total             4220K
+4097:   ./a.out
+0000000000400000      4K r-x-- a.out
+0000000000600000      4K r---- a.out
+0000000000601000      4K rw--- a.out
+00007f8b386af000   1800K r-x-- libc-2.17.so
+00007f8b38871000   2048K ----- libc-2.17.so
+00007f8b38a71000     16K r---- libc-2.17.so
+00007f8b38a75000      8K rw--- libc-2.17.so
+00007f8b38a77000     20K rw---   [ anon ]
+00007f8b38a7c000    136K r-x-- ld-2.17.so
+00007f8b38c94000     12K rw---   [ anon ]
+00007f8b38c9a000     12K rw---   [ anon ]
+00007f8b38c9d000      4K r---- ld-2.17.so
+00007f8b38c9e000      4K rw--- ld-2.17.so
+00007f8b38c9f000      4K rw---   [ anon ]
+00007fff77cbb000    132K rw---   [ stack ]
+00007fff77cfc000      8K r-x--   [ anon ]
+ffffffffff600000      4K r-x--   [ anon ]
+ total             4220K

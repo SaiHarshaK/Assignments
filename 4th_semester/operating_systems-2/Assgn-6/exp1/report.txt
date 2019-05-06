@@ -1,0 +1,137 @@
+* i have checked my kernel version using
+$ uname -r
+3.10.0-957.el7.x86_64
+
+and os version using
+$ cat /etc/*elease
+CentOS Linux release 7.6.1810 (Core)
+...
+
+* Other version's of the same-release packages doesn't work.
+
+* kdump catures the vm core of the system which is essentially the whole of memory(ram + swap) just before kernel panic.
+* To be noted that user space related ones do not get copied as they are useless for the kernel debugging and for privacy purposes.
+* I reserved 128M in ram which will be used by kexec when there is a kernel crash so as to function and obtain the vm core.
+* when sysrq is triggered, we get a bunch of notifications on screen such as the modules loaded, etc
+* crash is used to analyze the vm core generated after kernel panic.
+* upon running crash, some details are shown such as :
+  kernel, dumpfile, cpus, number of tasks, kernel-release, machine, PID, etc (which can been viewed again using $ sys)
+
+WARNING: kernel relocated [86MB]: patching 85605 gdb minimal_symbol values
+KERNEL: backup1
+DUMPFILE: /dev/crash
+CPUS: 1
+DATE: Tue Apr 23 12:19:38 2019
+UPTIME: 00:01:05
+LOAD AVERAGE: 0.30, 0.10, 0.04
+TASKS: 110
+NODENAME: localhost.localdomain
+RELEASE: 3.10.0-957.el7.x86_64
+VERSION: #1 SMP Thu Nov 8 23:39:32 UTC 2018
+MACHINE: x86_64  (2807 Mhz)
+MEMORY: 1 GB
+PID: 3751
+COMMAND: "crash"
+TASK: ffff9cbfbcf5b0c0  [THREAD_INFO: ffff9cbfbbbe0000]
+CPU: 0
+STATE: TASK_RUNNING (ACTIVE)
+
+* ps lets us know what was running on system at the time of crash(Command, PID lets us know about process) and %memory, vsz, rss used by each process.
+
+crash> ps
+PID    PPID  CPU       TASK        ST  %MEM     VSZ    RSS  COMM
+0      0   0  ffffffff87218480  RU   0.0       0      0  [swapper/0]
+1      0   0  ffff9cbfbdba8000  IN   0.6  128008   6532  systemd
+2      0   0  ffff9cbfbdba9040  IN   0.0       0      0  [kthreadd]
+3      2   0  ffff9cbfbdbaa080  IN   0.0       0      0  [ksoftirqd/0]
+4      2   0  ffff9cbfbdbab0c0  IN   0.0       0      0  [kworker/0:0]
+
+* ST shows the task state of the process(running, inturreptible sleep).
+
+* display the parental hierarchy of process using
+  $ ps -p <pid>
+
+crash> ps -p 1
+PID: 0      TASK: ffffffff87218480  CPU: 0   COMMAND: "swapper/0"
+PID: 1      TASK: ffff9cbfbdba8000  CPU: 0   COMMAND: "systemd"
+
+  or children using
+  $ ps -c <pid>
+PID: 22     TASK: ffff9cbfbdbec100  CPU: 0   COMMAND: "md"
+(no children)
+
+
+* to show most recently used run task on a cpu $ ps -m -C0
+  which in our case, is crash
+
+crash> ps -m -C0
+CPU: 0
+[0 00:00:00.000] [RU]  PID: 3751   TASK: ffff9cbfbcf5b0c0  CPU: 0   COMMAND: "crash"
+[0 00:00:00.000] [IN]  PID: 3729   TASK: ffff9cbfb6b830c0  CPU: 0   COMMAND: "sshd"
+[0 00:00:00.000] [IN]  PID: 47     TASK: ffff9cbfba20e180  CPU: 0   COMMAND: "kworker/0:2"
+[0 00:00:00.185] [IN]  PID: 3531   TASK: ffff9cbfbce4a080  CPU: 0   COMMAND: "tuned"
+
+* $ dev , shows all the character and block devices
+
+crash> dev
+CHRDEV    NAME                 CDEV        OPERATIONS
+1      mem            ffff9cbfbd575580  memory_fops
+4      /dev/vc/0      ffffffff87833d20  console_fops
+4      tty            ffff9cbfbd575680  tty_fops
+....
+
+* $ swap , lets us view swap space.
+* in the vmcore i was debugging, the swap partiton used was 264k / 839676k. PRI = -2, which is priority
+
+crash> swap
+SWAP_INFO_STRUCT    TYPE       SIZE       USED     PCT  PRI  FILENAME
+ffff9cbfbc690000  PARTITION   839676k     1800k     0%   -2  /dev/dm-1
+
+
+* $ ipcs , shows the shared memory usage.
+
+crash> ipcs
+SHMID_KERNEL     KEY      SHMID      UID   PERMS BYTES      NATTCH STATUS
+(none allocated)
+SEM_ARRAY        KEY      SEMID      UID   PERMS NSEMS
+(none allocated)
+MSG_QUEUE        KEY      MSQID      UID   PERMS USED-BYTES   MESSAGES
+(none allocated)
+
+* In our case, it is empty.
+
+* $ irq -s , shows irq status. left most number is irq number and the next number shows the number of rime, cpu core has been interrupted.
+Example: IRQ 0 -> system timer, it has been interruped 152 times.
+
+CPU0
+0:        147  IO-APIC-edge     timer
+1:         24  IO-APIC-edge     i8042
+8:          0  IO-APIC-edge     rtc0
+9:         25  IO-APIC-fasteoi  acpi
+12:        156  IO-APIC-edge     i8042
+
+* $ vm for virtual memory usage
+
+crash> vm
+PID: 3824   TASK: ffff9cbfbce4c100  CPU: 0   COMMAND: "crash"
+MM               PGD          RSS    TOTAL_VM
+ffff9cbfbcc8b840  ffff9cbfbc7ba000  297168k  434104k
+VMA           START       END     FLAGS FILE
+ffff9cbfb5f6c288     400000     afc000 8000875 /usr/bin/crash
+ffff9cbfb5f6c870     cfb000     cfc000 8100871 /usr/bin/crash
+ffff9cbfbcd1e360     cfc000     d21000 8100873 /usr/bin/crash
+ffff9cbfb5f6ce58     d21000     fdd000 8100073
+ffff9cbfbcd1e438    13bd000    711d000 8100073
+ffff9cbfb6887e58 7fee920b4000 7fee94244000 8100073
+ffff9cbfbce0ba20 7fee94244000 7fee944d5000 8000071 /root/backup1
+ffff9cbfbcc65e58 7fee944d5000 7fee947cb000 8000071 /root/backup1
+
+* $ files, for the open files when system crashed
+crash> files
+PID: 3824   TASK: ffff9cbfbce4c100  CPU: 0   COMMAND: "crash"
+ROOT: /    CWD: /root
+FD       FILE            DENTRY           INODE       TYPE PATH
+0 ffff9cbfbbb40500 ffff9cbfba7de6c0 ffff9cbfba53d280 CHR  /dev/pts/0
+1 ffff9cbfbbb40500 ffff9cbfba7de6c0 ffff9cbfba53d280 CHR  /dev/pts/0
+2 ffff9cbfbbb40500 ffff9cbfba7de6c0 ffff9cbfba53d280 CHR  /dev/pts/0
+

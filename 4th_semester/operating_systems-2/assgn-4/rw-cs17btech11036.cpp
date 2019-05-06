@@ -238,6 +238,10 @@ int main() {
   sem_destroy(&rw_m);
   sem_destroy(&mutex);
 
+  // delete the dynamic threads created.
+  delete [] th_r;
+  delete [] th_w;
+
   //close files
   log_file.close();
 

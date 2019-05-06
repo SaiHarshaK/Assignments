@@ -229,6 +229,7 @@ int main() {
   // delete the dynamic buffer created.
   delete [] buffer;
   buffer = NULL;
+
   log_file<<fixed<<"Average waiting time for producers: "<<waiting_time_prod / (n_p * rep_p)<<endl;
   log_file<<fixed<<"Average waiting time for consumers: "<<waiting_time_cons / (n_c * rep_c)<<endl;
   log_file.close();

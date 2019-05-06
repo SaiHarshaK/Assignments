@@ -1,0 +1,19 @@
+* comparing $ vm -p, output for both the PID's
+for file /usr/lib64/libc-2.17.so
+We see that though the virtual address is different, the physical address is the same.
+some of them have address , some have offset from the file mentioned.
+Example:
+"""
+1 VIRTUAL     PHYSICAL                                                     |    1 VIRTUAL     PHYSICAL
+2 7fb2d62d8000  3fdb0000                                                   |    2 7f8b386af000  3fdb0000
+3 7fb2d62d9000  3fdb1000                                                   |    3 7f8b386b0000  3fdb1000
+4 7fb2d62da000  3fdb2000                                                   |    4 7f8b386b1000  3fdb2000
+5 7fb2d62db000  3fdb3000                                                   |    5 7f8b386b2000  3fdb3000
+6 7fb2d62dc000  3fe3f000                                                   |    6 7f8b386b3000  3fe3f000
+7 7fb2d62dd000   67f0000                                                   |    7 7f8b386b4000   67f0000
+"""
+
+Not just libc, even ld-2.17.so is shared
+
+* (*full) txt files have the complete command output for reference.
+* kernel-dump txt is where we run ps command after crash to find pid's of required processes.
