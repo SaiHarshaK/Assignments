@@ -14,7 +14,7 @@ class Main inherits IO {
     {
       out_string("Enter number: ");
       a <- in_int();
-      out_string("The nth fibonacci is: ";
+      out_string("The nth fibonacci is: ");
       out_int((new Fib).fibof(a));
       out_string("\n");
     }

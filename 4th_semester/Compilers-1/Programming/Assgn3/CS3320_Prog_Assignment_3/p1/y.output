@@ -1,0 +1,239 @@
+Grammar
+
+    0 $accept: MOVE $end
+
+    1 MOVE: POS '-' POS
+    2     | POS 'x' POS
+    3     | POS '-' POS '=' PAWNUP
+    4     | POS 'x' POS '=' PAWNUP
+    5     | MOVE POS '-' POS
+    6     | MOVE POS 'x' POS
+    7     | MOVE POS '-' POS '=' PAWNUP
+    8     | MOVE POS 'x' POS '=' PAWNUP
+
+    9 POS: COL ROW
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'-' (45) 1 3 5 7
+'=' (61) 3 4 7 8
+'x' (120) 2 4 6 8
+error (256)
+ROW <num> (258) 9
+COL <chr> (259) 9
+PAWNUP <chr> (260) 3 4 7 8
+
+
+Nonterminals, with rules where they appear
+
+$accept (9)
+    on left: 0
+MOVE <num> (10)
+    on left: 1 2 3 4 5 6 7 8, on right: 0 5 6 7 8
+POS <num> (11)
+    on left: 9, on right: 1 2 3 4 5 6 7 8
+
+
+State 0
+
+    0 $accept: . MOVE $end
+
+    COL  shift, and go to state 1
+
+    MOVE  go to state 2
+    POS   go to state 3
+
+
+State 1
+
+    9 POS: COL . ROW
+
+    ROW  shift, and go to state 4
+
+
+State 2
+
+    0 $accept: MOVE . $end
+    5 MOVE: MOVE . POS '-' POS
+    6     | MOVE . POS 'x' POS
+    7     | MOVE . POS '-' POS '=' PAWNUP
+    8     | MOVE . POS 'x' POS '=' PAWNUP
+
+    $end  shift, and go to state 5
+    COL   shift, and go to state 1
+
+    POS  go to state 6
+
+
+State 3
+
+    1 MOVE: POS . '-' POS
+    2     | POS . 'x' POS
+    3     | POS . '-' POS '=' PAWNUP
+    4     | POS . 'x' POS '=' PAWNUP
+
+    '-'  shift, and go to state 7
+    'x'  shift, and go to state 8
+
+
+State 4
+
+    9 POS: COL ROW .
+
+    $default  reduce using rule 9 (POS)
+
+
+State 5
+
+    0 $accept: MOVE $end .
+
+    $default  accept
+
+
+State 6
+
+    5 MOVE: MOVE POS . '-' POS
+    6     | MOVE POS . 'x' POS
+    7     | MOVE POS . '-' POS '=' PAWNUP
+    8     | MOVE POS . 'x' POS '=' PAWNUP
+
+    '-'  shift, and go to state 9
+    'x'  shift, and go to state 10
+
+
+State 7
+
+    1 MOVE: POS '-' . POS
+    3     | POS '-' . POS '=' PAWNUP
+
+    COL  shift, and go to state 1
+
+    POS  go to state 11
+
+
+State 8
+
+    2 MOVE: POS 'x' . POS
+    4     | POS 'x' . POS '=' PAWNUP
+
+    COL  shift, and go to state 1
+
+    POS  go to state 12
+
+
+State 9
+
+    5 MOVE: MOVE POS '-' . POS
+    7     | MOVE POS '-' . POS '=' PAWNUP
+
+    COL  shift, and go to state 1
+
+    POS  go to state 13
+
+
+State 10
+
+    6 MOVE: MOVE POS 'x' . POS
+    8     | MOVE POS 'x' . POS '=' PAWNUP
+
+    COL  shift, and go to state 1
+
+    POS  go to state 14
+
+
+State 11
+
+    1 MOVE: POS '-' POS .
+    3     | POS '-' POS . '=' PAWNUP
+
+    '='  shift, and go to state 15
+
+    $default  reduce using rule 1 (MOVE)
+
+
+State 12
+
+    2 MOVE: POS 'x' POS .
+    4     | POS 'x' POS . '=' PAWNUP
+
+    '='  shift, and go to state 16
+
+    $default  reduce using rule 2 (MOVE)
+
+
+State 13
+
+    5 MOVE: MOVE POS '-' POS .
+    7     | MOVE POS '-' POS . '=' PAWNUP
+
+    '='  shift, and go to state 17
+
+    $default  reduce using rule 5 (MOVE)
+
+
+State 14
+
+    6 MOVE: MOVE POS 'x' POS .
+    8     | MOVE POS 'x' POS . '=' PAWNUP
+
+    '='  shift, and go to state 18
+
+    $default  reduce using rule 6 (MOVE)
+
+
+State 15
+
+    3 MOVE: POS '-' POS '=' . PAWNUP
+
+    PAWNUP  shift, and go to state 19
+
+
+State 16
+
+    4 MOVE: POS 'x' POS '=' . PAWNUP
+
+    PAWNUP  shift, and go to state 20
+
+
+State 17
+
+    7 MOVE: MOVE POS '-' POS '=' . PAWNUP
+
+    PAWNUP  shift, and go to state 21
+
+
+State 18
+
+    8 MOVE: MOVE POS 'x' POS '=' . PAWNUP
+
+    PAWNUP  shift, and go to state 22
+
+
+State 19
+
+    3 MOVE: POS '-' POS '=' PAWNUP .
+
+    $default  reduce using rule 3 (MOVE)
+
+
+State 20
+
+    4 MOVE: POS 'x' POS '=' PAWNUP .
+
+    $default  reduce using rule 4 (MOVE)
+
+
+State 21
+
+    7 MOVE: MOVE POS '-' POS '=' PAWNUP .
+
+    $default  reduce using rule 7 (MOVE)
+
+
+State 22
+
+    8 MOVE: MOVE POS 'x' POS '=' PAWNUP .
+
+    $default  reduce using rule 8 (MOVE)

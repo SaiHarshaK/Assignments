@@ -1,0 +1,82 @@
+Roll No.:   CS17BTECH11036
+Name:       SAI HARSHA KOTTAPALLI
+
+--------------------------------------------------------------------------------
+
+P1: Chess
+---------
+Assumptions / Comments (if any):
+
+# Is the program complete? Are there any assumptions made? Any other comments?
+* Yes the program is complete.
+* As the TA has informed through mail, no error checking has been done in the program as it was not needed and that only correct input will be given.
+* The board's columns are denoted by a,b,c...
+* The board's rows are denoted by 1,2,3,...
+
+Approach :
+# How do you solve this problem?
+* First we complete the lex to divide the input to tokens with the help of start conditions if necessary.
+* We create R.E. names for the keywords and operators
+* Create an array of 64 chars which would store what piece is currently on the board.
+* Initialize the board in main function.
+* The board columns are translated to zero index and served as offset from row number
+* We calculate row id by multiplying 8 with row number after making it 0-index.
+* We ignore all the capital letters as they are useless to us, the position itself tells us what piece is currently on it.
+* We do the same procedure for 'x' as well ls '-':
+  - We calculate the position in decimal form, for the initial to final place and update
+    the piece stored on final position. (as for 'x', it just overwrites any other piece.)
+  - Initial position piece is set to blank
+* As for pawn promotion, we do the same as previous case except that we update the
+  final position piece with the letter after '=' rather than 'P'
+* Finally after yyparse is done we print the final state of the table.
+
+* For lex, we have three tokens, ROW for row(1-8), COL for column(a-h) and PAWN(for '=' with help of states) for promotion of pawn.
+* We use two yacc definitions, num and chr which can store numbers and characters
+* MOVE and POS the non-terminals for the grammer defined.
+* Here, MOVE Consists of combination of MOVES. where each MOVE would be updating position of piece
+that is, POS '-/x' POS
+* Also for cases when pawn is upgraded, we follow the rule POS '-/x' POS '=' PAWNUP
+* We do the above using functions, chessBoardUpdate, chessBoardUpdUpg, rowToNum and colToNum.
+(function and other details in comments)
+
+P2: Calculator
+--------------
+Assumptions / Comments (if any):
+
+# Is the program complete? Are there any assumptions made? Any other comments?
+* Yes.
+* As the TA has informed through mail, no error checking has been done in the program as it was not needed and that only correct input will be given.
+* As TA has informed, there are no nested if else conditions
+* All the assumptions given via classroom -
+  1. You should generate the configuration inside an infinite while loop. (In short, Init call should be followed by while loop)
+  2. You can assume the general semantics of C language in the generated code (For size of integers, if/else, etc.)
+  3. The configuration provided is case insensitive (Both if and IF should be generated as if(). This holds true for any statement in the configuration)
+  4. You can assume that there will be one tab space before every input configuration (0/1s) and also one tab space between each 0/1 in the configuration; this is true irrespective of whether the if/else statements are present.
+  5. There would be one whitespace after ':' in case of delay and select.
+  6. There can be only one seven segment configuration inside if or else blocks, i.e., only one statement can reside in if/else block.
+  7. 'If' can take only integer based conditions. Please note that it is sufficient to handle only equality (== and !=), less/greater than and less/greater than equal to conditions.
+  8. Lines starting with '#' are comments and are to be ignored.
+* We assume that there are a maximum of only 512 assignments where each line
+  - including two spaces, two tabs, a '\n', an '=' symbol, a ';' symbol, with the two id's(with paranthesis for function for one of them) or an id and number will amount to only 256 characters
+* ELSE, DELAY, SELECT will have ':' attached immediately as a keyword,  as clarified by TA.
+* The keywords in the input file are case insensitive.
+* In the if condition , there is only one operator can appear.
+* All variables are assigned / declared before "Select:" keyword
+* For variable assignments, rvalue can be number or a funtion(ex: readInt which is translated to readInt())
+
+Approach :
+# How do you solve this problem?
+* First we complete the lex to divide the input to tokens with the help of start conditions if necessary.
+* We create R.E. names for the keywords and operators, whitespace etc. Then for Identifiers, numbers and binary.
+* Since we do not do any arithmetic operations on the numbers/binary we can store them as strings.
+* As for comments we ignore everything until a \n is encountered
+* For binary number, we keep a count of how many binary numbers were scanned from input, as we know that Seven segment display needs 8 bits, we keep storing the binaries in a buffer until the count is 8, upon which we just store it using yylval and reset the buffer.
+* For Select and delay, and ELSE we only need to store the number after we encounter the respective keyword which can be handled easily.
+* As for variable declarations and definitions, we need to maintain two DIFFERENT buffers(so that we dont overwrite before going back to initial state), one for storing the lvalue and one for the rvalue. The order in which we have to scan can be taken care by start conditions
+* Now for "if" condition, we just need to scan similar to how we do it for variable declaration/assignment except that we also need to return comparision operators which can be treated as tokens as they are finite and fixed.
+* Once we decide on yacc definitions and tokens we simply write the yacc grammer keeping in mind about how we scanned the input with lex, and on matching, the actions will call functions which are responsible in printing the code.
+* One operators we store its definition in a buffer so that we can construct the "if" condition later.
+* We use a boolean ifElseCond so that we know how many tab's we need to provide.
+* A boolean "first_select" to print while condition when we encounter the first "select"
+* declare_assign stores the number of declarations we made and a buffer with assumptions mentioned which stores the declarations, so that once "while" is written we can follow up and print all the declarations
+* Finally when the input is scanned upon EOF, yywrap is called where we complete the program.

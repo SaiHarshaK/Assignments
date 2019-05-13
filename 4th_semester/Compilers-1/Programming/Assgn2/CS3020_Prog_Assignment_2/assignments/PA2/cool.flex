@@ -45,7 +45,6 @@ extern YYSTYPE cool_yylval;
 
 int nest_level = 0; /* For keeping track for the nest level(depth) of comments */
 int str_len = 0; /* keep count of length of string so as to check for overflow */
-int str_overflow_len = 0; /* if string overflowed, keep track of length of those */
 bool null_string = 1; /* true if string contains null */
 
  /* reset string buffer once the string is added to the table */

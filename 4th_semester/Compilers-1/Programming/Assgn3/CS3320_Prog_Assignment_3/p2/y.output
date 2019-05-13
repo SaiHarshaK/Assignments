@@ -1,0 +1,276 @@
+Grammar
+
+    0 $accept: LINE $end
+
+    1 LINE: INIT
+    2     | LINE ID ID
+    3     | LINE ID '=' NUMBER
+    4     | LINE ID '=' ID
+    5     | LINE SELECT NUMBER
+    6     | LINE DELAY NUMBER
+    7     | LINE IF ID OP TERM
+    8     | LINE ELSE
+    9     | LINE BINARY
+
+   10 TERM: ID
+   11     | NUMBER
+
+   12 OP: EQUAL
+   13   | NOTEQUAL
+   14   | LESSEQ
+   15   | GREATEREQ
+   16   | LESSTHAN
+   17   | GREATERTHAN
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'=' (61) 3 4
+error (256)
+ID <string> (258) 2 3 4 7 10
+NUMBER <string> (259) 3 5 6 11
+BINARY <string> (260) 9
+SELECT (261) 5
+DELAY (262) 6
+IF (263) 7
+ELSE (264) 8
+INIT (265) 1
+EQUAL (266) 12
+NOTEQUAL (267) 13
+LESSEQ (268) 14
+GREATEREQ (269) 15
+LESSTHAN (270) 16
+GREATERTHAN (271) 17
+
+
+Nonterminals, with rules where they appear
+
+$accept (18)
+    on left: 0
+LINE (19)
+    on left: 1 2 3 4 5 6 7 8 9, on right: 0 2 3 4 5 6 7 8 9
+TERM <string> (20)
+    on left: 10 11, on right: 7
+OP (21)
+    on left: 12 13 14 15 16 17, on right: 7
+
+
+State 0
+
+    0 $accept: . LINE $end
+
+    INIT  shift, and go to state 1
+
+    LINE  go to state 2
+
+
+State 1
+
+    1 LINE: INIT .
+
+    $default  reduce using rule 1 (LINE)
+
+
+State 2
+
+    0 $accept: LINE . $end
+    2 LINE: LINE . ID ID
+    3     | LINE . ID '=' NUMBER
+    4     | LINE . ID '=' ID
+    5     | LINE . SELECT NUMBER
+    6     | LINE . DELAY NUMBER
+    7     | LINE . IF ID OP TERM
+    8     | LINE . ELSE
+    9     | LINE . BINARY
+
+    $end    shift, and go to state 3
+    ID      shift, and go to state 4
+    BINARY  shift, and go to state 5
+    SELECT  shift, and go to state 6
+    DELAY   shift, and go to state 7
+    IF      shift, and go to state 8
+    ELSE    shift, and go to state 9
+
+
+State 3
+
+    0 $accept: LINE $end .
+
+    $default  accept
+
+
+State 4
+
+    2 LINE: LINE ID . ID
+    3     | LINE ID . '=' NUMBER
+    4     | LINE ID . '=' ID
+
+    ID   shift, and go to state 10
+    '='  shift, and go to state 11
+
+
+State 5
+
+    9 LINE: LINE BINARY .
+
+    $default  reduce using rule 9 (LINE)
+
+
+State 6
+
+    5 LINE: LINE SELECT . NUMBER
+
+    NUMBER  shift, and go to state 12
+
+
+State 7
+
+    6 LINE: LINE DELAY . NUMBER
+
+    NUMBER  shift, and go to state 13
+
+
+State 8
+
+    7 LINE: LINE IF . ID OP TERM
+
+    ID  shift, and go to state 14
+
+
+State 9
+
+    8 LINE: LINE ELSE .
+
+    $default  reduce using rule 8 (LINE)
+
+
+State 10
+
+    2 LINE: LINE ID ID .
+
+    $default  reduce using rule 2 (LINE)
+
+
+State 11
+
+    3 LINE: LINE ID '=' . NUMBER
+    4     | LINE ID '=' . ID
+
+    ID      shift, and go to state 15
+    NUMBER  shift, and go to state 16
+
+
+State 12
+
+    5 LINE: LINE SELECT NUMBER .
+
+    $default  reduce using rule 5 (LINE)
+
+
+State 13
+
+    6 LINE: LINE DELAY NUMBER .
+
+    $default  reduce using rule 6 (LINE)
+
+
+State 14
+
+    7 LINE: LINE IF ID . OP TERM
+
+    EQUAL        shift, and go to state 17
+    NOTEQUAL     shift, and go to state 18
+    LESSEQ       shift, and go to state 19
+    GREATEREQ    shift, and go to state 20
+    LESSTHAN     shift, and go to state 21
+    GREATERTHAN  shift, and go to state 22
+
+    OP  go to state 23
+
+
+State 15
+
+    4 LINE: LINE ID '=' ID .
+
+    $default  reduce using rule 4 (LINE)
+
+
+State 16
+
+    3 LINE: LINE ID '=' NUMBER .
+
+    $default  reduce using rule 3 (LINE)
+
+
+State 17
+
+   12 OP: EQUAL .
+
+    $default  reduce using rule 12 (OP)
+
+
+State 18
+
+   13 OP: NOTEQUAL .
+
+    $default  reduce using rule 13 (OP)
+
+
+State 19
+
+   14 OP: LESSEQ .
+
+    $default  reduce using rule 14 (OP)
+
+
+State 20
+
+   15 OP: GREATEREQ .
+
+    $default  reduce using rule 15 (OP)
+
+
+State 21
+
+   16 OP: LESSTHAN .
+
+    $default  reduce using rule 16 (OP)
+
+
+State 22
+
+   17 OP: GREATERTHAN .
+
+    $default  reduce using rule 17 (OP)
+
+
+State 23
+
+    7 LINE: LINE IF ID OP . TERM
+
+    ID      shift, and go to state 24
+    NUMBER  shift, and go to state 25
+
+    TERM  go to state 26
+
+
+State 24
+
+   10 TERM: ID .
+
+    $default  reduce using rule 10 (TERM)
+
+
+State 25
+
+   11 TERM: NUMBER .
+
+    $default  reduce using rule 11 (TERM)
+
+
+State 26
+
+    7 LINE: LINE IF ID OP TERM .
+
+    $default  reduce using rule 7 (LINE)
