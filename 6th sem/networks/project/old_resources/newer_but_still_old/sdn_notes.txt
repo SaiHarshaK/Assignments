@@ -1,0 +1,2 @@
+the ip object stores values in the format:
+  ipv4(csum=13764,dst='10.0.0.2',flags=2,header_length=5,identification=61666,offset=0,option=None,proto=1,src='10.0.0.1',tos=0,total_length=84,ttl=64,version=4)

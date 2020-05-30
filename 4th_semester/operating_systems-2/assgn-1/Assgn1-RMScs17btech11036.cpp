@@ -1,6 +1,6 @@
 /*
 author: Sai Harsha Kottapalli
-About: assignment for operating systems 2. Check ReadMe for instructions. 
+About: assignment for operating systems 2. Check ReadMe for instructions.
  */
 #include <iostream>
 #include <fstream>
@@ -59,10 +59,10 @@ int main() {
   int cs;
   cout<<"add context switch time? Press 1 for yes. 0 for no."<<endl;
   cin>>cs;
-  
+
   // process input
   int nProc; // number of processes
-  vector<Process> procs;  
+  vector<Process> procs;
   getInput(&nProc, procs);
 
   // output files

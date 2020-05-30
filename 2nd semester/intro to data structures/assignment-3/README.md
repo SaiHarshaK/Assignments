@@ -1,0 +1,2 @@
+# Lab Assignment 3
+Define a structure that can hold the name and course code of a subject. Create a linked list of such structures. User (tester/evaluator) can enter course name and code from the console. Also write a function that, given two course codes, swaps the corresponding structures in the linked list. Matching of course codes will be case-insensitive, i.e. CS1353, Cs1353, cs1353 and cS1353 all will be treated as same course ID. One should be able to traverse the linked list and display the entries (along with the address of the current node) for every node.

@@ -1,0 +1,101 @@
+\hypertarget{namespacecheckSim}{}\section{check\+Sim Namespace Reference}
+\label{namespacecheckSim}\index{check\+Sim@{check\+Sim}}
+
+
+Documentation for this module.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecheckSim_aca6a1a250e7f9dc6df75a433dcdb5d6d}{preprocess} (keywords)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecheckSim_a83651c0eb2cb80d5549cd9f42cb2ffec}{get\+\_\+keywords} (domain\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecheckSim_aca742c80c5db1f197a41e26f60539cec}{similarity\+\_\+check\+\_\+util} (keywords, filterwords)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecheckSim_a7dce71b3bf75822b4772d9211132f449}{similarity\+\_\+check} (servername)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Documentation for this module. 
+
+This package consists all the necessary methods require to find similarity between requested webpage and filter words so that network administrator can decide how relevant the webpage is to the ones we wish to block 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacecheckSim_a83651c0eb2cb80d5549cd9f42cb2ffec}\label{namespacecheckSim_a83651c0eb2cb80d5549cd9f42cb2ffec}} 
+\index{check\+Sim@{check\+Sim}!get\+\_\+keywords@{get\+\_\+keywords}}
+\index{get\+\_\+keywords@{get\+\_\+keywords}!check\+Sim@{check\+Sim}}
+\subsubsection{\texorpdfstring{get\+\_\+keywords()}{get\_keywords()}}
+{\footnotesize\ttfamily def check\+Sim.\+get\+\_\+keywords (\begin{DoxyParamCaption}\item[{}]{domain\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain\+\_\+name} & name of the domain of requested url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of keywords extracted for the given domain\+\_\+name
+\end{DoxyReturn}
+method to collect appropriate keywords for the requested url which form as input for the ML model to find similarity between requested page and filter words \mbox{\Hypertarget{namespacecheckSim_aca6a1a250e7f9dc6df75a433dcdb5d6d}\label{namespacecheckSim_aca6a1a250e7f9dc6df75a433dcdb5d6d}} 
+\index{check\+Sim@{check\+Sim}!preprocess@{preprocess}}
+\index{preprocess@{preprocess}!check\+Sim@{check\+Sim}}
+\subsubsection{\texorpdfstring{preprocess()}{preprocess()}}
+{\footnotesize\ttfamily def check\+Sim.\+preprocess (\begin{DoxyParamCaption}\item[{}]{keywords }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keywords} & Set of keywords extracted for the url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of preprocessed keywords
+\end{DoxyReturn}
+a preprocessing step for keywords like case lowering, remove punctuation, remove stopwords, and repititions as these negatively effect the ML method. \mbox{\Hypertarget{namespacecheckSim_a7dce71b3bf75822b4772d9211132f449}\label{namespacecheckSim_a7dce71b3bf75822b4772d9211132f449}} 
+\index{check\+Sim@{check\+Sim}!similarity\+\_\+check@{similarity\+\_\+check}}
+\index{similarity\+\_\+check@{similarity\+\_\+check}!check\+Sim@{check\+Sim}}
+\subsubsection{\texorpdfstring{similarity\+\_\+check()}{similarity\_check()}}
+{\footnotesize\ttfamily def check\+Sim.\+similarity\+\_\+check (\begin{DoxyParamCaption}\item[{}]{servername }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em servername} & name of the requested webpage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+similarity value \mbox{[}0,1\mbox{]} calculated by the model
+\end{DoxyReturn}
+this is like a main function where required function calls are made to use the utility functions defined. \mbox{\Hypertarget{namespacecheckSim_aca742c80c5db1f197a41e26f60539cec}\label{namespacecheckSim_aca742c80c5db1f197a41e26f60539cec}} 
+\index{check\+Sim@{check\+Sim}!similarity\+\_\+check\+\_\+util@{similarity\+\_\+check\+\_\+util}}
+\index{similarity\+\_\+check\+\_\+util@{similarity\+\_\+check\+\_\+util}!check\+Sim@{check\+Sim}}
+\subsubsection{\texorpdfstring{similarity\+\_\+check\+\_\+util()}{similarity\_check\_util()}}
+{\footnotesize\ttfamily def check\+Sim.\+similarity\+\_\+check\+\_\+util (\begin{DoxyParamCaption}\item[{}]{keywords,  }\item[{}]{filterwords }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keywords} & list of words of requested page after preprocessing is done \\
+\hline
+{\em filterwords} & list of appropriate words provided by the administrator based on requirement of which kind of websites need to be blocked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\+: similarity value
+\end{DoxyReturn}
+this utility function where similarity between filterwords and keywords is found using the B\+E\+RT embeddings of the words and finally return a similarity value between keywords and filterwords 

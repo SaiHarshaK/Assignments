@@ -1,0 +1,177 @@
+Printing analysis 'Scalar Evolution Analysis' for function '_Z11printSubsetPii':
+Classifying expressions for: @_Z11printSubsetPii
+  %.0 = phi i32 [ 0, %2 ], [ %11, %10 ]
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,-2147483648) S: [0,-2147483648)		Exits: (0 smax %1)		LoopDispositions: { %3: Computable }
+  %6 = sext i32 %.0 to i64
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,2147483648) S: [0,2147483648)		Exits: (zext i32 (0 smax %1) to i64)		LoopDispositions: { %3: Computable }
+  %7 = getelementptr inbounds i32, i32* %0, i64 %6
+  -->  {%0,+,4}<nsw><%3> U: full-set S: full-set		Exits: ((4 * (zext i32 (0 smax %1) to i64))<nuw><nsw> + %0)		LoopDispositions: { %3: Computable }
+  %8 = load i32, i32* %7, align 4
+  -->  %8 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %3: Variant }
+  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 5, i32 %8)
+  -->  %9 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %3: Variant }
+  %11 = add nsw i32 %.0, 1
+  -->  {1,+,1}<nuw><%3> U: [1,-2147483647) S: [1,-2147483647)		Exits: (1 + (0 smax %1))<nuw>		LoopDispositions: { %3: Computable }
+  %13 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i32 0, i32 0))
+  -->  %13 U: full-set S: full-set
+Determining loop execution counts for: @_Z11printSubsetPii
+Loop %3: backedge-taken count is (0 smax %1)
+Loop %3: max backedge-taken count is 2147483647
+Loop %3: Predicated backedge-taken count is (0 smax %1)
+ Predicates:
+
+Loop %3: Trip multiple is 1
+Printing analysis 'Scalar Evolution Analysis' for function '_Z10comparatorPKvS0_':
+Classifying expressions for: @_Z10comparatorPKvS0_
+  %3 = bitcast i8* %0 to i32*
+  -->  %0 U: full-set S: full-set
+  %4 = bitcast i8* %1 to i32*
+  -->  %1 U: full-set S: full-set
+  %5 = load i32, i32* %3, align 4
+  -->  %5 U: full-set S: full-set
+  %6 = load i32, i32* %4, align 4
+  -->  %6 U: full-set S: full-set
+  %8 = zext i1 %7 to i32
+  -->  (zext i1 %7 to i32) U: [0,2) S: [0,2)
+Determining loop execution counts for: @_Z10comparatorPKvS0_
+Printing analysis 'Scalar Evolution Analysis' for function '_Z10subset_sumPiS_iiiii':
+Classifying expressions for: @_Z10subset_sumPiS_iiiii
+  %8 = load i32, i32* @_ZL11total_nodes, align 4
+  -->  %8 U: full-set S: full-set
+  %9 = add nsw i32 %8, 1
+  -->  (1 + %8) U: full-set S: full-set
+  %12 = add nsw i32 %5, 1
+  -->  (1 + %5) U: full-set S: full-set
+  %15 = sext i32 %5 to i64
+  -->  (sext i32 %5 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %16 = getelementptr inbounds i32, i32* %0, i64 %15
+  -->  ((4 * (sext i32 %5 to i64))<nsw> + %0)<nsw> U: full-set S: full-set
+  %17 = load i32, i32* %16, align 4
+  -->  %17 U: full-set S: full-set
+  %18 = sub nsw i32 %4, %17
+  -->  ((-1 * %17) + %4) U: full-set S: full-set
+  %19 = add nsw i32 %5, 1
+  -->  (1 + %5) U: full-set S: full-set
+  %20 = sext i32 %19 to i64
+  -->  (sext i32 (1 + %5) to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %21 = getelementptr inbounds i32, i32* %0, i64 %20
+  -->  ((4 * (sext i32 (1 + %5) to i64))<nsw> + %0)<nsw> U: full-set S: full-set
+  %22 = load i32, i32* %21, align 4
+  -->  %22 U: full-set S: full-set
+  %23 = add nsw i32 %18, %22
+  -->  ((-1 * %17) + %4 + %22) U: full-set S: full-set
+  %26 = sub nsw i32 %3, 1
+  -->  (-1 + %3) U: full-set S: full-set
+  %27 = sext i32 %5 to i64
+  -->  (sext i32 %5 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %28 = getelementptr inbounds i32, i32* %0, i64 %27
+  -->  ((4 * (sext i32 %5 to i64))<nsw> + %0)<nsw> U: full-set S: full-set
+  %29 = load i32, i32* %28, align 4
+  -->  %29 U: full-set S: full-set
+  %30 = sub nsw i32 %4, %29
+  -->  ((-1 * %29) + %4) U: full-set S: full-set
+  %31 = add nsw i32 %5, 1
+  -->  (1 + %5) U: full-set S: full-set
+  %36 = sext i32 %5 to i64
+  -->  (sext i32 %5 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %37 = getelementptr inbounds i32, i32* %0, i64 %36
+  -->  ((4 * (sext i32 %5 to i64))<nsw> + %0)<nsw> U: full-set S: full-set
+  %38 = load i32, i32* %37, align 4
+  -->  %38 U: full-set S: full-set
+  %39 = add nsw i32 %4, %38
+  -->  (%4 + %38) U: full-set S: full-set
+  %.0 = phi i32 [ %5, %41 ], [ %64, %63 ]
+  -->  {%5,+,1}<nsw><%42> U: full-set S: full-set		Exits: (%2 smax %5)		LoopDispositions: { %42: Computable }
+  %45 = sext i32 %.0 to i64
+  -->  {(sext i32 %5 to i64),+,1}<nsw><%42> U: [-2147483648,6442450943) S: [-2147483648,6442450943)		Exits: ((zext i32 ((-1 * %5) + (%2 smax %5)) to i64) + (sext i32 %5 to i64))		LoopDispositions: { %42: Computable }
+  %46 = getelementptr inbounds i32, i32* %0, i64 %45
+  -->  {((4 * (sext i32 %5 to i64))<nsw> + %0)<nsw>,+,4}<nsw><%42> U: full-set S: full-set		Exits: ((4 * (zext i32 ((-1 * %5) + (%2 smax %5)) to i64))<nuw><nsw> + (4 * (sext i32 %5 to i64))<nsw> + %0)		LoopDispositions: { %42: Computable }
+  %47 = load i32, i32* %46, align 4
+  -->  %47 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %42: Variant }
+  %48 = sext i32 %3 to i64
+  -->  (sext i32 %3 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)		Exits: (sext i32 %3 to i64)		LoopDispositions: { %42: Invariant }
+  %49 = getelementptr inbounds i32, i32* %1, i64 %48
+  -->  ((4 * (sext i32 %3 to i64))<nsw> + %1)<nsw> U: full-set S: full-set		Exits: ((4 * (sext i32 %3 to i64))<nsw> + %1)<nsw>		LoopDispositions: { %42: Invariant }
+  %50 = sext i32 %.0 to i64
+  -->  {(sext i32 %5 to i64),+,1}<nsw><%42> U: [-2147483648,6442450943) S: [-2147483648,6442450943)		Exits: ((zext i32 ((-1 * %5) + (%2 smax %5)) to i64) + (sext i32 %5 to i64))		LoopDispositions: { %42: Computable }
+  %51 = getelementptr inbounds i32, i32* %0, i64 %50
+  -->  {((4 * (sext i32 %5 to i64))<nsw> + %0)<nsw>,+,4}<nsw><%42> U: full-set S: full-set		Exits: ((4 * (zext i32 ((-1 * %5) + (%2 smax %5)) to i64))<nuw><nsw> + (4 * (sext i32 %5 to i64))<nsw> + %0)		LoopDispositions: { %42: Computable }
+  %52 = load i32, i32* %51, align 4
+  -->  %52 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %42: Variant }
+  %53 = add nsw i32 %4, %52
+  -->  (%4 + %52) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %42: Variant }
+  %56 = add nsw i32 %3, 1
+  -->  (1 + %3) U: full-set S: full-set		Exits: (1 + %3)		LoopDispositions: { %42: Invariant }
+  %57 = sext i32 %.0 to i64
+  -->  {(sext i32 %5 to i64),+,1}<nsw><%42> U: [-2147483648,6442450943) S: [-2147483648,6442450943)		Exits: ((zext i32 ((-1 * %5) + (%2 smax %5)) to i64) + (sext i32 %5 to i64))		LoopDispositions: { %42: Computable }
+  %58 = getelementptr inbounds i32, i32* %0, i64 %57
+  -->  {((4 * (sext i32 %5 to i64))<nsw> + %0)<nsw>,+,4}<nsw><%42> U: full-set S: full-set		Exits: ((4 * (zext i32 ((-1 * %5) + (%2 smax %5)) to i64))<nuw><nsw> + (4 * (sext i32 %5 to i64))<nsw> + %0)		LoopDispositions: { %42: Computable }
+  %59 = load i32, i32* %58, align 4
+  -->  %59 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %42: Variant }
+  %60 = add nsw i32 %4, %59
+  -->  (%4 + %59) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %42: Variant }
+  %61 = add nsw i32 %.0, 1
+  -->  {(1 + %5),+,1}<nw><%42> U: full-set S: full-set		Exits: (1 + (%2 smax %5))		LoopDispositions: { %42: Computable }
+  %64 = add nsw i32 %.0, 1
+  -->  {(1 + %5),+,1}<nw><%42> U: full-set S: full-set		Exits: (1 + (%2 smax %5))		LoopDispositions: { %42: Computable }
+Determining loop execution counts for: @_Z10subset_sumPiS_iiiii
+Loop %42: backedge-taken count is ((-1 * %5) + (%2 smax %5))
+Loop %42: max backedge-taken count is -1
+Loop %42: Predicated backedge-taken count is ((-1 * %5) + (%2 smax %5))
+ Predicates:
+
+Loop %42: Trip multiple is 1
+Printing analysis 'Scalar Evolution Analysis' for function '_Z15generateSubsetsPiii':
+Classifying expressions for: @_Z15generateSubsetsPiii
+  %4 = sext i32 %1 to i64
+  -->  (sext i32 %1 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %5 = mul i64 %4, 4
+  -->  (4 * (sext i32 %1 to i64))<nsw> U: [0,-3) S: [-8589934592,8589934589)
+  %6 = call noalias i8* @malloc(i64 %5) #6
+  -->  %6 U: full-set S: full-set
+  %7 = bitcast i8* %6 to i32*
+  -->  %6 U: full-set S: full-set
+  %8 = bitcast i32* %0 to i8*
+  -->  %0 U: full-set S: full-set
+  %9 = sext i32 %1 to i64
+  -->  (sext i32 %1 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %.01 = phi i32 [ 0, %3 ], [ %16, %17 ]
+  -->  %.01 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %10: Variant }
+  %.0 = phi i32 [ 0, %3 ], [ %18, %17 ]
+  -->  {0,+,1}<nuw><nsw><%10> U: [0,-2147483648) S: [0,-2147483648)		Exits: (0 smax %1)		LoopDispositions: { %10: Computable }
+  %13 = sext i32 %.0 to i64
+  -->  {0,+,1}<nuw><nsw><%10> U: [0,2147483648) S: [0,2147483648)		Exits: (zext i32 (0 smax %1) to i64)		LoopDispositions: { %10: Computable }
+  %14 = getelementptr inbounds i32, i32* %0, i64 %13
+  -->  {%0,+,4}<nsw><%10> U: full-set S: full-set		Exits: ((4 * (zext i32 (0 smax %1) to i64))<nuw><nsw> + %0)		LoopDispositions: { %10: Computable }
+  %15 = load i32, i32* %14, align 4
+  -->  %15 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %10: Variant }
+  %16 = add nsw i32 %.01, %15
+  -->  (%15 + %.01) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %10: Variant }
+  %18 = add nsw i32 %.0, 1
+  -->  {1,+,1}<nuw><%10> U: [1,-2147483647) S: [1,-2147483647)		Exits: (1 + (0 smax %1))<nuw>		LoopDispositions: { %10: Computable }
+  %20 = getelementptr inbounds i32, i32* %0, i64 0
+  -->  %0 U: full-set S: full-set
+  %21 = load i32, i32* %20, align 4
+  -->  %21 U: full-set S: full-set
+  %27 = bitcast i32* %7 to i8*
+  -->  %6 U: full-set S: full-set
+Determining loop execution counts for: @_Z15generateSubsetsPiii
+Loop %10: backedge-taken count is (0 smax %1)
+Loop %10: max backedge-taken count is 2147483647
+Loop %10: Predicated backedge-taken count is (0 smax %1)
+ Predicates:
+
+Loop %10: Trip multiple is 1
+Printing analysis 'Scalar Evolution Analysis' for function 'main':
+Classifying expressions for: @main
+  %1 = alloca [8 x i32], align 16
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %2 = bitcast [8 x i32]* %1 to i8*
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %3 = getelementptr inbounds [8 x i32], [8 x i32]* %1, i32 0, i32 0
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %4 = load i32, i32* @_ZL11total_nodes, align 4
+  -->  %4 U: full-set S: full-set
+  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i32 0, i32 0), i32 %4)
+  -->  %5 U: full-set S: full-set
+Determining loop execution counts for: @main

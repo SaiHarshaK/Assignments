@@ -1,0 +1,30 @@
+\hypertarget{namespacefirewall__monitor}{}\section{firewall\+\_\+monitor Namespace Reference}
+\label{namespacefirewall__monitor}\index{firewall\+\_\+monitor@{firewall\+\_\+monitor}}
+
+
+Documentation for this module.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classfirewall__monitor_1_1FirewallMonitor}{Firewall\+Monitor}
+\begin{DoxyCompactList}\small\item\em Docs on \hyperlink{classfirewall__monitor_1_1FirewallMonitor}{Firewall\+Monitor}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacefirewall__monitor_a6585908202c51cea3e24af8f353ed1fb}\label{namespacefirewall__monitor_a6585908202c51cea3e24af8f353ed1fb}} 
+list \hyperlink{namespacefirewall__monitor_a6585908202c51cea3e24af8f353ed1fb}{dns\+\_\+servers} = \mbox{[}\textquotesingle{}192.\+168.\+122.\+1\textquotesingle{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em List of known dns servers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacefirewall__monitor_af975be9a092e2c88eccae9bea5dc9904}\label{namespacefirewall__monitor_af975be9a092e2c88eccae9bea5dc9904}} 
+list \hyperlink{namespacefirewall__monitor_af975be9a092e2c88eccae9bea5dc9904}{allow\+\_\+subnet} = \mbox{[}\char`\"{}10.\+0.\+0.\+0/24\char`\"{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Allows ip in this subnet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacefirewall__monitor_afaa8240fbbda1d696bcb5e88f39f61f6}\label{namespacefirewall__monitor_afaa8240fbbda1d696bcb5e88f39f61f6}} 
+list \hyperlink{namespacefirewall__monitor_afaa8240fbbda1d696bcb5e88f39f61f6}{reject\+\_\+regex} = \mbox{[}\char`\"{}192.\+168.\+122.\+56/29\char`\"{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Subnet to reject. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Documentation for this module. 
+
+An extension to the learning switch module Allows \char`\"{}good\char`\"{} websites and blocks \char`\"{}bad\char`\"{} website based on the similarity to the filter set in check\+Sim.\+py. Populates corresponding rules into the flow tables connected to the controller. 

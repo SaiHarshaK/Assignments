@@ -1,0 +1,2 @@
+dc-assgn4.pdf - I assumed that when process stops early it lets other process know that it quit safely and not due to crash.
+EarlyStop - v3 is better algo.

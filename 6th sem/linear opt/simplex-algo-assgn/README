@@ -1,0 +1,46 @@
+---------------------
+Team Infomation
+---------------------
+1) Sagar Jain - CS17BTECH11034
+2) Sai Harsha - CS17BTECH11036
+
+---------------------
+Assumptions
+---------------------
+1) I have assumed that the positivity constraints i.e. Xi >= 0 would
+be given within A, i.e. -Xi <= 0. As this is the case that was taught
+in the class.
+2) Since the accuracy is limited to floatin point arithmetic, values
+like 43.2e-13 should be understood as zero in the output.
+
+---------------------
+Example Run of the code
+---------------------
+For quick example run of the code please use the following commands:
+
+cat input.txt | python3 simplex.py
+
+cat degenerate-input.txt | python3 degenrateSimplex.py
+
+---------------------
+Directory Information
+---------------------
+The following files are present in this folder:
+1) simplex.py - simplex implementation for non-degenerate case
+2) degenerateSimplex.py - simplex implementation which can handle degenerate case as well
+3) input.txt - test case for simplex.py
+4) degenerate-input.txt - test case for degenerateSimplex.py
+5) unbounded.txt - test case for unbounded LP
+it can be run using:
+cat unbounded.txt | python3 degenrateSimplex.py
+
+---------------------
+Expected Input Format
+---------------------
+1) First line m
+2) Second line n
+3) Next m lines, value of A row wise space seperated
+4) Values of B space seperated
+5) Values of C space seperated
+
+Please look at the provided example input filess

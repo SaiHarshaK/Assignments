@@ -1,0 +1,196 @@
+Printing analysis 'Scalar Evolution Analysis' for function '__cxx_global_var_init':
+Classifying expressions for: @__cxx_global_var_init
+  %1 = call i32 @__cxa_atexit(void (i8*)* bitcast (void (%"class.std::ios_base::Init"*)* @_ZNSt8ios_base4InitD1Ev to void (i8*)*), i8* getelementptr inbounds (%"class.std::ios_base::Init", %"class.std::ios_base::Init"* @_ZStL8__ioinit, i32 0, i32 0), i8* @__dso_handle) #3
+  -->  %1 U: full-set S: full-set
+Determining loop execution counts for: @__cxx_global_var_init
+Printing analysis 'Scalar Evolution Analysis' for function '_Z16MatrixChainOrderPii':
+Classifying expressions for: @_Z16MatrixChainOrderPii
+  %3 = zext i32 %1 to i64
+  -->  (zext i32 %1 to i64) U: [0,4294967296) S: [0,4294967296)
+  %4 = zext i32 %1 to i64
+  -->  (zext i32 %1 to i64) U: [0,4294967296) S: [0,4294967296)
+  %5 = call i8* @llvm.stacksave()
+  -->  %5 U: full-set S: full-set
+  %6 = mul nuw i64 %3, %4
+  -->  ((zext i32 %1 to i64) * (zext i32 %1 to i64)) U: [0,-8589934590) S: [0,-8589934590)
+  %7 = alloca i32, i64 %6, align 16
+  -->  %7 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %.02 = phi i32 [ 1, %2 ], [ %17, %16 ]
+  -->  {1,+,1}<nuw><nsw><%8> U: [1,-2147483648) S: [1,-2147483648)		Exits: (1 smax %1)		LoopDispositions: { %8: Computable }
+  %11 = sext i32 %.02 to i64
+  -->  {1,+,1}<nuw><nsw><%8> U: [1,2147483648) S: [1,2147483648)		Exits: (1 + (zext i32 (-1 + (1 smax %1))<nsw> to i64))<nuw><nsw>		LoopDispositions: { %8: Computable }
+  %12 = mul nsw i64 %11, %4
+  -->  {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%8> U: [0,9223372030412324866) S: [0,9223372030412324866)		Exits: ((zext i32 %1 to i64) * (1 + (zext i32 (-1 + (1 smax %1))<nsw> to i64))<nuw><nsw>)		LoopDispositions: { %8: Computable }
+  %13 = getelementptr inbounds i32, i32* %7, i64 %12
+  -->  {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%8> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: (((zext i32 %1 to i64) * (4 + (4 * (zext i32 (-1 + (1 smax %1))<nsw> to i64))<nuw><nsw>)<nuw><nsw>) + %7)		LoopDispositions: { %8: Computable }
+  %14 = sext i32 %.02 to i64
+  -->  {1,+,1}<nuw><nsw><%8> U: [1,2147483648) S: [1,2147483648)		Exits: (1 + (zext i32 (-1 + (1 smax %1))<nsw> to i64))<nuw><nsw>		LoopDispositions: { %8: Computable }
+  %15 = getelementptr inbounds i32, i32* %13, i64 %14
+  -->  {(4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 + (4 * (zext i32 %1 to i64))<nuw><nsw>)<nuw><nsw>}<%8> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: (4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + ((zext i32 (-1 + (1 smax %1))<nsw> to i64) * (4 + (4 * (zext i32 %1 to i64))<nuw><nsw>)<nuw><nsw>) + %7)		LoopDispositions: { %8: Computable }
+  %17 = add nsw i32 %.02, 1
+  -->  {2,+,1}<nuw><%8> U: [2,-2147483647) S: [2,-2147483647)		Exits: (1 + (1 smax %1))		LoopDispositions: { %8: Computable }
+  %.0 = phi i32 [ 2, %18 ], [ %86, %85 ]
+  -->  {2,+,1}<nuw><nsw><%19> U: [2,-2147483648) S: [2,-2147483648)		Exits: (2 smax %1)		LoopDispositions: { %19: Computable, %22: Invariant, %34: Invariant }
+  %.1 = phi i32 [ 1, %21 ], [ %83, %82 ]
+  -->  {1,+,1}<nuw><nsw><%22> U: [1,-2147483648) S: [1,-2147483648)		Exits: (1 smax {(-1 + %1),+,-1}<nw><%19>)		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %23 = sub nsw i32 %1, %.0
+  -->  {(-2 + %1),+,-1}<nw><%19> U: full-set S: full-set		Exits: {(-2 + %1),+,-1}<nw><%19>		LoopDispositions: { %22: Invariant, %19: Computable, %34: Invariant }
+  %24 = add nsw i32 %23, 1
+  -->  {(-1 + %1),+,-1}<nw><%19> U: full-set S: full-set		Exits: {(-1 + %1),+,-1}<nw><%19>		LoopDispositions: { %22: Invariant, %19: Computable, %34: Invariant }
+  %27 = add nsw i32 %.1, %.0
+  -->  {{3,+,1}<nuw><%19>,+,1}<nw><%22> U: [3,-1) S: [3,-1)		Exits: ({2,+,1}<nuw><nsw><%19> + (1 smax {(-1 + %1),+,-1}<nw><%19>))		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %28 = sub nsw i32 %27, 1
+  -->  {{2,+,1}<nuw><nsw><%19>,+,1}<nw><%22> U: [2,-2) S: [2,-2)		Exits: ({1,+,1}<nw><%19> + (1 smax {(-1 + %1),+,-1}<nw><%19>))		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %29 = sext i32 %.1 to i64
+  -->  {1,+,1}<nuw><nsw><%22> U: [1,2147483648) S: [1,2147483648)		Exits: (1 + (zext i32 (-1 + (1 smax {(-1 + %1),+,-1}<nw><%19>))<nsw> to i64))<nuw><nsw>		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %30 = mul nsw i64 %29, %4
+  -->  {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%22> U: [0,9223372030412324866) S: [0,9223372030412324866)		Exits: ((zext i32 %1 to i64) * (1 + (zext i32 (-1 + (1 smax {(-1 + %1),+,-1}<nw><%19>))<nsw> to i64))<nuw><nsw>)		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %31 = getelementptr inbounds i32, i32* %7, i64 %30
+  -->  {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: (((zext i32 %1 to i64) * (4 + (4 * (zext i32 (-1 + (1 smax {(-1 + %1),+,-1}<nw><%19>))<nsw> to i64))<nuw><nsw>)<nuw><nsw>) + %7)		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %32 = sext i32 %28 to i64
+  -->  (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)		Exits: (-1 + (sext i32 ({2,+,1}<nuw><nsw><%19> + (1 smax {(-1 + %1),+,-1}<nw><%19>)) to i64))<nsw>		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %33 = getelementptr inbounds i32, i32* %31, i64 %32
+  -->  ((4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + {(-4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>) U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: (-4 + (4 * (sext i32 ({2,+,1}<nuw><nsw><%19> + (1 smax {(-1 + %1),+,-1}<nw><%19>)) to i64))<nsw> + ((zext i32 %1 to i64) * (4 + (4 * (zext i32 (-1 + (1 smax {(-1 + %1),+,-1}<nw><%19>))<nsw> to i64))<nuw><nsw>)<nuw><nsw>) + %7)		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %.01 = phi i32 [ %.1, %26 ], [ %80, %79 ]
+  -->  {{1,+,1}<nuw><nsw><%22>,+,1}<nuw><nsw><%34> U: [1,-2147483648) S: [1,-2147483648)		Exits: (1 + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))<nuw>		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %35 = sub nsw i32 %28, 1
+  -->  {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22> U: [1,-3) S: [1,-3)		Exits: {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %38 = sext i32 %.1 to i64
+  -->  {1,+,1}<nuw><nsw><%22> U: [1,2147483648) S: [1,2147483648)		Exits: {1,+,1}<nuw><nsw><%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %39 = mul nsw i64 %38, %4
+  -->  {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%22> U: [0,9223372030412324866) S: [0,9223372030412324866)		Exits: {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %40 = getelementptr inbounds i32, i32* %7, i64 %39
+  -->  {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %41 = sext i32 %.01 to i64
+  -->  {{1,+,1}<nuw><nsw><%22>,+,1}<nuw><nsw><%34> U: [1,4294967295) S: [1,4294967295)		Exits: ((zext i32 ({0,+,-1}<nw><%22> + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>)) to i64) + {1,+,1}<nuw><nsw><%22>)		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %42 = getelementptr inbounds i32, i32* %40, i64 %41
+  -->  {{(4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 + (4 * (zext i32 %1 to i64))<nuw><nsw>)<nuw><nsw>}<%22>,+,4}<nsw><%34> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: ((4 * (zext i32 ({0,+,-1}<nw><%22> + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>)) to i64))<nuw><nsw> + {(4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 + (4 * (zext i32 %1 to i64))<nuw><nsw>)<nuw><nsw>}<%22>)		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %43 = load i32, i32* %42, align 4
+  -->  %43 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %44 = add nsw i32 %.01, 1
+  -->  {{2,+,1}<nuw><%22>,+,1}<nuw><%34> U: [2,0) S: [2,0)		Exits: (2 + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))<nuw>		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %45 = sext i32 %44 to i64
+  -->  (sext i32 {{2,+,1}<nuw><%22>,+,1}<nuw><%34> to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)		Exits: (sext i32 (2 + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))<nuw> to i64)		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %46 = mul nsw i64 %45, %4
+  -->  ((zext i32 %1 to i64) * (sext i32 {{2,+,1}<nuw><%22>,+,1}<nuw><%34> to i64)) U: [-9223372034707292160,9223372030412324866) S: [-9223372034707292160,9223372030412324866)		Exits: ((zext i32 %1 to i64) * (sext i32 (2 + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))<nuw> to i64))		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %47 = getelementptr inbounds i32, i32* %7, i64 %46
+  -->  ((4 * (zext i32 %1 to i64) * (sext i32 {{2,+,1}<nuw><%22>,+,1}<nuw><%34> to i64)) + %7)<nsw> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: ((4 * (zext i32 %1 to i64) * (sext i32 (2 + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))<nuw> to i64)) + %7)<nsw>		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %48 = sext i32 %28 to i64
+  -->  (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)		Exits: (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %49 = getelementptr inbounds i32, i32* %47, i64 %48
+  -->  (-4 + (4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + (4 * (zext i32 %1 to i64) * (sext i32 {{2,+,1}<nuw><%22>,+,1}<nuw><%34> to i64)) + %7) U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: (-4 + (4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + (4 * (zext i32 %1 to i64) * (sext i32 (2 + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))<nuw> to i64)) + %7)		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %50 = load i32, i32* %49, align 4
+  -->  %50 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %51 = add nsw i32 %43, %50
+  -->  (%50 + %43) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %52 = sub nsw i32 %.1, 1
+  -->  {0,+,1}<nuw><nsw><%22> U: [0,2147483647) S: [0,2147483647)		Exits: {0,+,1}<nuw><nsw><%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %53 = sext i32 %52 to i64
+  -->  {0,+,1}<nuw><nsw><%22> U: [0,2147483647) S: [0,2147483647)		Exits: {0,+,1}<nuw><nsw><%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %54 = getelementptr inbounds i32, i32* %0, i64 %53
+  -->  {%0,+,4}<nsw><%22> U: full-set S: full-set		Exits: {%0,+,4}<nsw><%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %55 = load i32, i32* %54, align 4
+  -->  %55 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %56 = sext i32 %.01 to i64
+  -->  {{1,+,1}<nuw><nsw><%22>,+,1}<nuw><nsw><%34> U: [1,4294967295) S: [1,4294967295)		Exits: ((zext i32 ({0,+,-1}<nw><%22> + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>)) to i64) + {1,+,1}<nuw><nsw><%22>)		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %57 = getelementptr inbounds i32, i32* %0, i64 %56
+  -->  {{(4 + %0)<nsw>,+,4}<nsw><%22>,+,4}<nsw><%34> U: full-set S: full-set		Exits: ((4 * (zext i32 ({0,+,-1}<nw><%22> + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>)) to i64))<nuw><nsw> + {(4 + %0)<nsw>,+,4}<nsw><%22>)		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %58 = load i32, i32* %57, align 4
+  -->  %58 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %59 = mul nsw i32 %55, %58
+  -->  (%58 * %55) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %60 = sext i32 %28 to i64
+  -->  (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)		Exits: (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %61 = getelementptr inbounds i32, i32* %0, i64 %60
+  -->  (-4 + (4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + %0) U: full-set S: full-set		Exits: (-4 + (4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + %0)		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %62 = load i32, i32* %61, align 4
+  -->  %62 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %63 = mul nsw i32 %59, %62
+  -->  (%62 * %58 * %55) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %64 = add nsw i32 %51, %63
+  -->  ((%62 * %58 * %55) + %50 + %43) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %65 = sext i32 %.1 to i64
+  -->  {1,+,1}<nuw><nsw><%22> U: [1,2147483648) S: [1,2147483648)		Exits: {1,+,1}<nuw><nsw><%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %66 = mul nsw i64 %65, %4
+  -->  {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%22> U: [0,9223372030412324866) S: [0,9223372030412324866)		Exits: {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %67 = getelementptr inbounds i32, i32* %7, i64 %66
+  -->  {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %68 = sext i32 %28 to i64
+  -->  (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)		Exits: (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %69 = getelementptr inbounds i32, i32* %67, i64 %68
+  -->  ((4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + {(-4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>) U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: ((4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + {(-4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>)		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %70 = load i32, i32* %69, align 4
+  -->  %70 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %34: Variant, %22: Variant, %19: Variant }
+  %73 = sext i32 %.1 to i64
+  -->  {1,+,1}<nuw><nsw><%22> U: [1,2147483648) S: [1,2147483648)		Exits: {1,+,1}<nuw><nsw><%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %74 = mul nsw i64 %73, %4
+  -->  {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%22> U: [0,9223372030412324866) S: [0,9223372030412324866)		Exits: {(zext i32 %1 to i64),+,(zext i32 %1 to i64)}<%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %75 = getelementptr inbounds i32, i32* %7, i64 %74
+  -->  {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw>,+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %76 = sext i32 %28 to i64
+  -->  (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)		Exits: (-1 + (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw>		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %77 = getelementptr inbounds i32, i32* %75, i64 %76
+  -->  ((4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + {(-4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>) U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: ((4 * (sext i32 {{3,+,1}<nuw><%19>,+,1}<nuw><%22> to i64))<nsw> + {(-4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + %7),+,(4 * (zext i32 %1 to i64))<nuw><nsw>}<%22>)		LoopDispositions: { %34: Invariant, %22: Computable, %19: Variant }
+  %80 = add nsw i32 %.01, 1
+  -->  {{2,+,1}<nuw><%22>,+,1}<nuw><%34> U: [2,0) S: [2,0)		Exits: (2 + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))<nuw>		LoopDispositions: { %34: Computable, %22: Variant, %19: Variant }
+  %83 = add nsw i32 %.1, 1
+  -->  {2,+,1}<nuw><%22> U: [2,-2147483647) S: [2,-2147483647)		Exits: (1 + (1 smax {(-1 + %1),+,-1}<nw><%19>))		LoopDispositions: { %22: Computable, %19: Variant, %34: Invariant }
+  %86 = add nsw i32 %.0, 1
+  -->  {3,+,1}<nuw><%19> U: [3,-2147483647) S: [3,-2147483647)		Exits: (1 + (2 smax %1))		LoopDispositions: { %19: Computable, %22: Invariant, %34: Invariant }
+  %88 = mul nsw i64 1, %4
+  -->  (zext i32 %1 to i64) U: [0,4294967296) S: [0,4294967296)
+  %89 = getelementptr inbounds i32, i32* %7, i64 %88
+  -->  ((4 * (zext i32 %1 to i64))<nuw><nsw> + %7)<nsw> U: [0,-3) S: [-9223372036854775808,9223372036854775805)
+  %90 = sub nsw i32 %1, 1
+  -->  (-1 + %1) U: full-set S: full-set
+  %91 = sext i32 %90 to i64
+  -->  (-1 + (sext i32 %1 to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)
+  %92 = getelementptr inbounds i32, i32* %89, i64 %91
+  -->  (-4 + (4 * (zext i32 %1 to i64))<nuw><nsw> + (4 * (sext i32 %1 to i64))<nsw> + %7) U: [0,-3) S: [-9223372036854775808,9223372036854775805)
+  %93 = load i32, i32* %92, align 4
+  -->  %93 U: full-set S: full-set
+Determining loop execution counts for: @_Z16MatrixChainOrderPii
+Loop %34: backedge-taken count is ({0,+,-1}<nw><%22> + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))
+Loop %34: max backedge-taken count is 2147483647
+Loop %34: Predicated backedge-taken count is ({0,+,-1}<nw><%22> + ({0,+,1}<nuw><nsw><%22> smax {{1,+,1}<nuw><nsw><%19>,+,1}<nw><%22>))
+ Predicates:
+
+Loop %34: Trip multiple is 1
+Loop %22: backedge-taken count is (-1 + (1 smax {(-1 + %1),+,-1}<nw><%19>))<nsw>
+Loop %22: max backedge-taken count is 2147483646
+Loop %22: Predicated backedge-taken count is (-1 + (1 smax {(-1 + %1),+,-1}<nw><%19>))<nsw>
+ Predicates:
+
+Loop %22: Trip multiple is 1
+Loop %19: backedge-taken count is (-2 + (2 smax %1))<nsw>
+Loop %19: max backedge-taken count is 2147483645
+Loop %19: Predicated backedge-taken count is (-2 + (2 smax %1))<nsw>
+ Predicates:
+
+Loop %19: Trip multiple is 1
+Loop %8: backedge-taken count is (-1 + (1 smax %1))<nsw>
+Loop %8: max backedge-taken count is 2147483646
+Loop %8: Predicated backedge-taken count is (-1 + (1 smax %1))<nsw>
+ Predicates:
+
+Loop %8: Trip multiple is 1
+Printing analysis 'Scalar Evolution Analysis' for function 'main':
+Classifying expressions for: @main
+  %1 = alloca [4 x i32], align 16
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %2 = bitcast [4 x i32]* %1 to i8*
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %3 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%"class.std::basic_ostream"* dereferenceable(272) @_ZSt4cout, i8* getelementptr inbounds ([38 x i8], [38 x i8]* @.str, i32 0, i32 0))
+  -->  %3 U: full-set S: full-set
+  %4 = getelementptr inbounds [4 x i32], [4 x i32]* %1, i32 0, i32 0
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %5 = call i32 @_Z16MatrixChainOrderPii(i32* %4, i32 4)
+  -->  %5 U: full-set S: full-set
+  %6 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZNSolsEi(%"class.std::basic_ostream"* %3, i32 %5)
+  -->  %6 U: full-set S: full-set
+  %7 = call i32 @getchar()
+  -->  %7 U: full-set S: full-set
+Determining loop execution counts for: @main
+Printing analysis 'Scalar Evolution Analysis' for function '_GLOBAL__sub_I_matrix_chain_multiplication.cpp':
+Classifying expressions for: @_GLOBAL__sub_I_matrix_chain_multiplication.cpp
+Determining loop execution counts for: @_GLOBAL__sub_I_matrix_chain_multiplication.cpp

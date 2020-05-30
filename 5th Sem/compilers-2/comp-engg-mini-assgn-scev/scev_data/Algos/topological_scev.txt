@@ -1,0 +1,1966 @@
+Printing analysis 'Scalar Evolution Analysis' for function '__cxx_global_var_init':
+Classifying expressions for: @__cxx_global_var_init
+  %1 = call i32 @__cxa_atexit(void (i8*)* bitcast (void (%"class.std::ios_base::Init"*)* @_ZNSt8ios_base4InitD1Ev to void (i8*)*), i8* getelementptr inbounds (%"class.std::ios_base::Init", %"class.std::ios_base::Init"* @_ZStL8__ioinit, i32 0, i32 0), i8* @__dso_handle) #3
+  -->  %1 U: full-set S: full-set
+Determining loop execution counts for: @__cxx_global_var_init
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN5GraphC2Ei':
+Classifying expressions for: @_ZN5GraphC2Ei
+  %3 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = sext i32 %1 to i64
+  -->  (sext i32 %1 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %6 = extractvalue { i64, i1 } %5, 1
+  -->  %6 U: full-set S: full-set
+  %7 = extractvalue { i64, i1 } %5, 0
+  -->  (24 * (sext i32 %1 to i64))<nsw> U: [0,-7) S: [-51539607552,51539607529)
+  %9 = extractvalue { i64, i1 } %8, 1
+  -->  %9 U: full-set S: full-set
+  %10 = or i1 %6, %9
+  -->  %10 U: full-set S: full-set
+  %11 = extractvalue { i64, i1 } %8, 0
+  -->  (8 + (24 * (sext i32 %1 to i64))<nsw>)<nsw> U: [0,-7) S: [-51539607544,51539607537)
+  %12 = select i1 %10, i64 -1, i64 %11
+  -->  %12 U: full-set S: full-set
+  %13 = call i8* @_Znam(i64 %12) #12
+  -->  %13 U: full-set S: full-set
+  %14 = bitcast i8* %13 to i64*
+  -->  %13 U: full-set S: full-set
+  %15 = getelementptr inbounds i8, i8* %13, i64 8
+  -->  (8 + %13)<nsw> U: full-set S: full-set
+  %16 = bitcast i8* %15 to %"class.std::__cxx11::list"*
+  -->  (8 + %13)<nsw> U: full-set S: full-set
+  %19 = getelementptr inbounds %"class.std::__cxx11::list", %"class.std::__cxx11::list"* %16, i64 %4
+  -->  (8 + (24 * (sext i32 %1 to i64))<nsw> + %13) U: full-set S: full-set
+  %21 = phi %"class.std::__cxx11::list"* [ %16, %18 ], [ %22, %20 ]
+  -->  {(8 + %13)<nsw>,+,24}<nuw><%20> U: full-set S: full-set		Exits: (8 + (24 * ((-8 + (8 * (sext i32 %1 to i64)))<nsw> /u 8)) + %13)		LoopDispositions: { %20: Computable }
+  %22 = getelementptr inbounds %"class.std::__cxx11::list", %"class.std::__cxx11::list"* %21, i64 1
+  -->  {(32 + %13),+,24}<nw><%20> U: full-set S: full-set		Exits: (32 + (24 * ((-8 + (8 * (sext i32 %1 to i64)))<nsw> /u 8)) + %13)		LoopDispositions: { %20: Computable }
+  %25 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZN5GraphC2Ei
+Loop %20: backedge-taken count is ((-8 + (8 * (sext i32 %1 to i64)))<nsw> /u 8)
+Loop %20: max backedge-taken count is 2305843009213693951
+Loop %20: Predicated backedge-taken count is ((-8 + (8 * (sext i32 %1 to i64)))<nsw> /u 8)
+ Predicates:
+
+Loop %20: Trip multiple is 1
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx114listIiSaIiEEC2Ev':
+Classifying expressions for: @_ZNSt7__cxx114listIiSaIiEEC2Ev
+  %2 = bitcast %"class.std::__cxx11::list"* %0 to %"class.std::__cxx11::_List_base"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx114listIiSaIiEEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN5Graph7addEdgeEii':
+Classifying expressions for: @_ZN5Graph7addEdgeEii
+  %4 = alloca i32, align 4
+  -->  %4 U: [0,-3) S: [-9223372036854775808,9223372036854775805)
+  %5 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %6 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %5, align 8
+  -->  %6 U: full-set S: full-set
+  %7 = sext i32 %1 to i64
+  -->  (sext i32 %1 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %8 = getelementptr inbounds %"class.std::__cxx11::list", %"class.std::__cxx11::list"* %6, i64 %7
+  -->  ((24 * (sext i32 %1 to i64))<nsw> + %6)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZN5Graph7addEdgeEii
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx114listIiSaIiEE9push_backERKi':
+Classifying expressions for: @_ZNSt7__cxx114listIiSaIiEE9push_backERKi
+  %3 = alloca %"struct.std::_List_iterator", align 8
+  -->  %3 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %4 = call %"struct.std::__detail::_List_node_base"* @_ZNSt7__cxx114listIiSaIiEE3endEv(%"class.std::__cxx11::list"* %0) #3
+  -->  %4 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %3, i32 0, i32 0
+  -->  %3 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %6 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %3, i32 0, i32 0
+  -->  %3 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %6, align 8
+  -->  %7 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx114listIiSaIiEE9push_backERKi
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN5Graph19topologicalSortUtilEiPbRSt5stackIiSt5dequeIiSaIiEEE':
+Classifying expressions for: @_ZN5Graph19topologicalSortUtilEiPbRSt5stackIiSt5dequeIiSaIiEEE
+  %5 = alloca i32, align 4
+  -->  %5 U: [0,-3) S: [-9223372036854775808,9223372036854775805)
+  %6 = alloca %"struct.std::_List_iterator", align 8
+  -->  %6 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %7 = alloca %"struct.std::_List_iterator", align 8
+  -->  %7 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %8 = alloca %"struct.std::_List_iterator", align 8
+  -->  %8 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %9 = load i32, i32* %5, align 4
+  -->  %9 U: full-set S: full-set
+  %10 = sext i32 %9 to i64
+  -->  (sext i32 %9 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %11 = getelementptr inbounds i8, i8* %2, i64 %10
+  -->  ((sext i32 %9 to i64) + %2)<nsw> U: full-set S: full-set
+  %12 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %13 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %12, align 8
+  -->  %13 U: full-set S: full-set
+  %14 = load i32, i32* %5, align 4
+  -->  %14 U: full-set S: full-set
+  %15 = sext i32 %14 to i64
+  -->  (sext i32 %14 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %16 = getelementptr inbounds %"class.std::__cxx11::list", %"class.std::__cxx11::list"* %13, i64 %15
+  -->  ((24 * (sext i32 %14 to i64))<nsw> + %13)<nsw> U: full-set S: full-set
+  %17 = call %"struct.std::__detail::_List_node_base"* @_ZNSt7__cxx114listIiSaIiEE5beginEv(%"class.std::__cxx11::list"* %16) #3
+  -->  %17 U: full-set S: full-set
+  %18 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %7, i32 0, i32 0
+  -->  %7 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %19 = bitcast %"struct.std::_List_iterator"* %6 to i8*
+  -->  %6 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %20 = bitcast %"struct.std::_List_iterator"* %7 to i8*
+  -->  %7 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %22 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set		Exits: (8 + %0)<nsw>		LoopDispositions: { %21: Invariant }
+  %23 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %22, align 8
+  -->  %23 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %24 = load i32, i32* %5, align 4
+  -->  %24 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %25 = sext i32 %24 to i64
+  -->  (sext i32 %24 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %26 = getelementptr inbounds %"class.std::__cxx11::list", %"class.std::__cxx11::list"* %23, i64 %25
+  -->  ((24 * (sext i32 %24 to i64))<nsw> + %23)<nsw> U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %27 = call %"struct.std::__detail::_List_node_base"* @_ZNSt7__cxx114listIiSaIiEE3endEv(%"class.std::__cxx11::list"* %26) #3
+  -->  %27 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %28 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %8, i32 0, i32 0
+  -->  %8 U: [0,-7) S: [-9223372036854775808,9223372036854775801)		Exits: %8		LoopDispositions: { %21: Invariant }
+  %29 = call zeroext i1 @_ZStneRKSt14_List_iteratorIiES2_(%"struct.std::_List_iterator"* dereferenceable(8) %6, %"struct.std::_List_iterator"* dereferenceable(8) %8) #3
+  -->  %29 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %31 = call dereferenceable(4) i32* @_ZNKSt14_List_iteratorIiEdeEv(%"struct.std::_List_iterator"* %6) #3
+  -->  %31 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %32 = load i32, i32* %31, align 4
+  -->  %32 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %33 = sext i32 %32 to i64
+  -->  (sext i32 %32 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %34 = getelementptr inbounds i8, i8* %2, i64 %33
+  -->  ((sext i32 %32 to i64) + %2)<nsw> U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %35 = load i8, i8* %34, align 1
+  -->  %35 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %36 = trunc i8 %35 to i1
+  -->  (trunc i8 %35 to i1) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %38 = call dereferenceable(4) i32* @_ZNKSt14_List_iteratorIiEdeEv(%"struct.std::_List_iterator"* %6) #3
+  -->  %38 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %39 = load i32, i32* %38, align 4
+  -->  %39 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+  %42 = call dereferenceable(8) %"struct.std::_List_iterator"* @_ZNSt14_List_iteratorIiEppEv(%"struct.std::_List_iterator"* %6) #3
+  -->  %42 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %21: Variant }
+Determining loop execution counts for: @_ZN5Graph19topologicalSortUtilEiPbRSt5stackIiSt5dequeIiSaIiEEE
+Loop %21: Unpredictable backedge-taken count.
+Loop %21: Unpredictable max backedge-taken count. 
+Loop %21: Unpredictable predicated backedge-taken count. 
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt14_List_iteratorIiEC2Ev':
+Classifying expressions for: @_ZNSt14_List_iteratorIiEC2Ev
+  %2 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt14_List_iteratorIiEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx114listIiSaIiEE5beginEv':
+Classifying expressions for: @_ZNSt7__cxx114listIiSaIiEE5beginEv
+  %2 = alloca %"struct.std::_List_iterator", align 8
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %3 = bitcast %"class.std::__cxx11::list"* %0 to %"class.std::__cxx11::_List_base"*
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl", %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl"* %4, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %6 = bitcast %"struct.std::__detail::_List_node_header"* %5 to %"struct.std::__detail::_List_node_base"*
+  -->  %0 U: full-set S: full-set
+  %7 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %6, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %8 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %7, align 8
+  -->  %8 U: full-set S: full-set
+  %9 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %2, i32 0, i32 0
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8
+  -->  %10 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx114listIiSaIiEE5beginEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZStneRKSt14_List_iteratorIiES2_':
+Classifying expressions for: @_ZStneRKSt14_List_iteratorIiES2_
+  %3 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %3, align 8
+  -->  %4 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %1, i32 0, i32 0
+  -->  %1 U: full-set S: full-set
+  %6 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %5, align 8
+  -->  %6 U: full-set S: full-set
+Determining loop execution counts for: @_ZStneRKSt14_List_iteratorIiES2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx114listIiSaIiEE3endEv':
+Classifying expressions for: @_ZNSt7__cxx114listIiSaIiEE3endEv
+  %2 = alloca %"struct.std::_List_iterator", align 8
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %3 = bitcast %"class.std::__cxx11::list"* %0 to %"class.std::__cxx11::_List_base"*
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl", %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl"* %4, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %6 = bitcast %"struct.std::__detail::_List_node_header"* %5 to %"struct.std::__detail::_List_node_base"*
+  -->  %0 U: full-set S: full-set
+  %7 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %2, i32 0, i32 0
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %8 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %7, align 8
+  -->  %8 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx114listIiSaIiEE3endEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt14_List_iteratorIiEdeEv':
+Classifying expressions for: @_ZNKSt14_List_iteratorIiEdeEv
+  %2 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %2, align 8
+  -->  %3 U: full-set S: full-set
+  %4 = bitcast %"struct.std::__detail::_List_node_base"* %3 to %"struct.std::_List_node"*
+  -->  %3 U: full-set S: full-set
+  %5 = invoke i32* @_ZNSt10_List_nodeIiE9_M_valptrEv(%"struct.std::_List_node"* %4)
+          to label %6 unwind label %7
+  -->  %5 U: full-set S: full-set
+  %9 = extractvalue { i8*, i32 } %8, 0
+  -->  %9 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt14_List_iteratorIiEdeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt14_List_iteratorIiEppEv':
+Classifying expressions for: @_ZNSt14_List_iteratorIiEppEv
+  %2 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %2, align 8
+  -->  %3 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %3, i32 0, i32 0
+  -->  %3 U: full-set S: full-set
+  %5 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8
+  -->  %5 U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt14_List_iteratorIiEppEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5stackIiSt5dequeIiSaIiEEE4pushERKi':
+Classifying expressions for: @_ZNSt5stackIiSt5dequeIiSaIiEEE4pushERKi
+  %3 = getelementptr inbounds %"class.std::stack", %"class.std::stack"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5stackIiSt5dequeIiSaIiEEE4pushERKi
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN5Graph15topologicalSortEv':
+Classifying expressions for: @_ZN5Graph15topologicalSortEv
+  %2 = alloca %"class.std::stack", align 8
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %3 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = load i32, i32* %3, align 8
+  -->  %4 U: full-set S: full-set
+  %5 = sext i32 %4 to i64
+  -->  (sext i32 %4 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %6 = invoke i8* @_Znam(i64 %5) #12
+          to label %7 unwind label %17
+  -->  %6 U: full-set S: full-set
+  %.01 = phi i32 [ 0, %7 ], [ %16, %15 ]
+  -->  {0,+,1}<nuw><nsw><%8> U: [0,-2147483648) S: [0,-2147483648)		Exits: <<Unknown>>		LoopDispositions: { %8: Computable }
+  %9 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set		Exits: %0		LoopDispositions: { %8: Invariant }
+  %10 = load i32, i32* %9, align 8
+  -->  %10 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %8: Variant }
+  %13 = sext i32 %.01 to i64
+  -->  {0,+,1}<nuw><nsw><%8> U: [0,2147483648) S: [0,2147483648)		Exits: <<Unknown>>		LoopDispositions: { %8: Computable }
+  %14 = getelementptr inbounds i8, i8* %6, i64 %13
+  -->  {%6,+,1}<nsw><%8> U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %8: Computable }
+  %16 = add nsw i32 %.01, 1
+  -->  {1,+,1}<nuw><%8> U: [1,-2147483647) S: [1,-2147483647)		Exits: <<Unknown>>		LoopDispositions: { %8: Computable }
+  %19 = extractvalue { i8*, i32 } %18, 0
+  -->  %19 U: full-set S: full-set
+  %20 = extractvalue { i8*, i32 } %18, 1
+  -->  %20 U: full-set S: full-set
+  %.0 = phi i32 [ 0, %21 ], [ %37, %36 ]
+  -->  {0,+,1}<nuw><nsw><%22> U: [0,-2147483648) S: [0,-2147483648)		Exits: <<Unknown>>		LoopDispositions: { %22: Computable }
+  %23 = getelementptr inbounds %class.Graph, %class.Graph* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set		Exits: %0		LoopDispositions: { %22: Invariant }
+  %24 = load i32, i32* %23, align 8
+  -->  %24 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %22: Variant }
+  %27 = sext i32 %.0 to i64
+  -->  {0,+,1}<nuw><nsw><%22> U: [0,2147483648) S: [0,2147483648)		Exits: <<Unknown>>		LoopDispositions: { %22: Computable }
+  %28 = getelementptr inbounds i8, i8* %6, i64 %27
+  -->  {%6,+,1}<nsw><%22> U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %22: Computable }
+  %29 = load i8, i8* %28, align 1
+  -->  %29 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %22: Variant }
+  %30 = trunc i8 %29 to i1
+  -->  (trunc i8 %29 to i1) U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %22: Variant }
+  %31 = zext i1 %30 to i32
+  -->  (zext i1 (trunc i8 %29 to i1) to i32) U: [0,2) S: [0,2)		Exits: <<Unknown>>		LoopDispositions: { %22: Variant }
+  %37 = add nsw i32 %.0, 1
+  -->  {1,+,1}<nuw><%22> U: [1,-2147483647) S: [1,-2147483647)		Exits: <<Unknown>>		LoopDispositions: { %22: Computable }
+  %40 = invoke zeroext i1 @_ZNKSt5stackIiSt5dequeIiSaIiEEE5emptyEv(%"class.std::stack"* %2)
+          to label %41 unwind label %17
+  -->  %40 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %39: Variant }
+  %42 = zext i1 %40 to i32
+  -->  (zext i1 %40 to i32) U: [0,2) S: [0,2)		Exits: <<Unknown>>		LoopDispositions: { %39: Variant }
+  %45 = invoke dereferenceable(4) i32* @_ZNSt5stackIiSt5dequeIiSaIiEEE3topEv(%"class.std::stack"* %2)
+          to label %46 unwind label %17
+  -->  %45 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %39: Variant }
+  %47 = load i32, i32* %45, align 4
+  -->  %47 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %39: Variant }
+  %48 = invoke dereferenceable(272) %"class.std::basic_ostream"* @_ZNSolsEi(%"class.std::basic_ostream"* @_ZSt4cout, i32 %47)
+          to label %49 unwind label %17
+  -->  %48 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %39: Variant }
+  %50 = invoke dereferenceable(272) %"class.std::basic_ostream"* @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%"class.std::basic_ostream"* dereferenceable(272) %48, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str, i32 0, i32 0))
+          to label %51 unwind label %17
+  -->  %50 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %39: Variant }
+Determining loop execution counts for: @_ZN5Graph15topologicalSortEv
+Loop %39: <multiple exits> Unpredictable backedge-taken count.
+  exit count for : ***COULDNOTCOMPUTE***
+  exit count for : ***COULDNOTCOMPUTE***
+  exit count for : ***COULDNOTCOMPUTE***
+  exit count for : ***COULDNOTCOMPUTE***
+  exit count for : ***COULDNOTCOMPUTE***
+  exit count for : ***COULDNOTCOMPUTE***
+Loop %39: Unpredictable max backedge-taken count. 
+Loop %39: Unpredictable predicated backedge-taken count. 
+Loop %22: <multiple exits> Unpredictable backedge-taken count.
+  exit count for : ***COULDNOTCOMPUTE***
+  exit count for : ***COULDNOTCOMPUTE***
+Loop %22: max backedge-taken count is 2147483647
+Loop %22: Unpredictable predicated backedge-taken count. 
+Loop %8: Unpredictable backedge-taken count.
+Loop %8: max backedge-taken count is 2147483647
+Loop %8: Unpredictable predicated backedge-taken count. 
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5stackIiSt5dequeIiSaIiEEEC2IS2_vEEv':
+Classifying expressions for: @_ZNSt5stackIiSt5dequeIiSaIiEEEC2IS2_vEEv
+  %2 = getelementptr inbounds %"class.std::stack", %"class.std::stack"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5stackIiSt5dequeIiSaIiEEEC2IS2_vEEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt5stackIiSt5dequeIiSaIiEEE5emptyEv':
+Classifying expressions for: @_ZNKSt5stackIiSt5dequeIiSaIiEEE5emptyEv
+  %2 = getelementptr inbounds %"class.std::stack", %"class.std::stack"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = call zeroext i1 @_ZNKSt5dequeIiSaIiEE5emptyEv(%"class.std::deque"* %2) #3
+  -->  %3 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt5stackIiSt5dequeIiSaIiEEE5emptyEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5stackIiSt5dequeIiSaIiEEE3topEv':
+Classifying expressions for: @_ZNSt5stackIiSt5dequeIiSaIiEEE3topEv
+  %2 = getelementptr inbounds %"class.std::stack", %"class.std::stack"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = call dereferenceable(4) i32* @_ZNSt5dequeIiSaIiEE4backEv(%"class.std::deque"* %2) #3
+  -->  %3 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5stackIiSt5dequeIiSaIiEEE3topEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5stackIiSt5dequeIiSaIiEEE3popEv':
+Classifying expressions for: @_ZNSt5stackIiSt5dequeIiSaIiEEE3popEv
+  %2 = getelementptr inbounds %"class.std::stack", %"class.std::stack"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5stackIiSt5dequeIiSaIiEEE3popEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5stackIiSt5dequeIiSaIiEEED2Ev':
+Classifying expressions for: @_ZNSt5stackIiSt5dequeIiSaIiEEED2Ev
+  %2 = getelementptr inbounds %"class.std::stack", %"class.std::stack"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5stackIiSt5dequeIiSaIiEEED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function 'main':
+Classifying expressions for: @main
+  %1 = alloca %class.Graph, align 8
+  -->  %1 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %2 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%"class.std::basic_ostream"* dereferenceable(272) @_ZSt4cout, i8* getelementptr inbounds ([53 x i8], [53 x i8]* @.str.1, i32 0, i32 0))
+  -->  %2 U: full-set S: full-set
+Determining loop execution counts for: @main
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx1110_List_baseIiSaIiEEC2Ev':
+Classifying expressions for: @_ZNSt7__cxx1110_List_baseIiSaIiEEC2Ev
+  %2 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx1110_List_baseIiSaIiEEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx1110_List_baseIiSaIiEE10_List_implC2Ev':
+Classifying expressions for: @_ZNSt7__cxx1110_List_baseIiSaIiEE10_List_implC2Ev
+  %2 = bitcast %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl"* %0 to %"class.std::allocator"*
+  -->  %0 U: full-set S: full-set
+  %3 = getelementptr inbounds %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl", %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx1110_List_baseIiSaIiEE10_List_implC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSaISt10_List_nodeIiEEC2Ev':
+Classifying expressions for: @_ZNSaISt10_List_nodeIiEEC2Ev
+  %2 = bitcast %"class.std::allocator"* %0 to %"class.__gnu_cxx::new_allocator"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSaISt10_List_nodeIiEEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt8__detail17_List_node_headerC2Ev':
+Classifying expressions for: @_ZNSt8__detail17_List_node_headerC2Ev
+  %2 = bitcast %"struct.std::__detail::_List_node_header"* %0 to %"struct.std::__detail::_List_node_base"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt8__detail17_List_node_headerC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEEC2Ev':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEEC2Ev
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt8__detail17_List_node_header7_M_initEv':
+Classifying expressions for: @_ZNSt8__detail17_List_node_header7_M_initEv
+  %2 = bitcast %"struct.std::__detail::_List_node_header"* %0 to %"struct.std::__detail::_List_node_base"*
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast %"struct.std::__detail::_List_node_header"* %0 to %"struct.std::__detail::_List_node_base"*
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %3, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %5 = bitcast %"struct.std::__detail::_List_node_header"* %0 to %"struct.std::__detail::_List_node_base"*
+  -->  %0 U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %5, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %7 = getelementptr inbounds %"struct.std::__detail::_List_node_header", %"struct.std::__detail::_List_node_header"* %0, i32 0, i32 1
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt8__detail17_List_node_header7_M_initEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEED2Ev':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEED2Ev
+  %2 = alloca %"struct.std::_Deque_iterator", align 8
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %3 = alloca %"struct.std::_Deque_iterator", align 8
+  -->  %3 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %4 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %5 = call dereferenceable(1) %"class.std::allocator.0"* @_ZNSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv(%"class.std::_Deque_base"* %4) #3
+  -->  %5 U: full-set S: full-set
+  %7 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %10 = extractvalue { i8*, i32 } %9, 0
+  -->  %10 U: full-set S: full-set
+  %11 = extractvalue { i8*, i32 } %9, 1
+  -->  %11 U: full-set S: full-set
+  %12 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE15_M_destroy_dataESt15_Deque_iteratorIiRiPiES5_RKS0_':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE15_M_destroy_dataESt15_Deque_iteratorIiRiPiES5_RKS0_
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE15_M_destroy_dataESt15_Deque_iteratorIiRiPiES5_RKS0_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE5beginEv':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE5beginEv
+  %3 = bitcast %"class.std::deque"* %1 to %"class.std::_Deque_base"*
+  -->  %1 U: full-set S: full-set
+  %4 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %3, i32 0, i32 0
+  -->  %1 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %4, i32 0, i32 2
+  -->  (16 + %1)<nsw> U: full-set S: full-set
+  %6 = bitcast %"struct.std::_Deque_iterator"* %0 to i8*
+  -->  %0 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %7 = bitcast %"struct.std::_Deque_iterator"* %5 to i8*
+  -->  (16 + %1)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE5beginEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE3endEv':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE3endEv
+  %3 = bitcast %"class.std::deque"* %1 to %"class.std::_Deque_base"*
+  -->  %1 U: full-set S: full-set
+  %4 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %3, i32 0, i32 0
+  -->  %1 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %4, i32 0, i32 3
+  -->  (48 + %1)<nsw> U: full-set S: full-set
+  %6 = bitcast %"struct.std::_Deque_iterator"* %0 to i8*
+  -->  %0 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %7 = bitcast %"struct.std::_Deque_iterator"* %5 to i8*
+  -->  (48 + %1)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE3endEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv
+  %2 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %2 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEED2Ev':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEED2Ev
+  %2 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %2, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = load i32**, i32*** %3, align 8
+  -->  %4 U: full-set S: full-set
+  %7 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %8 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %7, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %9 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %8, i32 0, i32 3
+  -->  (40 + %0) U: full-set S: full-set
+  %10 = load i32**, i32*** %9, align 8
+  -->  %10 U: full-set S: full-set
+  %11 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %12 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %11, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %13 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %12, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %14 = load i32**, i32*** %13, align 8
+  -->  %14 U: full-set S: full-set
+  %15 = getelementptr inbounds i32*, i32** %14, i64 1
+  -->  (8 + %14)<nsw> U: full-set S: full-set
+  %16 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %17 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %16, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %18 = load i32**, i32*** %17, align 8
+  -->  %18 U: full-set S: full-set
+  %19 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %20 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %19, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %21 = load i64, i64* %20, align 8
+  -->  %21 U: full-set S: full-set
+  %23 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '__clang_call_terminate':
+Classifying expressions for: @__clang_call_terminate
+  %2 = call i8* @__cxa_begin_catch(i8* %0) #3
+  -->  %2 U: full-set S: full-set
+Determining loop execution counts for: @__clang_call_terminate
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE16_M_destroy_nodesEPPiS3_':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE16_M_destroy_nodesEPPiS3_
+  %.0 = phi i32** [ %1, %3 ], [ %9, %8 ]
+  -->  {%1,+,8}<nuw><%4> U: full-set S: full-set		Exits: ((8 * ((7 + (-1 * %1) + (%1 umax %2)) /u 8))<nuw> + %1)		LoopDispositions: { %4: Computable }
+  %7 = load i32*, i32** %.0, align 8
+  -->  %7 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %4: Variant }
+  %9 = getelementptr inbounds i32*, i32** %.0, i32 1
+  -->  {(8 + %1)<nsw>,+,8}<nw><%4> U: full-set S: full-set		Exits: (8 + (8 * ((7 + (-1 * %1) + (%1 umax %2)) /u 8))<nuw> + %1)		LoopDispositions: { %4: Computable }
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE16_M_destroy_nodesEPPiS3_
+Loop %4: backedge-taken count is ((7 + (-1 * %1) + (%1 umax %2)) /u 8)
+Loop %4: max backedge-taken count is 2305843009213693951
+Loop %4: Predicated backedge-taken count is ((7 + (-1 * %1) + (%1 umax %2)) /u 8)
+ Predicates:
+
+Loop %4: Trip multiple is 1
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE17_M_deallocate_mapEPPim':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE17_M_deallocate_mapEPPim
+  %4 = alloca %"class.std::allocator.3", align 1
+  -->  %4 U: full-set S: full-set
+  %8 = extractvalue { i8*, i32 } %7, 0
+  -->  %8 U: full-set S: full-set
+  %9 = extractvalue { i8*, i32 } %7, 1
+  -->  %9 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE17_M_deallocate_mapEPPim
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE11_Deque_implD2Ev':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE11_Deque_implD2Ev
+  %2 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %0 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE11_Deque_implD2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE18_M_deallocate_nodeEPi':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE18_M_deallocate_nodeEPi
+  %3 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %3 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+  %5 = invoke i64 @_ZSt16__deque_buf_sizem(i64 4)
+          to label %6 unwind label %8
+  -->  %5 U: full-set S: full-set
+  %10 = extractvalue { i8*, i32 } %9, 0
+  -->  %10 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE18_M_deallocate_nodeEPi
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim':
+Classifying expressions for: @_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim
+  %4 = bitcast %"class.std::allocator.0"* %0 to %"class.__gnu_cxx::new_allocator.1"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt16__deque_buf_sizem':
+Classifying expressions for: @_ZSt16__deque_buf_sizem
+  %4 = udiv i64 512, %0
+  -->  (512 /u %0) U: [0,513) S: [0,513)
+  %7 = phi i64 [ %4, %3 ], [ 1, %5 ]
+  -->  %7 U: [0,513) S: [0,513)
+Determining loop execution counts for: @_ZSt16__deque_buf_sizem
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim
+  %4 = bitcast i32* %1 to i8*
+  -->  %1 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt11_Deque_baseIiSaIiEE20_M_get_map_allocatorEv':
+Classifying expressions for: @_ZNKSt11_Deque_baseIiSaIiEE20_M_get_map_allocatorEv
+  %3 = call dereferenceable(1) %"class.std::allocator.0"* @_ZNKSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv(%"class.std::_Deque_base"* %1) #3
+  -->  %3 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt11_Deque_baseIiSaIiEE20_M_get_map_allocatorEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaIPiEE10deallocateERS1_PS0_m':
+Classifying expressions for: @_ZNSt16allocator_traitsISaIPiEE10deallocateERS1_PS0_m
+  %4 = bitcast %"class.std::allocator.3"* %0 to %"class.__gnu_cxx::new_allocator.4"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaIPiEE10deallocateERS1_PS0_m
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSaIPiED2Ev':
+Classifying expressions for: @_ZNSaIPiED2Ev
+  %2 = bitcast %"class.std::allocator.3"* %0 to %"class.__gnu_cxx::new_allocator.4"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSaIPiED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv':
+Classifying expressions for: @_ZNKSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv
+  %2 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %2 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSaIPiEC2IiEERKSaIT_E':
+Classifying expressions for: @_ZNSaIPiEC2IiEERKSaIT_E
+  %3 = bitcast %"class.std::allocator.3"* %0 to %"class.__gnu_cxx::new_allocator.4"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSaIPiEC2IiEERKSaIT_E
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIPiEC2Ev':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIPiEC2Ev
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIPiEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIPiE10deallocateEPS1_m':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIPiE10deallocateEPS1_m
+  %4 = bitcast i32** %1 to i8*
+  -->  %1 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIPiE10deallocateEPS1_m
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIPiED2Ev':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIPiED2Ev
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIPiED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSaIiED2Ev':
+Classifying expressions for: @_ZNSaIiED2Ev
+  %2 = bitcast %"class.std::allocator.0"* %0 to %"class.__gnu_cxx::new_allocator.1"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSaIiED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIiED2Ev':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIiED2Ev
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIiED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx114listIiSaIiEE9_M_insertIJRKiEEEvSt14_List_iteratorIiEDpOT_':
+Classifying expressions for: @_ZNSt7__cxx114listIiSaIiEE9_M_insertIJRKiEEEvSt14_List_iteratorIiEDpOT_
+  %4 = alloca %"struct.std::_List_iterator", align 8
+  -->  %4 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %5 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %4, i32 0, i32 0
+  -->  %4 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %6 = call dereferenceable(4) i32* @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE(i32* dereferenceable(4) %2) #3
+  -->  %6 U: full-set S: full-set
+  %7 = call %"struct.std::_List_node"* @_ZNSt7__cxx114listIiSaIiEE14_M_create_nodeIJRKiEEEPSt10_List_nodeIiEDpOT_(%"class.std::__cxx11::list"* %0, i32* dereferenceable(4) %6)
+  -->  %7 U: full-set S: full-set
+  %8 = bitcast %"struct.std::_List_node"* %7 to %"struct.std::__detail::_List_node_base"*
+  -->  %7 U: full-set S: full-set
+  %9 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %4, i32 0, i32 0
+  -->  %4 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8
+  -->  %10 U: full-set S: full-set
+  %11 = bitcast %"class.std::__cxx11::list"* %0 to %"class.std::__cxx11::_List_base"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx114listIiSaIiEE9_M_insertIJRKiEEEvSt14_List_iteratorIiEDpOT_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx114listIiSaIiEE14_M_create_nodeIJRKiEEEPSt10_List_nodeIiEDpOT_':
+Classifying expressions for: @_ZNSt7__cxx114listIiSaIiEE14_M_create_nodeIJRKiEEEPSt10_List_nodeIiEDpOT_
+  %3 = alloca %"struct.std::__allocated_ptr", align 8
+  -->  %3 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %4 = bitcast %"class.std::__cxx11::list"* %0 to %"class.std::__cxx11::_List_base"*
+  -->  %0 U: full-set S: full-set
+  %5 = call %"struct.std::_List_node"* @_ZNSt7__cxx1110_List_baseIiSaIiEE11_M_get_nodeEv(%"class.std::__cxx11::_List_base"* %4)
+  -->  %5 U: full-set S: full-set
+  %6 = bitcast %"class.std::__cxx11::list"* %0 to %"class.std::__cxx11::_List_base"*
+  -->  %0 U: full-set S: full-set
+  %7 = call dereferenceable(1) %"class.std::allocator"* @_ZNSt7__cxx1110_List_baseIiSaIiEE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"* %6) #3
+  -->  %7 U: full-set S: full-set
+  %8 = invoke i32* @_ZNSt10_List_nodeIiE9_M_valptrEv(%"struct.std::_List_node"* %5)
+          to label %9 unwind label %12
+  -->  %8 U: full-set S: full-set
+  %10 = call dereferenceable(4) i32* @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE(i32* dereferenceable(4) %1) #3
+  -->  %10 U: full-set S: full-set
+  %11 = call dereferenceable(16) %"struct.std::__allocated_ptr"* @_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEEaSEDn(%"struct.std::__allocated_ptr"* %3, i8* null) #3
+  -->  %11 U: full-set S: full-set
+  %14 = extractvalue { i8*, i32 } %13, 0
+  -->  %14 U: full-set S: full-set
+  %15 = extractvalue { i8*, i32 } %13, 1
+  -->  %15 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx114listIiSaIiEE14_M_create_nodeIJRKiEEEPSt10_List_nodeIiEDpOT_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE':
+Classifying expressions for: @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE
+Determining loop execution counts for: @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx1110_List_baseIiSaIiEE11_M_inc_sizeEm':
+Classifying expressions for: @_ZNSt7__cxx1110_List_baseIiSaIiEE11_M_inc_sizeEm
+  %3 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl", %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl"* %3, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::__detail::_List_node_header", %"struct.std::__detail::_List_node_header"* %4, i32 0, i32 1
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %6 = load i64, i64* %5, align 8
+  -->  %6 U: full-set S: full-set
+  %7 = add i64 %6, %1
+  -->  (%1 + %6) U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx1110_List_baseIiSaIiEE11_M_inc_sizeEm
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx1110_List_baseIiSaIiEE11_M_get_nodeEv':
+Classifying expressions for: @_ZNSt7__cxx1110_List_baseIiSaIiEE11_M_get_nodeEv
+  %2 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl"* %2 to %"class.std::allocator"*
+  -->  %0 U: full-set S: full-set
+  %4 = call %"struct.std::_List_node"* @_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE8allocateERS2_m(%"class.std::allocator"* dereferenceable(1) %3, i64 1)
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx1110_List_baseIiSaIiEE11_M_get_nodeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt7__cxx1110_List_baseIiSaIiEE21_M_get_Node_allocatorEv':
+Classifying expressions for: @_ZNSt7__cxx1110_List_baseIiSaIiEE21_M_get_Node_allocatorEv
+  %2 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast %"struct.std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl"* %2 to %"class.std::allocator"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt7__cxx1110_List_baseIiSaIiEE21_M_get_Node_allocatorEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEEC2ERS2_PS1_':
+Classifying expressions for: @_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEEC2ERS2_PS1_
+  %4 = getelementptr inbounds %"struct.std::__allocated_ptr", %"struct.std::__allocated_ptr"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %5 = call %"class.std::allocator"* @_ZSt11__addressofISaISt10_List_nodeIiEEEPT_RS3_(%"class.std::allocator"* dereferenceable(1) %1) #3
+  -->  %5 U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::__allocated_ptr", %"struct.std::__allocated_ptr"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEEC2ERS2_PS1_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE9constructIiJRKiEEEvRS2_PT_DpOT0_':
+Classifying expressions for: @_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE9constructIiJRKiEEEvRS2_PT_DpOT0_
+  %4 = bitcast %"class.std::allocator"* %0 to %"class.__gnu_cxx::new_allocator"*
+  -->  %0 U: full-set S: full-set
+  %5 = call dereferenceable(4) i32* @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE(i32* dereferenceable(4) %2) #3
+  -->  %5 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE9constructIiJRKiEEEvRS2_PT_DpOT0_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt10_List_nodeIiE9_M_valptrEv':
+Classifying expressions for: @_ZNSt10_List_nodeIiE9_M_valptrEv
+  %2 = getelementptr inbounds %"struct.std::_List_node", %"struct.std::_List_node"* %0, i32 0, i32 1
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %3 = call i32* @_ZN9__gnu_cxx16__aligned_membufIiE6_M_ptrEv(%"struct.__gnu_cxx::__aligned_membuf"* %2) #3
+  -->  %3 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt10_List_nodeIiE9_M_valptrEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEEaSEDn':
+Classifying expressions for: @_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEEaSEDn
+  %3 = getelementptr inbounds %"struct.std::__allocated_ptr", %"struct.std::__allocated_ptr"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEEaSEDn
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEED2Ev':
+Classifying expressions for: @_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEED2Ev
+  %2 = getelementptr inbounds %"struct.std::__allocated_ptr", %"struct.std::__allocated_ptr"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %3 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %2, align 8
+  -->  %3 U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::__allocated_ptr", %"struct.std::__allocated_ptr"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %7 = load %"class.std::allocator"*, %"class.std::allocator"** %6, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = getelementptr inbounds %"struct.std::__allocated_ptr", %"struct.std::__allocated_ptr"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %9 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %8, align 8
+  -->  %9 U: full-set S: full-set
+  %14 = extractvalue { i8*, i32 } %13, 0
+  -->  %14 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt15__allocated_ptrISaISt10_List_nodeIiEEED2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE8allocateERS2_m':
+Classifying expressions for: @_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE8allocateERS2_m
+  %3 = bitcast %"class.std::allocator"* %0 to %"class.__gnu_cxx::new_allocator"*
+  -->  %0 U: full-set S: full-set
+  %4 = call %"struct.std::_List_node"* @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8allocateEmPKv(%"class.__gnu_cxx::new_allocator"* %3, i64 %1, i8* null)
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE8allocateERS2_m
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8allocateEmPKv':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8allocateEmPKv
+  %4 = call i64 @_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8max_sizeEv(%"class.__gnu_cxx::new_allocator"* %0) #3
+  -->  %4 U: full-set S: full-set
+  %8 = mul i64 %1, 24
+  -->  (24 * %1) U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %9 = call i8* @_Znwm(i64 %8)
+  -->  %9 U: full-set S: full-set
+  %10 = bitcast i8* %9 to %"struct.std::_List_node"*
+  -->  %9 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8allocateEmPKv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8max_sizeEv':
+Classifying expressions for: @_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8max_sizeEv
+Determining loop execution counts for: @_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIiEE8max_sizeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt11__addressofISaISt10_List_nodeIiEEEPT_RS3_':
+Classifying expressions for: @_ZSt11__addressofISaISt10_List_nodeIiEEEPT_RS3_
+Determining loop execution counts for: @_ZSt11__addressofISaISt10_List_nodeIiEEEPT_RS3_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE9constructIiJRKiEEEvPT_DpOT0_':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE9constructIiJRKiEEEvPT_DpOT0_
+  %4 = bitcast i32* %1 to i8*
+  -->  %1 U: full-set S: full-set
+  %5 = bitcast i8* %4 to i32*
+  -->  %1 U: full-set S: full-set
+  %6 = call dereferenceable(4) i32* @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE(i32* dereferenceable(4) %2) #3
+  -->  %6 U: full-set S: full-set
+  %7 = load i32, i32* %6, align 4
+  -->  %7 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE9constructIiJRKiEEEvPT_DpOT0_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx16__aligned_membufIiE6_M_ptrEv':
+Classifying expressions for: @_ZN9__gnu_cxx16__aligned_membufIiE6_M_ptrEv
+  %2 = call i8* @_ZN9__gnu_cxx16__aligned_membufIiE7_M_addrEv(%"struct.__gnu_cxx::__aligned_membuf"* %0) #3
+  -->  %2 U: full-set S: full-set
+  %3 = bitcast i8* %2 to i32*
+  -->  %2 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx16__aligned_membufIiE6_M_ptrEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx16__aligned_membufIiE7_M_addrEv':
+Classifying expressions for: @_ZN9__gnu_cxx16__aligned_membufIiE7_M_addrEv
+  %2 = getelementptr inbounds %"struct.__gnu_cxx::__aligned_membuf", %"struct.__gnu_cxx::__aligned_membuf"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast [4 x i8]* %2 to i8*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx16__aligned_membufIiE7_M_addrEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE10deallocateERS2_PS1_m':
+Classifying expressions for: @_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE10deallocateERS2_PS1_m
+  %4 = bitcast %"class.std::allocator"* %0 to %"class.__gnu_cxx::new_allocator"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaISt10_List_nodeIiEEE10deallocateERS2_PS1_m
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE10deallocateEPS2_m':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE10deallocateEPS2_m
+  %4 = bitcast %"struct.std::_List_node"* %1 to i8*
+  -->  %1 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIiEE10deallocateEPS2_m
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt14_List_iteratorIiEC2EPNSt8__detail15_List_node_baseE':
+Classifying expressions for: @_ZNSt14_List_iteratorIiEC2EPNSt8__detail15_List_node_baseE
+  %3 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt14_List_iteratorIiEC2EPNSt8__detail15_List_node_baseE
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE9push_backERKi':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE9push_backERKi
+  %3 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %3, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %4, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %5, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %7 = load i32*, i32** %6, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %9 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %8, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %10 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %9, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %11 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %10, i32 0, i32 2
+  -->  (64 + %0) U: full-set S: full-set
+  %12 = load i32*, i32** %11, align 8
+  -->  %12 U: full-set S: full-set
+  %13 = getelementptr inbounds i32, i32* %12, i64 -1
+  -->  (-4 + %12)<nsw> U: full-set S: full-set
+  %16 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %17 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %16, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %18 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %17 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+  %19 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %20 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %19, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %21 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %20, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %22 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %21, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %23 = load i32*, i32** %22, align 8
+  -->  %23 U: full-set S: full-set
+  %24 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %25 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %24, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %26 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %25, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %27 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %26, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %28 = load i32*, i32** %27, align 8
+  -->  %28 U: full-set S: full-set
+  %29 = getelementptr inbounds i32, i32* %28, i32 1
+  -->  (4 + %28)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE9push_backERKi
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_':
+Classifying expressions for: @_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_
+  %4 = bitcast %"class.std::allocator.0"* %0 to %"class.__gnu_cxx::new_allocator.1"*
+  -->  %0 U: full-set S: full-set
+  %5 = call dereferenceable(4) i32* @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE(i32* dereferenceable(4) %2) #3
+  -->  %5 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE16_M_push_back_auxIJRKiEEEvDpOT_':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE16_M_push_back_auxIJRKiEEEvDpOT_
+  %3 = call i64 @_ZNKSt5dequeIiSaIiEE4sizeEv(%"class.std::deque"* %0) #3
+  -->  %3 U: full-set S: full-set
+  %4 = call i64 @_ZNKSt5dequeIiSaIiEE8max_sizeEv(%"class.std::deque"* %0) #3
+  -->  %4 U: full-set S: full-set
+  %8 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %9 = call i32* @_ZNSt11_Deque_baseIiSaIiEE16_M_allocate_nodeEv(%"class.std::_Deque_base"* %8)
+  -->  %9 U: full-set S: full-set
+  %10 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %11 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %10, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %12 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %11, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %13 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %12, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %14 = load i32**, i32*** %13, align 8
+  -->  %14 U: full-set S: full-set
+  %15 = getelementptr inbounds i32*, i32** %14, i64 1
+  -->  (8 + %14)<nsw> U: full-set S: full-set
+  %16 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %17 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %16, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %18 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %17 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+  %19 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %20 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %19, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %21 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %20, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %22 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %21, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %23 = load i32*, i32** %22, align 8
+  -->  %23 U: full-set S: full-set
+  %24 = call dereferenceable(4) i32* @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE(i32* dereferenceable(4) %1) #3
+  -->  %24 U: full-set S: full-set
+  %25 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %26 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %25, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %27 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %26, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %28 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %29 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %28, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %30 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %29, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %31 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %30, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %32 = load i32**, i32*** %31, align 8
+  -->  %32 U: full-set S: full-set
+  %33 = getelementptr inbounds i32*, i32** %32, i64 1
+  -->  (8 + %32)<nsw> U: full-set S: full-set
+  %34 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %35 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %34, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %36 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %35, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %37 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %36, i32 0, i32 1
+  -->  (56 + %0) U: full-set S: full-set
+  %38 = load i32*, i32** %37, align 8
+  -->  %38 U: full-set S: full-set
+  %39 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %40 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %39, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %41 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %40, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %42 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %41, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE16_M_push_back_auxIJRKiEEEvDpOT_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_
+  %4 = bitcast i32* %1 to i8*
+  -->  %1 U: full-set S: full-set
+  %5 = bitcast i8* %4 to i32*
+  -->  %1 U: full-set S: full-set
+  %6 = call dereferenceable(4) i32* @_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE(i32* dereferenceable(4) %2) #3
+  -->  %6 U: full-set S: full-set
+  %7 = load i32, i32* %6, align 4
+  -->  %7 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt5dequeIiSaIiEE4sizeEv':
+Classifying expressions for: @_ZNKSt5dequeIiSaIiEE4sizeEv
+  %2 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %3 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %2, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %3, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %5 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %6 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %5, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %7 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %6, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %8 = call i64 @_ZStmiIiRiPiENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS6_S9_(%"struct.std::_Deque_iterator"* dereferenceable(32) %4, %"struct.std::_Deque_iterator"* dereferenceable(32) %7) #3
+  -->  %8 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt5dequeIiSaIiEE4sizeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt5dequeIiSaIiEE8max_sizeEv':
+Classifying expressions for: @_ZNKSt5dequeIiSaIiEE8max_sizeEv
+  %2 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %3 = call dereferenceable(1) %"class.std::allocator.0"* @_ZNKSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv(%"class.std::_Deque_base"* %2) #3
+  -->  %3 U: full-set S: full-set
+  %4 = call i64 @_ZNSt5dequeIiSaIiEE11_S_max_sizeERKS0_(%"class.std::allocator.0"* dereferenceable(1) %3) #3
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt5dequeIiSaIiEE8max_sizeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE22_M_reserve_map_at_backEm':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE22_M_reserve_map_at_backEm
+  %3 = add i64 %1, 1
+  -->  (1 + %1) U: full-set S: full-set
+  %4 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %5 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %4, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %5, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %7 = load i64, i64* %6, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %9 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %8, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %10 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %9, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %11 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %10, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %12 = load i32**, i32*** %11, align 8
+  -->  %12 U: full-set S: full-set
+  %13 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %14 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %13, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %15 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %14, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %16 = load i32**, i32*** %15, align 8
+  -->  %16 U: full-set S: full-set
+  %17 = ptrtoint i32** %12 to i64
+  -->  %17 U: full-set S: full-set
+  %18 = ptrtoint i32** %16 to i64
+  -->  %18 U: full-set S: full-set
+  %19 = sub i64 %17, %18
+  -->  ((-1 * %18) + %17) U: full-set S: full-set
+  %20 = sdiv exact i64 %19, 8
+  -->  %20 U: full-set S: [-1152921504606846976,1152921504606846976)
+  %21 = sub i64 %7, %20
+  -->  ((-1 * %20)<nsw> + %7) U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE22_M_reserve_map_at_backEm
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE16_M_allocate_nodeEv':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE16_M_allocate_nodeEv
+  %2 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %2 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+  %4 = call i64 @_ZSt16__deque_buf_sizem(i64 4)
+  -->  %4 U: full-set S: full-set
+  %5 = call i32* @_ZNSt16allocator_traitsISaIiEE8allocateERS0_m(%"class.std::allocator.0"* dereferenceable(1) %3, i64 %4)
+  -->  %5 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE16_M_allocate_nodeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt15_Deque_iteratorIiRiPiE11_M_set_nodeEPS1_':
+Classifying expressions for: @_ZNSt15_Deque_iteratorIiRiPiE11_M_set_nodeEPS1_
+  %3 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 3
+  -->  (24 + %0)<nsw> U: full-set S: full-set
+  %4 = load i32*, i32** %1, align 8
+  -->  %4 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %7 = load i32*, i32** %6, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = call i64 @_ZNSt15_Deque_iteratorIiRiPiE14_S_buffer_sizeEv() #3
+  -->  %8 U: full-set S: full-set
+  %9 = getelementptr inbounds i32, i32* %7, i64 %8
+  -->  ((4 * %8)<nsw> + %7)<nsw> U: full-set S: full-set
+  %10 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt15_Deque_iteratorIiRiPiE11_M_set_nodeEPS1_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZStmiIiRiPiENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS6_S9_':
+Classifying expressions for: @_ZStmiIiRiPiENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS6_S9_
+  %3 = call i64 @_ZNSt15_Deque_iteratorIiRiPiE14_S_buffer_sizeEv() #3
+  -->  %3 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 3
+  -->  (24 + %0)<nsw> U: full-set S: full-set
+  %5 = load i32**, i32*** %4, align 8
+  -->  %5 U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %1, i32 0, i32 3
+  -->  (24 + %1)<nsw> U: full-set S: full-set
+  %7 = load i32**, i32*** %6, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = ptrtoint i32** %5 to i64
+  -->  %8 U: full-set S: full-set
+  %9 = ptrtoint i32** %7 to i64
+  -->  %9 U: full-set S: full-set
+  %10 = sub i64 %8, %9
+  -->  ((-1 * %9) + %8) U: full-set S: full-set
+  %11 = sdiv exact i64 %10, 8
+  -->  %11 U: full-set S: [-1152921504606846976,1152921504606846976)
+  %12 = sub nsw i64 %11, 1
+  -->  (-1 + %11)<nsw> U: full-set S: [-1152921504606846977,1152921504606846975)
+  %13 = mul nsw i64 %3, %12
+  -->  ((-1 + %11)<nsw> * %3) U: full-set S: full-set
+  %14 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %15 = load i32*, i32** %14, align 8
+  -->  %15 U: full-set S: full-set
+  %16 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %17 = load i32*, i32** %16, align 8
+  -->  %17 U: full-set S: full-set
+  %18 = ptrtoint i32* %15 to i64
+  -->  %18 U: full-set S: full-set
+  %19 = ptrtoint i32* %17 to i64
+  -->  %19 U: full-set S: full-set
+  %20 = sub i64 %18, %19
+  -->  ((-1 * %19) + %18) U: full-set S: full-set
+  %21 = sdiv exact i64 %20, 4
+  -->  %21 U: full-set S: [-2305843009213693952,2305843009213693952)
+  %22 = add nsw i64 %13, %21
+  -->  (((-1 + %11)<nsw> * %3) + %21) U: full-set S: full-set
+  %23 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %1, i32 0, i32 2
+  -->  (16 + %1)<nsw> U: full-set S: full-set
+  %24 = load i32*, i32** %23, align 8
+  -->  %24 U: full-set S: full-set
+  %25 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %1, i32 0, i32 0
+  -->  %1 U: full-set S: full-set
+  %26 = load i32*, i32** %25, align 8
+  -->  %26 U: full-set S: full-set
+  %27 = ptrtoint i32* %24 to i64
+  -->  %27 U: full-set S: full-set
+  %28 = ptrtoint i32* %26 to i64
+  -->  %28 U: full-set S: full-set
+  %29 = sub i64 %27, %28
+  -->  ((-1 * %28) + %27) U: full-set S: full-set
+  %30 = sdiv exact i64 %29, 4
+  -->  %30 U: full-set S: [-2305843009213693952,2305843009213693952)
+  %31 = add nsw i64 %22, %30
+  -->  (((-1 + %11)<nsw> * %3) + %30 + %21) U: full-set S: full-set
+Determining loop execution counts for: @_ZStmiIiRiPiENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS6_S9_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt15_Deque_iteratorIiRiPiE14_S_buffer_sizeEv':
+Classifying expressions for: @_ZNSt15_Deque_iteratorIiRiPiE14_S_buffer_sizeEv
+  %1 = invoke i64 @_ZSt16__deque_buf_sizem(i64 4)
+          to label %2 unwind label %3
+  -->  %1 U: full-set S: full-set
+  %5 = extractvalue { i8*, i32 } %4, 0
+  -->  %5 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt15_Deque_iteratorIiRiPiE14_S_buffer_sizeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE11_S_max_sizeERKS0_':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE11_S_max_sizeERKS0_
+  %2 = alloca i64, align 8
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %3 = alloca i64, align 8
+  -->  %3 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %4 = call i64 @_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_(%"class.std::allocator.0"* dereferenceable(1) %0) #3
+  -->  %4 U: full-set S: full-set
+  %5 = invoke dereferenceable(8) i64* @_ZSt3minImERKT_S2_S2_(i64* dereferenceable(8) %2, i64* dereferenceable(8) %3)
+          to label %6 unwind label %8
+  -->  %5 U: full-set S: full-set
+  %7 = load i64, i64* %5, align 8
+  -->  %7 U: full-set S: full-set
+  %10 = extractvalue { i8*, i32 } %9, 0
+  -->  %10 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE11_S_max_sizeERKS0_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_':
+Classifying expressions for: @_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_
+  %2 = bitcast %"class.std::allocator.0"* %0 to %"class.__gnu_cxx::new_allocator.1"*
+  -->  %0 U: full-set S: full-set
+  %3 = call i64 @_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv(%"class.__gnu_cxx::new_allocator.1"* %2) #3
+  -->  %3 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt3minImERKT_S2_S2_':
+Classifying expressions for: @_ZSt3minImERKT_S2_S2_
+  %3 = load i64, i64* %1, align 8
+  -->  %3 U: full-set S: full-set
+  %4 = load i64, i64* %0, align 8
+  -->  %4 U: full-set S: full-set
+  %.0 = phi i64* [ %1, %6 ], [ %0, %7 ]
+  -->  %.0 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt3minImERKT_S2_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv':
+Classifying expressions for: @_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv
+Determining loop execution counts for: @_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE17_M_reallocate_mapEmb':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE17_M_reallocate_mapEmb
+  %4 = alloca i64, align 8
+  -->  %4 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %5 = zext i1 %2 to i8
+  -->  (zext i1 %2 to i8) U: [0,2) S: [0,2)
+  %6 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %7 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %6, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %8 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %7, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %9 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %8, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %10 = load i32**, i32*** %9, align 8
+  -->  %10 U: full-set S: full-set
+  %11 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %12 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %11, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %13 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %12, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %14 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %13, i32 0, i32 3
+  -->  (40 + %0) U: full-set S: full-set
+  %15 = load i32**, i32*** %14, align 8
+  -->  %15 U: full-set S: full-set
+  %16 = ptrtoint i32** %10 to i64
+  -->  %16 U: full-set S: full-set
+  %17 = ptrtoint i32** %15 to i64
+  -->  %17 U: full-set S: full-set
+  %18 = sub i64 %16, %17
+  -->  ((-1 * %17) + %16) U: full-set S: full-set
+  %19 = sdiv exact i64 %18, 8
+  -->  %19 U: full-set S: [-1152921504606846976,1152921504606846976)
+  %20 = add nsw i64 %19, 1
+  -->  (1 + %19)<nsw> U: full-set S: [-1152921504606846975,1152921504606846977)
+  %21 = load i64, i64* %4, align 8
+  -->  %21 U: full-set S: full-set
+  %22 = add i64 %20, %21
+  -->  (1 + %19 + %21) U: full-set S: full-set
+  %23 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %24 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %23, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %25 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %24, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %26 = load i64, i64* %25, align 8
+  -->  %26 U: full-set S: full-set
+  %27 = mul i64 2, %22
+  -->  (2 * (1 + %19 + %21)) U: [0,-1) S: [-9223372036854775808,9223372036854775807)
+  %30 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %31 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %30, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %32 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %31, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %33 = load i32**, i32*** %32, align 8
+  -->  %33 U: full-set S: full-set
+  %34 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %35 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %34, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %36 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %35, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %37 = load i64, i64* %36, align 8
+  -->  %37 U: full-set S: full-set
+  %38 = sub i64 %37, %22
+  -->  (-1 + (-1 * %19)<nsw> + (-1 * %21) + %37) U: full-set S: full-set
+  %39 = udiv i64 %38, 2
+  -->  ((-1 + (-1 * %19)<nsw> + (-1 * %21) + %37) /u 2) U: [0,-9223372036854775808) S: [0,-9223372036854775808)
+  %40 = getelementptr inbounds i32*, i32** %33, i64 %39
+  -->  ((8 * ((-1 + (-1 * %19)<nsw> + (-1 * %21) + %37) /u 2))<nuw><nsw> + %33)<nsw> U: full-set S: full-set
+  %41 = trunc i8 %5 to i1
+  -->  %2 U: full-set S: full-set
+  %43 = load i64, i64* %4, align 8
+  -->  %43 U: full-set S: full-set
+  %46 = phi i64 [ %43, %42 ], [ 0, %44 ]
+  -->  %46 U: full-set S: full-set
+  %47 = getelementptr inbounds i32*, i32** %40, i64 %46
+  -->  ((8 * ((-1 + (-1 * %19)<nsw> + (-1 * %21) + %37) /u 2))<nuw><nsw> + (8 * %46)<nsw> + %33) U: full-set S: full-set
+  %48 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %49 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %48, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %50 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %49, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %51 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %50, i32 0, i32 3
+  -->  (40 + %0) U: full-set S: full-set
+  %52 = load i32**, i32*** %51, align 8
+  -->  %52 U: full-set S: full-set
+  %55 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %56 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %55, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %57 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %56, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %58 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %57, i32 0, i32 3
+  -->  (40 + %0) U: full-set S: full-set
+  %59 = load i32**, i32*** %58, align 8
+  -->  %59 U: full-set S: full-set
+  %60 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %61 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %60, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %62 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %61, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %63 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %62, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %64 = load i32**, i32*** %63, align 8
+  -->  %64 U: full-set S: full-set
+  %65 = getelementptr inbounds i32*, i32** %64, i64 1
+  -->  (8 + %64)<nsw> U: full-set S: full-set
+  %66 = call i32** @_ZSt4copyIPPiS1_ET0_T_S3_S2_(i32** %59, i32** %65, i32** %47)
+  -->  %66 U: full-set S: full-set
+  %68 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %69 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %68, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %70 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %69, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %71 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %70, i32 0, i32 3
+  -->  (40 + %0) U: full-set S: full-set
+  %72 = load i32**, i32*** %71, align 8
+  -->  %72 U: full-set S: full-set
+  %73 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %74 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %73, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %75 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %74, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %76 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %75, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %77 = load i32**, i32*** %76, align 8
+  -->  %77 U: full-set S: full-set
+  %78 = getelementptr inbounds i32*, i32** %77, i64 1
+  -->  (8 + %77)<nsw> U: full-set S: full-set
+  %79 = getelementptr inbounds i32*, i32** %47, i64 %20
+  -->  (8 + (8 * ((-1 + (-1 * %19)<nsw> + (-1 * %21) + %37) /u 2))<nuw><nsw> + (8 * %19)<nsw> + (8 * %46)<nsw> + %33) U: full-set S: full-set
+  %80 = call i32** @_ZSt13copy_backwardIPPiS1_ET0_T_S3_S2_(i32** %72, i32** %78, i32** %79)
+  -->  %80 U: full-set S: full-set
+  %83 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %84 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %83, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %85 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %84, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %86 = load i64, i64* %85, align 8
+  -->  %86 U: full-set S: full-set
+  %87 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %88 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %87, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %89 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %88, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %90 = call dereferenceable(8) i64* @_ZSt3maxImERKT_S2_S2_(i64* dereferenceable(8) %89, i64* dereferenceable(8) %4)
+  -->  %90 U: full-set S: full-set
+  %91 = load i64, i64* %90, align 8
+  -->  %91 U: full-set S: full-set
+  %92 = add i64 %86, %91
+  -->  (%86 + %91) U: full-set S: full-set
+  %93 = add i64 %92, 2
+  -->  (2 + %86 + %91) U: full-set S: full-set
+  %94 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %95 = call i32** @_ZNSt11_Deque_baseIiSaIiEE15_M_allocate_mapEm(%"class.std::_Deque_base"* %94, i64 %93)
+  -->  %95 U: full-set S: full-set
+  %96 = sub i64 %93, %22
+  -->  (1 + (-1 * %19)<nsw> + (-1 * %21) + %86 + %91) U: full-set S: full-set
+  %97 = udiv i64 %96, 2
+  -->  ((1 + (-1 * %19)<nsw> + (-1 * %21) + %86 + %91) /u 2) U: [0,-9223372036854775808) S: [0,-9223372036854775808)
+  %98 = getelementptr inbounds i32*, i32** %95, i64 %97
+  -->  ((8 * ((1 + (-1 * %19)<nsw> + (-1 * %21) + %86 + %91) /u 2))<nuw><nsw> + %95)<nsw> U: full-set S: full-set
+  %99 = trunc i8 %5 to i1
+  -->  %2 U: full-set S: full-set
+  %101 = load i64, i64* %4, align 8
+  -->  %101 U: full-set S: full-set
+  %104 = phi i64 [ %101, %100 ], [ 0, %102 ]
+  -->  %104 U: full-set S: full-set
+  %105 = getelementptr inbounds i32*, i32** %98, i64 %104
+  -->  ((8 * ((1 + (-1 * %19)<nsw> + (-1 * %21) + %86 + %91) /u 2))<nuw><nsw> + (8 * %104)<nsw> + %95) U: full-set S: full-set
+  %106 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %107 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %106, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %108 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %107, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %109 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %108, i32 0, i32 3
+  -->  (40 + %0) U: full-set S: full-set
+  %110 = load i32**, i32*** %109, align 8
+  -->  %110 U: full-set S: full-set
+  %111 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %112 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %111, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %113 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %112, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %114 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %113, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %115 = load i32**, i32*** %114, align 8
+  -->  %115 U: full-set S: full-set
+  %116 = getelementptr inbounds i32*, i32** %115, i64 1
+  -->  (8 + %115)<nsw> U: full-set S: full-set
+  %117 = call i32** @_ZSt4copyIPPiS1_ET0_T_S3_S2_(i32** %110, i32** %116, i32** %105)
+  -->  %117 U: full-set S: full-set
+  %118 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %119 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %120 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %119, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %121 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %120, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %122 = load i32**, i32*** %121, align 8
+  -->  %122 U: full-set S: full-set
+  %123 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %124 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %123, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %125 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %124, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %126 = load i64, i64* %125, align 8
+  -->  %126 U: full-set S: full-set
+  %127 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %128 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %127, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %129 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %128, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %130 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %131 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %130, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %132 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %131, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %.0 = phi i32** [ %47, %81 ], [ %105, %103 ]
+  -->  %.0 U: full-set S: full-set
+  %134 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %135 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %134, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %136 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %135, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %137 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %138 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %137, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %139 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %138, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %140 = getelementptr inbounds i32*, i32** %.0, i64 %20
+  -->  (8 + (8 * %19)<nsw> + %.0) U: full-set S: full-set
+  %141 = getelementptr inbounds i32*, i32** %140, i64 -1
+  -->  ((8 * %19)<nsw> + %.0) U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE17_M_reallocate_mapEmb
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt4copyIPPiS1_ET0_T_S3_S2_':
+Classifying expressions for: @_ZSt4copyIPPiS1_ET0_T_S3_S2_
+  %4 = call i32** @_ZSt12__miter_baseIPPiET_S2_(i32** %0)
+  -->  %4 U: full-set S: full-set
+  %5 = call i32** @_ZSt12__miter_baseIPPiET_S2_(i32** %1)
+  -->  %5 U: full-set S: full-set
+  %6 = call i32** @_ZSt14__copy_move_a2ILb0EPPiS1_ET1_T0_S3_S2_(i32** %4, i32** %5, i32** %2)
+  -->  %6 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt4copyIPPiS1_ET0_T_S3_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt13copy_backwardIPPiS1_ET0_T_S3_S2_':
+Classifying expressions for: @_ZSt13copy_backwardIPPiS1_ET0_T_S3_S2_
+  %4 = call i32** @_ZSt12__miter_baseIPPiET_S2_(i32** %0)
+  -->  %4 U: full-set S: full-set
+  %5 = call i32** @_ZSt12__miter_baseIPPiET_S2_(i32** %1)
+  -->  %5 U: full-set S: full-set
+  %6 = call i32** @_ZSt23__copy_move_backward_a2ILb0EPPiS1_ET1_T0_S3_S2_(i32** %4, i32** %5, i32** %2)
+  -->  %6 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt13copy_backwardIPPiS1_ET0_T_S3_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt3maxImERKT_S2_S2_':
+Classifying expressions for: @_ZSt3maxImERKT_S2_S2_
+  %3 = load i64, i64* %0, align 8
+  -->  %3 U: full-set S: full-set
+  %4 = load i64, i64* %1, align 8
+  -->  %4 U: full-set S: full-set
+  %.0 = phi i64* [ %1, %6 ], [ %0, %7 ]
+  -->  %.0 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt3maxImERKT_S2_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE15_M_allocate_mapEm':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE15_M_allocate_mapEm
+  %3 = alloca %"class.std::allocator.3", align 1
+  -->  %3 U: full-set S: full-set
+  %4 = invoke i32** @_ZNSt16allocator_traitsISaIPiEE8allocateERS1_m(%"class.std::allocator.3"* dereferenceable(1) %3, i64 %1)
+          to label %5 unwind label %6
+  -->  %4 U: full-set S: full-set
+  %8 = extractvalue { i8*, i32 } %7, 0
+  -->  %8 U: full-set S: full-set
+  %9 = extractvalue { i8*, i32 } %7, 1
+  -->  %9 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE15_M_allocate_mapEm
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt14__copy_move_a2ILb0EPPiS1_ET1_T0_S3_S2_':
+Classifying expressions for: @_ZSt14__copy_move_a2ILb0EPPiS1_ET1_T0_S3_S2_
+  %4 = alloca i32**, align 8
+  -->  %4 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %5 = call i32** @_ZSt12__niter_baseIPPiET_S2_(i32** %0) #3
+  -->  %5 U: full-set S: full-set
+  %6 = call i32** @_ZSt12__niter_baseIPPiET_S2_(i32** %1) #3
+  -->  %6 U: full-set S: full-set
+  %7 = load i32**, i32*** %4, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = call i32** @_ZSt12__niter_baseIPPiET_S2_(i32** %7) #3
+  -->  %8 U: full-set S: full-set
+  %9 = call i32** @_ZSt13__copy_move_aILb0EPPiS1_ET1_T0_S3_S2_(i32** %5, i32** %6, i32** %8)
+  -->  %9 U: full-set S: full-set
+  %10 = call i32** @_ZSt12__niter_wrapIPPiET_RKS2_S2_(i32*** dereferenceable(8) %4, i32** %9)
+  -->  %10 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt14__copy_move_a2ILb0EPPiS1_ET1_T0_S3_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt12__miter_baseIPPiET_S2_':
+Classifying expressions for: @_ZSt12__miter_baseIPPiET_S2_
+Determining loop execution counts for: @_ZSt12__miter_baseIPPiET_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt12__niter_wrapIPPiET_RKS2_S2_':
+Classifying expressions for: @_ZSt12__niter_wrapIPPiET_RKS2_S2_
+Determining loop execution counts for: @_ZSt12__niter_wrapIPPiET_RKS2_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt13__copy_move_aILb0EPPiS1_ET1_T0_S3_S2_':
+Classifying expressions for: @_ZSt13__copy_move_aILb0EPPiS1_ET1_T0_S3_S2_
+  %4 = call i32** @_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPiEEPT_PKS4_S7_S5_(i32** %0, i32** %1, i32** %2)
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt13__copy_move_aILb0EPPiS1_ET1_T0_S3_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt12__niter_baseIPPiET_S2_':
+Classifying expressions for: @_ZSt12__niter_baseIPPiET_S2_
+Determining loop execution counts for: @_ZSt12__niter_baseIPPiET_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPiEEPT_PKS4_S7_S5_':
+Classifying expressions for: @_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPiEEPT_PKS4_S7_S5_
+  %4 = ptrtoint i32** %1 to i64
+  -->  %4 U: full-set S: full-set
+  %5 = ptrtoint i32** %0 to i64
+  -->  %5 U: full-set S: full-set
+  %6 = sub i64 %4, %5
+  -->  ((-1 * %5) + %4) U: full-set S: full-set
+  %7 = sdiv exact i64 %6, 8
+  -->  %7 U: full-set S: [-1152921504606846976,1152921504606846976)
+  %10 = bitcast i32** %2 to i8*
+  -->  %2 U: full-set S: full-set
+  %11 = bitcast i32** %0 to i8*
+  -->  %0 U: full-set S: full-set
+  %12 = mul i64 8, %7
+  -->  (8 * %7)<nsw> U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %14 = getelementptr inbounds i32*, i32** %2, i64 %7
+  -->  ((8 * %7)<nsw> + %2)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPiEEPT_PKS4_S7_S5_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt23__copy_move_backward_a2ILb0EPPiS1_ET1_T0_S3_S2_':
+Classifying expressions for: @_ZSt23__copy_move_backward_a2ILb0EPPiS1_ET1_T0_S3_S2_
+  %4 = alloca i32**, align 8
+  -->  %4 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %5 = call i32** @_ZSt12__niter_baseIPPiET_S2_(i32** %0) #3
+  -->  %5 U: full-set S: full-set
+  %6 = call i32** @_ZSt12__niter_baseIPPiET_S2_(i32** %1) #3
+  -->  %6 U: full-set S: full-set
+  %7 = load i32**, i32*** %4, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = call i32** @_ZSt12__niter_baseIPPiET_S2_(i32** %7) #3
+  -->  %8 U: full-set S: full-set
+  %9 = call i32** @_ZSt22__copy_move_backward_aILb0EPPiS1_ET1_T0_S3_S2_(i32** %5, i32** %6, i32** %8)
+  -->  %9 U: full-set S: full-set
+  %10 = call i32** @_ZSt12__niter_wrapIPPiET_RKS2_S2_(i32*** dereferenceable(8) %4, i32** %9)
+  -->  %10 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt23__copy_move_backward_a2ILb0EPPiS1_ET1_T0_S3_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSt22__copy_move_backward_aILb0EPPiS1_ET1_T0_S3_S2_':
+Classifying expressions for: @_ZSt22__copy_move_backward_aILb0EPPiS1_ET1_T0_S3_S2_
+  %4 = call i32** @_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPiEEPT_PKS4_S7_S5_(i32** %0, i32** %1, i32** %2)
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZSt22__copy_move_backward_aILb0EPPiS1_ET1_T0_S3_S2_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPiEEPT_PKS4_S7_S5_':
+Classifying expressions for: @_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPiEEPT_PKS4_S7_S5_
+  %4 = ptrtoint i32** %1 to i64
+  -->  %4 U: full-set S: full-set
+  %5 = ptrtoint i32** %0 to i64
+  -->  %5 U: full-set S: full-set
+  %6 = sub i64 %4, %5
+  -->  ((-1 * %5) + %4) U: full-set S: full-set
+  %7 = sdiv exact i64 %6, 8
+  -->  %7 U: full-set S: [-1152921504606846976,1152921504606846976)
+  %10 = sub i64 0, %7
+  -->  (-1 * %7)<nsw> U: full-set S: [-1152921504606846975,1152921504606846977)
+  %11 = getelementptr inbounds i32*, i32** %2, i64 %10
+  -->  ((-8 * %7) + %2)<nsw> U: full-set S: full-set
+  %12 = bitcast i32** %11 to i8*
+  -->  ((-8 * %7) + %2)<nsw> U: full-set S: full-set
+  %13 = bitcast i32** %0 to i8*
+  -->  %0 U: full-set S: full-set
+  %14 = mul i64 8, %7
+  -->  (8 * %7)<nsw> U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %16 = sub i64 0, %7
+  -->  (-1 * %7)<nsw> U: full-set S: [-1152921504606846975,1152921504606846977)
+  %17 = getelementptr inbounds i32*, i32** %2, i64 %16
+  -->  ((-8 * %7) + %2)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPiEEPT_PKS4_S7_S5_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaIPiEE8allocateERS1_m':
+Classifying expressions for: @_ZNSt16allocator_traitsISaIPiEE8allocateERS1_m
+  %3 = bitcast %"class.std::allocator.3"* %0 to %"class.__gnu_cxx::new_allocator.4"*
+  -->  %0 U: full-set S: full-set
+  %4 = call i32** @_ZN9__gnu_cxx13new_allocatorIPiE8allocateEmPKv(%"class.__gnu_cxx::new_allocator.4"* %3, i64 %1, i8* null)
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaIPiEE8allocateERS1_m
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIPiE8allocateEmPKv':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIPiE8allocateEmPKv
+  %4 = call i64 @_ZNK9__gnu_cxx13new_allocatorIPiE8max_sizeEv(%"class.__gnu_cxx::new_allocator.4"* %0) #3
+  -->  %4 U: full-set S: full-set
+  %8 = mul i64 %1, 8
+  -->  (8 * %1) U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %9 = call i8* @_Znwm(i64 %8)
+  -->  %9 U: full-set S: full-set
+  %10 = bitcast i8* %9 to i32**
+  -->  %9 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIPiE8allocateEmPKv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNK9__gnu_cxx13new_allocatorIPiE8max_sizeEv':
+Classifying expressions for: @_ZNK9__gnu_cxx13new_allocatorIPiE8max_sizeEv
+Determining loop execution counts for: @_ZNK9__gnu_cxx13new_allocatorIPiE8max_sizeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaIiEE8allocateERS0_m':
+Classifying expressions for: @_ZNSt16allocator_traitsISaIiEE8allocateERS0_m
+  %3 = bitcast %"class.std::allocator.0"* %0 to %"class.__gnu_cxx::new_allocator.1"*
+  -->  %0 U: full-set S: full-set
+  %4 = call i32* @_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv(%"class.__gnu_cxx::new_allocator.1"* %3, i64 %1, i8* null)
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaIiEE8allocateERS0_m
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv
+  %4 = call i64 @_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv(%"class.__gnu_cxx::new_allocator.1"* %0) #3
+  -->  %4 U: full-set S: full-set
+  %8 = mul i64 %1, 4
+  -->  (4 * %1) U: [0,-3) S: [-9223372036854775808,9223372036854775805)
+  %9 = call i8* @_Znwm(i64 %8)
+  -->  %9 U: full-set S: full-set
+  %10 = bitcast i8* %9 to i32*
+  -->  %9 U: full-set S: full-set
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEEC2Ev':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEEC2Ev
+  %2 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEEC2Ev':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEEC2Ev
+  %2 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %6 = extractvalue { i8*, i32 } %5, 0
+  -->  %6 U: full-set S: full-set
+  %7 = extractvalue { i8*, i32 } %5, 1
+  -->  %7 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE11_Deque_implC2Ev':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE11_Deque_implC2Ev
+  %2 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %0 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+  %3 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %0, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %0, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE11_Deque_implC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEm':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEm
+  %3 = alloca i64, align 8
+  -->  %3 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %4 = alloca i64, align 8
+  -->  %4 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %5 = call i64 @_ZSt16__deque_buf_sizem(i64 4)
+  -->  %5 U: full-set S: full-set
+  %6 = udiv i64 %1, %5
+  -->  (%1 /u %5) U: full-set S: full-set
+  %7 = add i64 %6, 1
+  -->  (1 + (%1 /u %5)) U: full-set S: full-set
+  %8 = add i64 %7, 2
+  -->  (3 + (%1 /u %5)) U: full-set S: full-set
+  %9 = call dereferenceable(8) i64* @_ZSt3maxImERKT_S2_S2_(i64* dereferenceable(8) %3, i64* dereferenceable(8) %4)
+  -->  %9 U: full-set S: full-set
+  %10 = load i64, i64* %9, align 8
+  -->  %10 U: full-set S: full-set
+  %11 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %12 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %11, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %13 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %14 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %13, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %15 = load i64, i64* %14, align 8
+  -->  %15 U: full-set S: full-set
+  %16 = call i32** @_ZNSt11_Deque_baseIiSaIiEE15_M_allocate_mapEm(%"class.std::_Deque_base"* %0, i64 %15)
+  -->  %16 U: full-set S: full-set
+  %17 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %18 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %17, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %19 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %20 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %19, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %21 = load i32**, i32*** %20, align 8
+  -->  %21 U: full-set S: full-set
+  %22 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %23 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %22, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %24 = load i64, i64* %23, align 8
+  -->  %24 U: full-set S: full-set
+  %25 = sub i64 %24, %7
+  -->  (-1 + (-1 * (%1 /u %5)) + %24) U: full-set S: full-set
+  %26 = udiv i64 %25, 2
+  -->  ((-1 + (-1 * (%1 /u %5)) + %24) /u 2) U: [0,-9223372036854775808) S: [0,-9223372036854775808)
+  %27 = getelementptr inbounds i32*, i32** %21, i64 %26
+  -->  ((8 * ((-1 + (-1 * (%1 /u %5)) + %24) /u 2))<nuw><nsw> + %21)<nsw> U: full-set S: full-set
+  %28 = getelementptr inbounds i32*, i32** %27, i64 %7
+  -->  (8 + (8 * ((-1 + (-1 * (%1 /u %5)) + %24) /u 2))<nuw><nsw> + (8 * (%1 /u %5)) + %21) U: full-set S: full-set
+  %32 = extractvalue { i8*, i32 } %31, 0
+  -->  %32 U: full-set S: full-set
+  %33 = extractvalue { i8*, i32 } %31, 1
+  -->  %33 U: full-set S: full-set
+  %35 = call i8* @__cxa_begin_catch(i8* %32) #3
+  -->  %35 U: full-set S: full-set
+  %36 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %37 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %36, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %38 = load i32**, i32*** %37, align 8
+  -->  %38 U: full-set S: full-set
+  %39 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %40 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %39, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %41 = load i64, i64* %40, align 8
+  -->  %41 U: full-set S: full-set
+  %42 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %43 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %42, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %44 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %45 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %44, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %48 = extractvalue { i8*, i32 } %47, 0
+  -->  %48 U: full-set S: full-set
+  %49 = extractvalue { i8*, i32 } %47, 1
+  -->  %49 U: full-set S: full-set
+  %52 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %53 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %52, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %54 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %55 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %54, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %56 = getelementptr inbounds i32*, i32** %28, i64 -1
+  -->  ((8 * ((-1 + (-1 * (%1 /u %5)) + %24) /u 2))<nuw><nsw> + (8 * (%1 /u %5)) + %21) U: full-set S: full-set
+  %57 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %58 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %57, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %59 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %58, i32 0, i32 1
+  -->  (24 + %0) U: full-set S: full-set
+  %60 = load i32*, i32** %59, align 8
+  -->  %60 U: full-set S: full-set
+  %61 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %62 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %61, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %63 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %62, i32 0, i32 0
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %64 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %65 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %64, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %66 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %65, i32 0, i32 1
+  -->  (56 + %0) U: full-set S: full-set
+  %67 = load i32*, i32** %66, align 8
+  -->  %67 U: full-set S: full-set
+  %68 = call i64 @_ZSt16__deque_buf_sizem(i64 4)
+  -->  %68 U: full-set S: full-set
+  %69 = urem i64 %1, %68
+  -->  ((-1 * (%1 /u %68) * %68) + %1) U: full-set S: full-set
+  %70 = getelementptr inbounds i32, i32* %67, i64 %69
+  -->  ((4 * %1) + (-4 * (%1 /u %68) * %68) + %67) U: full-set S: full-set
+  %71 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %72 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %71, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %73 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %72, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %79 = extractvalue { i8*, i32 } %78, 0
+  -->  %79 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEm
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSaIiEC2Ev':
+Classifying expressions for: @_ZNSaIiEC2Ev
+  %2 = bitcast %"class.std::allocator.0"* %0 to %"class.__gnu_cxx::new_allocator.1"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSaIiEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt15_Deque_iteratorIiRiPiEC2Ev':
+Classifying expressions for: @_ZNSt15_Deque_iteratorIiRiPiEC2Ev
+  %2 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 3
+  -->  (24 + %0)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt15_Deque_iteratorIiRiPiEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIiEC2Ev':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIiEC2Ev
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIiEC2Ev
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt11_Deque_baseIiSaIiEE15_M_create_nodesEPPiS3_':
+Classifying expressions for: @_ZNSt11_Deque_baseIiSaIiEE15_M_create_nodesEPPiS3_
+  %.0 = phi i32** [ %1, %3 ], [ %10, %9 ]
+  -->  {%1,+,8}<nuw><%4> U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %4: Computable }
+  %7 = invoke i32* @_ZNSt11_Deque_baseIiSaIiEE16_M_allocate_nodeEv(%"class.std::_Deque_base"* %0)
+          to label %8 unwind label %11
+  -->  %7 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %4: Variant }
+  %10 = getelementptr inbounds i32*, i32** %.0, i32 1
+  -->  {(8 + %1)<nsw>,+,8}<nw><%4> U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %4: Computable }
+  %13 = extractvalue { i8*, i32 } %12, 0
+  -->  %13 U: full-set S: full-set
+  %14 = extractvalue { i8*, i32 } %12, 1
+  -->  %14 U: full-set S: full-set
+  %16 = call i8* @__cxa_begin_catch(i8* %13) #3
+  -->  %16 U: full-set S: full-set
+  %20 = extractvalue { i8*, i32 } %19, 0
+  -->  %20 U: full-set S: full-set
+  %21 = extractvalue { i8*, i32 } %19, 1
+  -->  %21 U: full-set S: full-set
+  %29 = extractvalue { i8*, i32 } %28, 0
+  -->  %29 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt11_Deque_baseIiSaIiEE15_M_create_nodesEPPiS3_
+Loop %4: <multiple exits> Unpredictable backedge-taken count.
+  exit count for : ***COULDNOTCOMPUTE***
+  exit count for : ***COULDNOTCOMPUTE***
+Loop %4: Unpredictable max backedge-taken count. 
+Loop %4: Unpredictable predicated backedge-taken count. 
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt5dequeIiSaIiEE5emptyEv':
+Classifying expressions for: @_ZNKSt5dequeIiSaIiEE5emptyEv
+  %2 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %3 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %2, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %3, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %5 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %6 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %5, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %7 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %6, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %8 = call zeroext i1 @_ZSteqIiRiPiEbRKSt15_Deque_iteratorIT_T0_T1_ES8_(%"struct.std::_Deque_iterator"* dereferenceable(32) %4, %"struct.std::_Deque_iterator"* dereferenceable(32) %7) #3
+  -->  %8 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt5dequeIiSaIiEE5emptyEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZSteqIiRiPiEbRKSt15_Deque_iteratorIT_T0_T1_ES8_':
+Classifying expressions for: @_ZSteqIiRiPiEbRKSt15_Deque_iteratorIT_T0_T1_ES8_
+  %3 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = load i32*, i32** %3, align 8
+  -->  %4 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %1, i32 0, i32 0
+  -->  %1 U: full-set S: full-set
+  %6 = load i32*, i32** %5, align 8
+  -->  %6 U: full-set S: full-set
+Determining loop execution counts for: @_ZSteqIiRiPiEbRKSt15_Deque_iteratorIT_T0_T1_ES8_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE4backEv':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE4backEv
+  %2 = alloca %"struct.std::_Deque_iterator", align 8
+  -->  %2 U: [0,-7) S: [-9223372036854775808,9223372036854775801)
+  %3 = call dereferenceable(32) %"struct.std::_Deque_iterator"* @_ZNSt15_Deque_iteratorIiRiPiEmmEv(%"struct.std::_Deque_iterator"* %2) #3
+  -->  %3 U: full-set S: full-set
+  %4 = call dereferenceable(4) i32* @_ZNKSt15_Deque_iteratorIiRiPiEdeEv(%"struct.std::_Deque_iterator"* %2) #3
+  -->  %4 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE4backEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt15_Deque_iteratorIiRiPiEmmEv':
+Classifying expressions for: @_ZNSt15_Deque_iteratorIiRiPiEmmEv
+  %2 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = load i32*, i32** %2, align 8
+  -->  %3 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 1
+  -->  (8 + %0)<nsw> U: full-set S: full-set
+  %5 = load i32*, i32** %4, align 8
+  -->  %5 U: full-set S: full-set
+  %8 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 3
+  -->  (24 + %0)<nsw> U: full-set S: full-set
+  %9 = load i32**, i32*** %8, align 8
+  -->  %9 U: full-set S: full-set
+  %10 = getelementptr inbounds i32*, i32** %9, i64 -1
+  -->  (-8 + %9)<nsw> U: full-set S: full-set
+  %11 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 2
+  -->  (16 + %0)<nsw> U: full-set S: full-set
+  %12 = load i32*, i32** %11, align 8
+  -->  %12 U: full-set S: full-set
+  %13 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %15 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %16 = load i32*, i32** %15, align 8
+  -->  %16 U: full-set S: full-set
+  %17 = getelementptr inbounds i32, i32* %16, i32 -1
+  -->  (-4 + %16)<nsw> U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt15_Deque_iteratorIiRiPiEmmEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNKSt15_Deque_iteratorIiRiPiEdeEv':
+Classifying expressions for: @_ZNKSt15_Deque_iteratorIiRiPiEdeEv
+  %2 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %0, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %3 = load i32*, i32** %2, align 8
+  -->  %3 U: full-set S: full-set
+Determining loop execution counts for: @_ZNKSt15_Deque_iteratorIiRiPiEdeEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE8pop_backEv':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE8pop_backEv
+  %2 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %3 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %2, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %3, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %4, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %6 = load i32*, i32** %5, align 8
+  -->  %6 U: full-set S: full-set
+  %7 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %8 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %7, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %9 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %8, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %10 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %9, i32 0, i32 1
+  -->  (56 + %0) U: full-set S: full-set
+  %11 = load i32*, i32** %10, align 8
+  -->  %11 U: full-set S: full-set
+  %14 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %15 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %14, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %16 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %15, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %17 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %16, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %18 = load i32*, i32** %17, align 8
+  -->  %18 U: full-set S: full-set
+  %19 = getelementptr inbounds i32, i32* %18, i32 -1
+  -->  (-4 + %18)<nsw> U: full-set S: full-set
+  %20 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %21 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %20, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %22 = bitcast %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %21 to %"class.std::allocator.0"*
+  -->  %0 U: full-set S: full-set
+  %23 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %24 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %23, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %25 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %24, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %26 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %25, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %27 = load i32*, i32** %26, align 8
+  -->  %27 U: full-set S: full-set
+  %33 = extractvalue { i8*, i32 } %32, 0
+  -->  %33 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE8pop_backEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt16allocator_traitsISaIiEE7destroyIiEEvRS0_PT_':
+Classifying expressions for: @_ZNSt16allocator_traitsISaIiEE7destroyIiEEvRS0_PT_
+  %3 = bitcast %"class.std::allocator.0"* %0 to %"class.__gnu_cxx::new_allocator.1"*
+  -->  %0 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt16allocator_traitsISaIiEE7destroyIiEEvRS0_PT_
+Printing analysis 'Scalar Evolution Analysis' for function '_ZNSt5dequeIiSaIiEE15_M_pop_back_auxEv':
+Classifying expressions for: @_ZNSt5dequeIiSaIiEE15_M_pop_back_auxEv
+  %2 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %3 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %4 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %3, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %5 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %4, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %6 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %5, i32 0, i32 1
+  -->  (56 + %0) U: full-set S: full-set
+  %7 = load i32*, i32** %6, align 8
+  -->  %7 U: full-set S: full-set
+  %8 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %9 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %8, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %10 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %9, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %11 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %12 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %11, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %13 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %12, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %14 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %13, i32 0, i32 3
+  -->  (72 + %0) U: full-set S: full-set
+  %15 = load i32**, i32*** %14, align 8
+  -->  %15 U: full-set S: full-set
+  %16 = getelementptr inbounds i32*, i32** %15, i64 -1
+  -->  (-8 + %15)<nsw> U: full-set S: full-set
+  %17 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %18 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %17, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %19 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %18, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %20 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %19, i32 0, i32 2
+  -->  (64 + %0) U: full-set S: full-set
+  %21 = load i32*, i32** %20, align 8
+  -->  %21 U: full-set S: full-set
+  %22 = getelementptr inbounds i32, i32* %21, i64 -1
+  -->  (-4 + %21)<nsw> U: full-set S: full-set
+  %23 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %24 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %23, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %25 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %24, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %26 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %25, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %27 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %28 = call dereferenceable(1) %"class.std::allocator.0"* @_ZNSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv(%"class.std::_Deque_base"* %27) #3
+  -->  %28 U: full-set S: full-set
+  %29 = bitcast %"class.std::deque"* %0 to %"class.std::_Deque_base"*
+  -->  %0 U: full-set S: full-set
+  %30 = getelementptr inbounds %"class.std::_Deque_base", %"class.std::_Deque_base"* %29, i32 0, i32 0
+  -->  %0 U: full-set S: full-set
+  %31 = getelementptr inbounds %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl", %"struct.std::_Deque_base<int, std::allocator<int> >::_Deque_impl"* %30, i32 0, i32 3
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %32 = getelementptr inbounds %"struct.std::_Deque_iterator", %"struct.std::_Deque_iterator"* %31, i32 0, i32 0
+  -->  (48 + %0)<nsw> U: full-set S: full-set
+  %33 = load i32*, i32** %32, align 8
+  -->  %33 U: full-set S: full-set
+Determining loop execution counts for: @_ZNSt5dequeIiSaIiEE15_M_pop_back_auxEv
+Printing analysis 'Scalar Evolution Analysis' for function '_ZN9__gnu_cxx13new_allocatorIiE7destroyIiEEvPT_':
+Classifying expressions for: @_ZN9__gnu_cxx13new_allocatorIiE7destroyIiEEvPT_
+Determining loop execution counts for: @_ZN9__gnu_cxx13new_allocatorIiE7destroyIiEEvPT_
+Printing analysis 'Scalar Evolution Analysis' for function '_GLOBAL__sub_I_topological_sorting.cpp':
+Classifying expressions for: @_GLOBAL__sub_I_topological_sorting.cpp
+Determining loop execution counts for: @_GLOBAL__sub_I_topological_sorting.cpp

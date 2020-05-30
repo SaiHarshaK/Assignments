@@ -1,0 +1,218 @@
+\hypertarget{classfirewall__monitor_1_1FirewallMonitor}{}\section{firewall\+\_\+monitor.\+Firewall\+Monitor Class Reference}
+\label{classfirewall__monitor_1_1FirewallMonitor}\index{firewall\+\_\+monitor.\+Firewall\+Monitor@{firewall\+\_\+monitor.\+Firewall\+Monitor}}
+
+
+Docs on \hyperlink{classfirewall__monitor_1_1FirewallMonitor}{Firewall\+Monitor}.  
+
+
+
+
+Inheritance diagram for firewall\+\_\+monitor.\+Firewall\+Monitor\+:
+% FIG 0
+
+
+Collaboration diagram for firewall\+\_\+monitor.\+Firewall\+Monitor\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a006c7d4689534959d3248806bee4ec2c}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kwargs)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a4a6347577456965f83a4157fbbf45078}{switch\+\_\+features\+\_\+handler} (self, ev)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a59082b0d4936fcc073d3fcde3ab07235}{add\+\_\+flow} (self, datapath, priority, match, actions, timeout, buffer\+\_\+id=None, drop=False)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a5f17e9f7bd98f26a321eb89723ded819}{address\+In\+Network} (self, ip, net)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a954cea7c45222ba99bad62d3da0011ad}{get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt} (self, pkt)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a80c8d47505259d691130d87d5bf975bf}{save\+\_\+to\+\_\+file} (self, file\+Name, data)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a073c6de6846e5295f6a72329698bd0bf}{get\+\_\+check\+New\+Entry} (self, pkt)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\item 
+def \hyperlink{classfirewall__monitor_1_1FirewallMonitor_ab0321fdffc25df3afd2de19b992edd16}{is\+Reliable} (self, src, dst, raw\+\_\+pkt)
+\begin{DoxyCompactList}\small\item\em Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a4cd896a39e4389ccc2ef2e3763e1a856}\label{classfirewall__monitor_1_1FirewallMonitor_a4cd896a39e4389ccc2ef2e3763e1a856}} 
+\hyperlink{classfirewall__monitor_1_1FirewallMonitor_a4cd896a39e4389ccc2ef2e3763e1a856}{mac\+\_\+to\+\_\+port}
+\begin{DoxyCompactList}\small\item\em dictionary for mac to port \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a72fe23fd504aa7289b4080c5047c8b31}\label{classfirewall__monitor_1_1FirewallMonitor_a72fe23fd504aa7289b4080c5047c8b31}} 
+list \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a72fe23fd504aa7289b4080c5047c8b31}{O\+F\+P\+\_\+\+V\+E\+R\+S\+I\+O\+NS} = \mbox{[}ofproto\+\_\+v1\+\_\+3.\+O\+F\+P\+\_\+\+V\+E\+R\+S\+I\+ON\mbox{]}
+\begin{DoxyCompactList}\small\item\em Open\+Flow Protocol supported. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Docs on \hyperlink{classfirewall__monitor_1_1FirewallMonitor}{Firewall\+Monitor}. 
+
+Creates the Ryu Application, specifies which versions of the Open\+Flow protocol that the application is compatible with, and initializes the internal M\+A\+C-\/to-\/\+Port table. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a006c7d4689534959d3248806bee4ec2c}\label{classfirewall__monitor_1_1FirewallMonitor_a006c7d4689534959d3248806bee4ec2c}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a59082b0d4936fcc073d3fcde3ab07235}\label{classfirewall__monitor_1_1FirewallMonitor_a59082b0d4936fcc073d3fcde3ab07235}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!add\+\_\+flow@{add\+\_\+flow}}
+\index{add\+\_\+flow@{add\+\_\+flow}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{add\+\_\+flow()}{add\_flow()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+add\+\_\+flow (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{datapath,  }\item[{}]{priority,  }\item[{}]{match,  }\item[{}]{actions,  }\item[{}]{timeout,  }\item[{}]{buffer\+\_\+id = {\ttfamily None},  }\item[{}]{drop = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em datapath} & associated datapath of packet \\
+\hline
+{\em priority} & Matching precedence of the entry \\
+\hline
+{\em match} & The match fields consist of ingress ports, packet header fields, and metadata from a previous flow table \\
+\hline
+{\em actions} & set of instructions that are executed \\
+\hline
+{\em timeout} & boolean to decide if timeout has to be installed in flow entry \\
+\hline
+{\em buffer\+\_\+id} & buffer id of packet \\
+\hline
+{\em drop} & boolean to decide to drop packet or forward\\
+\hline
+\end{DoxyParams}
+a helper method is defined to construct and send the final flow entry. \mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a5f17e9f7bd98f26a321eb89723ded819}\label{classfirewall__monitor_1_1FirewallMonitor_a5f17e9f7bd98f26a321eb89723ded819}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!address\+In\+Network@{address\+In\+Network}}
+\index{address\+In\+Network@{address\+In\+Network}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{address\+In\+Network()}{addressInNetwork()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+address\+In\+Network (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ip,  }\item[{}]{net }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em ip} & ip address as string. \\
+\hline
+{\em net} & subnet as string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: boolean\+: true if ip inside subnet else false
+\end{DoxyReturn}
+a helper method is check if ip is contained in the subnet. \mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a073c6de6846e5295f6a72329698bd0bf}\label{classfirewall__monitor_1_1FirewallMonitor_a073c6de6846e5295f6a72329698bd0bf}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!get\+\_\+check\+New\+Entry@{get\+\_\+check\+New\+Entry}}
+\index{get\+\_\+check\+New\+Entry@{get\+\_\+check\+New\+Entry}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{get\+\_\+check\+New\+Entry()}{get\_checkNewEntry()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+get\+\_\+check\+New\+Entry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pkt }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em pkt} & packet as binary.\\
+\hline
+\end{DoxyParams}
+Calls \hyperlink{classfirewall__monitor_1_1FirewallMonitor_a954cea7c45222ba99bad62d3da0011ad}{get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt()} to retrieve hostname and ip address. Ignore if packet’s hostname is empty Check if the hostname is already in the processed list. If so, associated rule already exists. Otherwise extract keywords and use ML model \mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a954cea7c45222ba99bad62d3da0011ad}\label{classfirewall__monitor_1_1FirewallMonitor_a954cea7c45222ba99bad62d3da0011ad}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt@{get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt}}
+\index{get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt@{get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt()}{get\_hostname\_ip\_from\_pkt()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+get\+\_\+hostname\+\_\+ip\+\_\+from\+\_\+pkt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pkt }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em pkt} & packet as binary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\+: if dns reply, a list of hostname and ipaddresses from answer records, else returns \mbox{[}(\char`\"{}\char`\"{},\char`\"{}\char`\"{})\mbox{]}
+\end{DoxyReturn}
+a helper method is check if packet is a dns reply \mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_ab0321fdffc25df3afd2de19b992edd16}\label{classfirewall__monitor_1_1FirewallMonitor_ab0321fdffc25df3afd2de19b992edd16}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!is\+Reliable@{is\+Reliable}}
+\index{is\+Reliable@{is\+Reliable}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{is\+Reliable()}{isReliable()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+is\+Reliable (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{src,  }\item[{}]{dst,  }\item[{}]{raw\+\_\+pkt }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em src} & source ip address. \\
+\hline
+{\em dst} & destination ip address. \\
+\hline
+{\em raw\+\_\+pkt} & packet as binary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean\+: if good site or bad site after checking rules/ function calls.
+\end{DoxyReturn}
+calls check\+New\+Entry() to update rules or check if already processed before. Returns if good site or bad site after checking rules/ function calls. \mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a80c8d47505259d691130d87d5bf975bf}\label{classfirewall__monitor_1_1FirewallMonitor_a80c8d47505259d691130d87d5bf975bf}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!save\+\_\+to\+\_\+file@{save\+\_\+to\+\_\+file}}
+\index{save\+\_\+to\+\_\+file@{save\+\_\+to\+\_\+file}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{save\+\_\+to\+\_\+file()}{save\_to\_file()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+save\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+Name,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The object pointer. \\
+\hline
+{\em data} & string.\\
+\hline
+\end{DoxyParams}
+a helper method which saves data to the given file\+Name. \mbox{\Hypertarget{classfirewall__monitor_1_1FirewallMonitor_a4a6347577456965f83a4157fbbf45078}\label{classfirewall__monitor_1_1FirewallMonitor_a4a6347577456965f83a4157fbbf45078}} 
+\index{firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}!switch\+\_\+features\+\_\+handler@{switch\+\_\+features\+\_\+handler}}
+\index{switch\+\_\+features\+\_\+handler@{switch\+\_\+features\+\_\+handler}!firewall\+\_\+monitor\+::\+Firewall\+Monitor@{firewall\+\_\+monitor\+::\+Firewall\+Monitor}}
+\subsubsection{\texorpdfstring{switch\+\_\+features\+\_\+handler()}{switch\_features\_handler()}}
+{\footnotesize\ttfamily def firewall\+\_\+monitor.\+Firewall\+Monitor.\+switch\+\_\+features\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ev }\end{DoxyParamCaption})}
+
+
+
+Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em ev} & events is the datastructure which has datapath, ofproto, parser, data, other base attributes as defined by ryu\\
+\hline
+\end{DoxyParams}
+The main purpose for this code is to have it run any time a switch is added to the controller and install a catch-\/all (or table-\/miss) flow entry in the switch, which allows the switch to send packets to the controller. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+firewall\+\_\+monitor.\+py\end{DoxyCompactItemize}

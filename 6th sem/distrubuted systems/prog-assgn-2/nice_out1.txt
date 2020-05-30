@@ -1,0 +1,51 @@
+Cell 1 turns red at 01:55:28
+Cell 2 turns blue at 01:55:28
+Cell 3 turns blue at 01:55:28
+Cell 3 sends white token to parent at 01:55:28
+Cell 2 receives white token at 01:55:28
+Cell 3 sends blue msg to Cell 1 at 01:55:29
+Cell 2 sends blue msg to Cell 1 at 01:55:29
+Cell 1 sends red msg to Cell 3 at 01:55:29
+Cell 3 sends blue msg to Cell 2 at 01:55:29
+Cell 1 receives blue msg at 01:55:29
+Cell 2 sends blue msg to Cell 3 at 01:55:29
+Cell 1 receives blue msg at 01:55:29
+Cell 2 sends blue msg to Cell 4 at 01:55:29
+Cell 3 receives blue msg at 01:55:29
+Cell 3 receives red msg at 01:55:29
+Cell 2 receives blue msg at 01:55:29
+Cell 3 sends red msg to Cell 2 at 01:55:30
+Cell 1 sends blue msg to Cell 2 at 01:55:30
+Cell 1 sends blue msg to Cell 3 at 01:55:31
+Cell 2 receives blue msg at 01:55:31
+Cell 4 receives blue msg at 01:55:31
+Cell 4 sends white token to parent at 01:55:31
+Cell 2 receives white token at 01:55:31
+Cell 2 receives red msg at 01:55:31
+Cell 2 sends white token to parent at 01:55:31
+Cell 1 receives white token at 01:55:31
+Cell 1 sends reset token to child 2 at 01:55:31
+Cell 3 sends red msg to Cell 2 at 01:55:31
+Cell 3 receives blue msg at 01:55:31
+Cell 4 sends blue msg to Cell 2 at 01:55:32
+Cell 2 receives red msg at 01:55:32
+Cell 2 receives blue msg at 01:55:32
+Cell 2 receives reset token at 01:55:32
+Cell 2 sends(debug) resetreset token to child 3 at 01:55:32
+Cell 2 sends(debug) resetreset token to child 4 at 01:55:32
+Cell 3 receives reset token at 01:55:32
+Cell 4 sends blue msg to Cell 2 at 01:55:33
+Cell 2 receives blue msg at 01:55:33
+Cell 1 sends blue msg to Cell 2 at 01:55:33
+Cell 3 sends white token to parent at 01:55:33
+Cell 2 receives white token at 01:55:33
+Cell 4 receives reset token at 01:55:34
+Cell 2 sends blue msg to Cell 1 at 01:55:34
+Cell 1 sends blue msg to Cell 3 at 01:55:34
+Cell 2 receives blue msg at 01:55:34
+Cell 4 sends white token to parent at 01:55:34
+Cell 2 receives white token at 01:55:34
+Cell 3 sends blue msg to Cell 1 at 01:55:34
+Cell 2 sends white token to parent at 01:55:34
+Cell 1 receives white token at 01:55:34
+Cell 1 (coordinator) ends the t.d. algo at 01:55:34

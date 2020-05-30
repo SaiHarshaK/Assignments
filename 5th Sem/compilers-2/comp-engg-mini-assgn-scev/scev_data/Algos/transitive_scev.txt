@@ -1,0 +1,167 @@
+Printing analysis 'Scalar Evolution Analysis' for function '_Z17transitiveClosurePA4_i':
+Classifying expressions for: @_Z17transitiveClosurePA4_i
+  %2 = alloca [4 x [4 x i32]], align 16
+  -->  %2 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %.01 = phi i32 [ 0, %1 ], [ %22, %21 ]
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %3: Computable, %6: Invariant }
+  %.02 = phi i32 [ 0, %5 ], [ %19, %18 ]
+  -->  {0,+,1}<nuw><nsw><%6> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %6: Computable, %3: Variant }
+  %9 = sext i32 %.01 to i64
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%3>		LoopDispositions: { %6: Invariant, %3: Computable }
+  %10 = getelementptr inbounds [4 x i32], [4 x i32]* %0, i64 %9
+  -->  {%0,+,16}<nsw><%3> U: full-set S: full-set		Exits: {%0,+,16}<nsw><%3>		LoopDispositions: { %6: Invariant, %3: Computable }
+  %11 = sext i32 %.02 to i64
+  -->  {0,+,1}<nuw><nsw><%6> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %6: Computable, %3: Variant }
+  %12 = getelementptr inbounds [4 x i32], [4 x i32]* %10, i64 0, i64 %11
+  -->  {{%0,+,16}<nsw><%3>,+,4}<nsw><%6> U: full-set S: full-set		Exits: {(16 + %0),+,16}<nw><%3>		LoopDispositions: { %6: Computable, %3: Variant }
+  %13 = load i32, i32* %12, align 4
+  -->  %13 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %6: Variant, %3: Variant }
+  %14 = sext i32 %.01 to i64
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%3>		LoopDispositions: { %6: Invariant, %3: Computable }
+  %15 = getelementptr inbounds [4 x [4 x i32]], [4 x [4 x i32]]* %2, i64 0, i64 %14
+  -->  {%2,+,16}<nsw><%3> U: [0,-15) S: [-9223372036854775808,9223372036854775793)		Exits: {%2,+,16}<nsw><%3>		LoopDispositions: { %6: Invariant, %3: Computable }
+  %16 = sext i32 %.02 to i64
+  -->  {0,+,1}<nuw><nsw><%6> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %6: Computable, %3: Variant }
+  %17 = getelementptr inbounds [4 x i32], [4 x i32]* %15, i64 0, i64 %16
+  -->  {{%2,+,16}<nsw><%3>,+,4}<nsw><%6> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {(16 + %2),+,16}<nw><%3>		LoopDispositions: { %6: Computable, %3: Variant }
+  %19 = add nsw i32 %.02, 1
+  -->  {1,+,1}<nuw><nsw><%6> U: [1,6) S: [1,6)		Exits: 5		LoopDispositions: { %6: Computable, %3: Variant }
+  %22 = add nsw i32 %.01, 1
+  -->  {1,+,1}<nuw><nsw><%3> U: [1,6) S: [1,6)		Exits: 5		LoopDispositions: { %3: Computable, %6: Invariant }
+  %.0 = phi i32 [ 0, %23 ], [ %69, %68 ]
+  -->  {0,+,1}<nuw><nsw><%24> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %24: Computable, %27: Invariant, %30: Invariant }
+  %.1 = phi i32 [ 0, %26 ], [ %66, %65 ]
+  -->  {0,+,1}<nuw><nsw><%27> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %27: Computable, %24: Variant, %30: Invariant }
+  %.13 = phi i32 [ 0, %29 ], [ %63, %62 ]
+  -->  {0,+,1}<nuw><nsw><%30> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %33 = sext i32 %.1 to i64
+  -->  {0,+,1}<nuw><nsw><%27> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%27>		LoopDispositions: { %30: Invariant, %27: Computable, %24: Variant }
+  %34 = getelementptr inbounds [4 x [4 x i32]], [4 x [4 x i32]]* %2, i64 0, i64 %33
+  -->  {%2,+,16}<nsw><%27> U: [0,-15) S: [-9223372036854775808,9223372036854775793)		Exits: {%2,+,16}<nsw><%27>		LoopDispositions: { %30: Invariant, %27: Computable, %24: Variant }
+  %35 = sext i32 %.13 to i64
+  -->  {0,+,1}<nuw><nsw><%30> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %36 = getelementptr inbounds [4 x i32], [4 x i32]* %34, i64 0, i64 %35
+  -->  {{%2,+,16}<nsw><%27>,+,4}<nsw><%30> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {(16 + %2),+,16}<nw><%27>		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %37 = load i32, i32* %36, align 4
+  -->  %37 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %30: Variant, %27: Variant, %24: Variant }
+  %40 = sext i32 %.1 to i64
+  -->  {0,+,1}<nuw><nsw><%27> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%27>		LoopDispositions: { %30: Invariant, %27: Computable, %24: Variant }
+  %41 = getelementptr inbounds [4 x [4 x i32]], [4 x [4 x i32]]* %2, i64 0, i64 %40
+  -->  {%2,+,16}<nsw><%27> U: [0,-15) S: [-9223372036854775808,9223372036854775793)		Exits: {%2,+,16}<nsw><%27>		LoopDispositions: { %30: Invariant, %27: Computable, %24: Variant }
+  %42 = sext i32 %.0 to i64
+  -->  {0,+,1}<nuw><nsw><%24> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%24>		LoopDispositions: { %30: Invariant, %27: Invariant, %24: Computable }
+  %43 = getelementptr inbounds [4 x i32], [4 x i32]* %41, i64 0, i64 %42
+  -->  {{%2,+,4}<nsw><%24>,+,16}<nsw><%27> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {{%2,+,4}<nsw><%24>,+,16}<nsw><%27>		LoopDispositions: { %30: Invariant, %27: Computable, %24: Variant }
+  %44 = load i32, i32* %43, align 4
+  -->  %44 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %30: Variant, %27: Variant, %24: Variant }
+  %47 = sext i32 %.0 to i64
+  -->  {0,+,1}<nuw><nsw><%24> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%24>		LoopDispositions: { %30: Invariant, %27: Invariant, %24: Computable }
+  %48 = getelementptr inbounds [4 x [4 x i32]], [4 x [4 x i32]]* %2, i64 0, i64 %47
+  -->  {%2,+,16}<nsw><%24> U: [0,-15) S: [-9223372036854775808,9223372036854775793)		Exits: {%2,+,16}<nsw><%24>		LoopDispositions: { %30: Invariant, %27: Invariant, %24: Computable }
+  %49 = sext i32 %.13 to i64
+  -->  {0,+,1}<nuw><nsw><%30> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %50 = getelementptr inbounds [4 x i32], [4 x i32]* %48, i64 0, i64 %49
+  -->  {{%2,+,16}<nsw><%24>,+,4}<nsw><%30> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {(16 + %2),+,16}<nw><%24>		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %51 = load i32, i32* %50, align 4
+  -->  %51 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %30: Variant, %27: Variant, %24: Variant }
+  %54 = phi i1 [ false, %39 ], [ %52, %46 ]
+  -->  %54 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %30: Variant, %27: Variant, %24: Variant }
+  %56 = phi i1 [ true, %32 ], [ %54, %53 ]
+  -->  %56 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %30: Variant, %27: Variant, %24: Variant }
+  %57 = zext i1 %56 to i32
+  -->  (zext i1 %56 to i32) U: [0,2) S: [0,2)		Exits: <<Unknown>>		LoopDispositions: { %30: Variant, %27: Variant, %24: Variant }
+  %58 = sext i32 %.1 to i64
+  -->  {0,+,1}<nuw><nsw><%27> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%27>		LoopDispositions: { %30: Invariant, %27: Computable, %24: Variant }
+  %59 = getelementptr inbounds [4 x [4 x i32]], [4 x [4 x i32]]* %2, i64 0, i64 %58
+  -->  {%2,+,16}<nsw><%27> U: [0,-15) S: [-9223372036854775808,9223372036854775793)		Exits: {%2,+,16}<nsw><%27>		LoopDispositions: { %30: Invariant, %27: Computable, %24: Variant }
+  %60 = sext i32 %.13 to i64
+  -->  {0,+,1}<nuw><nsw><%30> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %61 = getelementptr inbounds [4 x i32], [4 x i32]* %59, i64 0, i64 %60
+  -->  {{%2,+,16}<nsw><%27>,+,4}<nsw><%30> U: [0,-3) S: [-9223372036854775808,9223372036854775805)		Exits: {(16 + %2),+,16}<nw><%27>		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %63 = add nsw i32 %.13, 1
+  -->  {1,+,1}<nuw><nsw><%30> U: [1,6) S: [1,6)		Exits: 5		LoopDispositions: { %30: Computable, %27: Variant, %24: Variant }
+  %66 = add nsw i32 %.1, 1
+  -->  {1,+,1}<nuw><nsw><%27> U: [1,6) S: [1,6)		Exits: 5		LoopDispositions: { %27: Computable, %24: Variant, %30: Invariant }
+  %69 = add nsw i32 %.0, 1
+  -->  {1,+,1}<nuw><nsw><%24> U: [1,6) S: [1,6)		Exits: 5		LoopDispositions: { %24: Computable, %27: Invariant, %30: Invariant }
+  %71 = getelementptr inbounds [4 x [4 x i32]], [4 x [4 x i32]]* %2, i32 0, i32 0
+  -->  %2 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+Determining loop execution counts for: @_Z17transitiveClosurePA4_i
+Loop %30: backedge-taken count is 4
+Loop %30: max backedge-taken count is 4
+Loop %30: Predicated backedge-taken count is 4
+ Predicates:
+
+Loop %30: Trip multiple is 5
+Loop %27: backedge-taken count is 4
+Loop %27: max backedge-taken count is 4
+Loop %27: Predicated backedge-taken count is 4
+ Predicates:
+
+Loop %27: Trip multiple is 5
+Loop %24: backedge-taken count is 4
+Loop %24: max backedge-taken count is 4
+Loop %24: Predicated backedge-taken count is 4
+ Predicates:
+
+Loop %24: Trip multiple is 5
+Loop %6: backedge-taken count is 4
+Loop %6: max backedge-taken count is 4
+Loop %6: Predicated backedge-taken count is 4
+ Predicates:
+
+Loop %6: Trip multiple is 5
+Loop %3: backedge-taken count is 4
+Loop %3: max backedge-taken count is 4
+Loop %3: Predicated backedge-taken count is 4
+ Predicates:
+
+Loop %3: Trip multiple is 5
+Printing analysis 'Scalar Evolution Analysis' for function '_Z13printSolutionPA4_i':
+Classifying expressions for: @_Z13printSolutionPA4_i
+  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([59 x i8], [59 x i8]* @.str, i32 0, i32 0))
+  -->  %2 U: full-set S: full-set
+  %.01 = phi i32 [ 0, %1 ], [ %20, %19 ]
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %3: Computable, %6: Invariant }
+  %.0 = phi i32 [ 0, %5 ], [ %16, %15 ]
+  -->  {0,+,1}<nuw><nsw><%6> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %6: Computable, %3: Variant }
+  %9 = sext i32 %.01 to i64
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,5) S: [0,5)		Exits: {0,+,1}<nuw><nsw><%3>		LoopDispositions: { %6: Invariant, %3: Computable }
+  %10 = getelementptr inbounds [4 x i32], [4 x i32]* %0, i64 %9
+  -->  {%0,+,16}<nsw><%3> U: full-set S: full-set		Exits: {%0,+,16}<nsw><%3>		LoopDispositions: { %6: Invariant, %3: Computable }
+  %11 = sext i32 %.0 to i64
+  -->  {0,+,1}<nuw><nsw><%6> U: [0,5) S: [0,5)		Exits: 4		LoopDispositions: { %6: Computable, %3: Variant }
+  %12 = getelementptr inbounds [4 x i32], [4 x i32]* %10, i64 0, i64 %11
+  -->  {{%0,+,16}<nsw><%3>,+,4}<nsw><%6> U: full-set S: full-set		Exits: {(16 + %0),+,16}<nw><%3>		LoopDispositions: { %6: Computable, %3: Variant }
+  %13 = load i32, i32* %12, align 4
+  -->  %13 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %6: Variant, %3: Variant }
+  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i32 0, i32 0), i32 %13)
+  -->  %14 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %6: Variant, %3: Variant }
+  %16 = add nsw i32 %.0, 1
+  -->  {1,+,1}<nuw><nsw><%6> U: [1,6) S: [1,6)		Exits: 5		LoopDispositions: { %6: Computable, %3: Variant }
+  %18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.2, i32 0, i32 0))
+  -->  %18 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %3: Variant, %6: Invariant }
+  %20 = add nsw i32 %.01, 1
+  -->  {1,+,1}<nuw><nsw><%3> U: [1,6) S: [1,6)		Exits: 5		LoopDispositions: { %3: Computable, %6: Invariant }
+Determining loop execution counts for: @_Z13printSolutionPA4_i
+Loop %6: backedge-taken count is 4
+Loop %6: max backedge-taken count is 4
+Loop %6: Predicated backedge-taken count is 4
+ Predicates:
+
+Loop %6: Trip multiple is 5
+Loop %3: backedge-taken count is 4
+Loop %3: max backedge-taken count is 4
+Loop %3: Predicated backedge-taken count is 4
+ Predicates:
+
+Loop %3: Trip multiple is 5
+Printing analysis 'Scalar Evolution Analysis' for function 'main':
+Classifying expressions for: @main
+  %1 = alloca [4 x [4 x i32]], align 16
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %2 = bitcast [4 x [4 x i32]]* %1 to i8*
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %3 = getelementptr inbounds [4 x [4 x i32]], [4 x [4 x i32]]* %1, i32 0, i32 0
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+Determining loop execution counts for: @main

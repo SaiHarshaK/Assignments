@@ -1,4 +1,4 @@
-Number of processes that came into the system      : 200
-Number of processes that successfully completed    : 112
-Number of processes that missed their deadlines    : 88
-Average waiting time for each process              : 270.394
+Number of processes that came into the system      : 100
+Number of processes that successfully completed    : 85
+Number of processes that missed their deadlines    : 15
+Average waiting time for each process              : 128.431

@@ -1,0 +1,191 @@
+Printing analysis 'Scalar Evolution Analysis' for function '__cxx_global_var_init':
+Classifying expressions for: @__cxx_global_var_init
+  %1 = call i32 @__cxa_atexit(void (i8*)* bitcast (void (%"class.std::ios_base::Init"*)* @_ZNSt8ios_base4InitD1Ev to void (i8*)*), i8* getelementptr inbounds (%"class.std::ios_base::Init", %"class.std::ios_base::Init"* @_ZStL8__ioinit, i32 0, i32 0), i8* @__dso_handle) #3
+  -->  %1 U: full-set S: full-set
+Determining loop execution counts for: @__cxx_global_var_init
+Printing analysis 'Scalar Evolution Analysis' for function '_Z6isSafeiPA5_bPii':
+Classifying expressions for: @_Z6isSafeiPA5_bPii
+  %5 = sub nsw i32 %3, 1
+  -->  (-1 + %3) U: full-set S: full-set
+  %6 = sext i32 %5 to i64
+  -->  (-1 + (sext i32 %3 to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)
+  %7 = getelementptr inbounds i32, i32* %2, i64 %6
+  -->  (-4 + (4 * (sext i32 %3 to i64))<nsw> + %2) U: full-set S: full-set
+  %8 = load i32, i32* %7, align 4
+  -->  %8 U: full-set S: full-set
+  %9 = sext i32 %8 to i64
+  -->  (sext i32 %8 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %10 = getelementptr inbounds [5 x i8], [5 x i8]* %1, i64 %9
+  -->  ((5 * (sext i32 %8 to i64))<nsw> + %1)<nsw> U: full-set S: full-set
+  %11 = sext i32 %0 to i64
+  -->  (sext i32 %0 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %12 = getelementptr inbounds [5 x i8], [5 x i8]* %10, i64 0, i64 %11
+  -->  ((sext i32 %0 to i64) + (5 * (sext i32 %8 to i64))<nsw> + %1) U: full-set S: full-set
+  %13 = load i8, i8* %12, align 1
+  -->  %13 U: full-set S: full-set
+  %14 = trunc i8 %13 to i1
+  -->  (trunc i8 %13 to i1) U: full-set S: full-set
+  %15 = zext i1 %14 to i32
+  -->  (zext i1 (trunc i8 %13 to i1) to i32) U: [0,2) S: [0,2)
+  %.01 = phi i32 [ 0, %18 ], [ %29, %28 ]
+  -->  {0,+,1}<nuw><nsw><%19> U: [0,-2147483648) S: [0,-2147483648)		Exits: <<Unknown>>		LoopDispositions: { %19: Computable }
+  %22 = sext i32 %.01 to i64
+  -->  {0,+,1}<nuw><nsw><%19> U: [0,2147483648) S: [0,2147483648)		Exits: <<Unknown>>		LoopDispositions: { %19: Computable }
+  %23 = getelementptr inbounds i32, i32* %2, i64 %22
+  -->  {%2,+,4}<nsw><%19> U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %19: Computable }
+  %24 = load i32, i32* %23, align 4
+  -->  %24 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %19: Variant }
+  %29 = add nsw i32 %.01, 1
+  -->  {1,+,1}<nuw><%19> U: [1,-2147483647) S: [1,-2147483647)		Exits: <<Unknown>>		LoopDispositions: { %19: Computable }
+  %.0 = phi i1 [ false, %17 ], [ false, %26 ], [ true, %30 ]
+  -->  %.0 U: full-set S: full-set
+Determining loop execution counts for: @_Z6isSafeiPA5_bPii
+Loop %19: <multiple exits> Unpredictable backedge-taken count.
+  exit count for : (0 smax %3)
+  exit count for : ***COULDNOTCOMPUTE***
+Loop %19: max backedge-taken count is 2147483647
+Loop %19: Unpredictable predicated backedge-taken count. 
+Printing analysis 'Scalar Evolution Analysis' for function '_Z12hamCycleUtilPA5_bPii':
+Classifying expressions for: @_Z12hamCycleUtilPA5_bPii
+  %6 = sub nsw i32 %2, 1
+  -->  (-1 + %2) U: full-set S: full-set
+  %7 = sext i32 %6 to i64
+  -->  (-1 + (sext i32 %2 to i64))<nsw> U: [-2147483649,2147483647) S: [-2147483649,2147483647)
+  %8 = getelementptr inbounds i32, i32* %1, i64 %7
+  -->  (-4 + (4 * (sext i32 %2 to i64))<nsw> + %1) U: full-set S: full-set
+  %9 = load i32, i32* %8, align 4
+  -->  %9 U: full-set S: full-set
+  %10 = sext i32 %9 to i64
+  -->  (sext i32 %9 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %11 = getelementptr inbounds [5 x i8], [5 x i8]* %0, i64 %10
+  -->  ((5 * (sext i32 %9 to i64))<nsw> + %0)<nsw> U: full-set S: full-set
+  %12 = getelementptr inbounds i32, i32* %1, i64 0
+  -->  %1 U: full-set S: full-set
+  %13 = load i32, i32* %12, align 4
+  -->  %13 U: full-set S: full-set
+  %14 = sext i32 %13 to i64
+  -->  (sext i32 %13 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)
+  %15 = getelementptr inbounds [5 x i8], [5 x i8]* %11, i64 0, i64 %14
+  -->  ((sext i32 %13 to i64) + (5 * (sext i32 %9 to i64))<nsw> + %0) U: full-set S: full-set
+  %16 = load i8, i8* %15, align 1
+  -->  %16 U: full-set S: full-set
+  %17 = trunc i8 %16 to i1
+  -->  (trunc i8 %16 to i1) U: full-set S: full-set
+  %18 = zext i1 %17 to i32
+  -->  (zext i1 (trunc i8 %16 to i1) to i32) U: [0,2) S: [0,2)
+  %.01 = phi i32 [ 1, %22 ], [ %40, %39 ]
+  -->  {1,+,1}<nuw><nsw><%23> U: [1,6) S: [1,6)		Exits: <<Unknown>>		LoopDispositions: { %23: Computable }
+  %26 = call zeroext i1 @_Z6isSafeiPA5_bPii(i32 %.01, [5 x i8]* %0, i32* %1, i32 %2)
+  -->  %26 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %23: Variant }
+  %28 = sext i32 %2 to i64
+  -->  (sext i32 %2 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)		Exits: (sext i32 %2 to i64)		LoopDispositions: { %23: Invariant }
+  %29 = getelementptr inbounds i32, i32* %1, i64 %28
+  -->  ((4 * (sext i32 %2 to i64))<nsw> + %1)<nsw> U: full-set S: full-set		Exits: ((4 * (sext i32 %2 to i64))<nsw> + %1)<nsw>		LoopDispositions: { %23: Invariant }
+  %30 = add nsw i32 %2, 1
+  -->  (1 + %2) U: full-set S: full-set		Exits: (1 + %2)		LoopDispositions: { %23: Invariant }
+  %31 = call zeroext i1 @_Z12hamCycleUtilPA5_bPii([5 x i8]* %0, i32* %1, i32 %30)
+  -->  %31 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %23: Variant }
+  %32 = zext i1 %31 to i32
+  -->  (zext i1 %31 to i32) U: [0,2) S: [0,2)		Exits: <<Unknown>>		LoopDispositions: { %23: Variant }
+  %36 = sext i32 %2 to i64
+  -->  (sext i32 %2 to i64) U: [-2147483648,2147483648) S: [-2147483648,2147483648)		Exits: (sext i32 %2 to i64)		LoopDispositions: { %23: Invariant }
+  %37 = getelementptr inbounds i32, i32* %1, i64 %36
+  -->  ((4 * (sext i32 %2 to i64))<nsw> + %1)<nsw> U: full-set S: full-set		Exits: ((4 * (sext i32 %2 to i64))<nsw> + %1)<nsw>		LoopDispositions: { %23: Invariant }
+  %40 = add nsw i32 %.01, 1
+  -->  {2,+,1}<nuw><nsw><%23> U: [2,7) S: [2,7)		Exits: <<Unknown>>		LoopDispositions: { %23: Computable }
+  %.0 = phi i1 [ true, %20 ], [ false, %21 ], [ true, %34 ], [ false, %41 ]
+  -->  %.0 U: full-set S: full-set
+Determining loop execution counts for: @_Z12hamCycleUtilPA5_bPii
+Loop %23: <multiple exits> Unpredictable backedge-taken count.
+  exit count for : 4
+  exit count for : ***COULDNOTCOMPUTE***
+Loop %23: max backedge-taken count is 4
+Loop %23: Unpredictable predicated backedge-taken count. 
+Printing analysis 'Scalar Evolution Analysis' for function '_Z8hamCyclePA5_b':
+Classifying expressions for: @_Z8hamCyclePA5_b
+  %2 = call i8* @_Znam(i64 20) #8
+  -->  %2 U: full-set S: full-set
+  %3 = bitcast i8* %2 to i32*
+  -->  %2 U: full-set S: full-set
+  %.01 = phi i32 [ 0, %1 ], [ %10, %9 ]
+  -->  {0,+,1}<nuw><nsw><%4> U: [0,6) S: [0,6)		Exits: 5		LoopDispositions: { %4: Computable }
+  %7 = sext i32 %.01 to i64
+  -->  {0,+,1}<nuw><nsw><%4> U: [0,6) S: [0,6)		Exits: 5		LoopDispositions: { %4: Computable }
+  %8 = getelementptr inbounds i32, i32* %3, i64 %7
+  -->  {%2,+,4}<nsw><%4> U: full-set S: full-set		Exits: (20 + %2)		LoopDispositions: { %4: Computable }
+  %10 = add nsw i32 %.01, 1
+  -->  {1,+,1}<nuw><nsw><%4> U: [1,7) S: [1,7)		Exits: 6		LoopDispositions: { %4: Computable }
+  %12 = getelementptr inbounds i32, i32* %3, i64 0
+  -->  %2 U: full-set S: full-set
+  %13 = call zeroext i1 @_Z12hamCycleUtilPA5_bPii([5 x i8]* %0, i32* %3, i32 1)
+  -->  %13 U: full-set S: full-set
+  %14 = zext i1 %13 to i32
+  -->  (zext i1 %13 to i32) U: [0,2) S: [0,2)
+  %17 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%"class.std::basic_ostream"* dereferenceable(272) @_ZSt4cout, i8* getelementptr inbounds ([25 x i8], [25 x i8]* @.str, i32 0, i32 0))
+  -->  %17 U: full-set S: full-set
+  %.0 = phi i1 [ false, %16 ], [ true, %18 ]
+  -->  %.0 U: full-set S: full-set
+Determining loop execution counts for: @_Z8hamCyclePA5_b
+Loop %4: backedge-taken count is 5
+Loop %4: max backedge-taken count is 5
+Loop %4: Predicated backedge-taken count is 5
+ Predicates:
+
+Loop %4: Trip multiple is 6
+Printing analysis 'Scalar Evolution Analysis' for function '_Z13printSolutionPi':
+Classifying expressions for: @_Z13printSolutionPi
+  %2 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%"class.std::basic_ostream"* dereferenceable(272) @_ZSt4cout, i8* getelementptr inbounds ([54 x i8], [54 x i8]* @.str.1, i32 0, i32 0))
+  -->  %2 U: full-set S: full-set
+  %.0 = phi i32 [ 0, %1 ], [ %12, %11 ]
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,6) S: [0,6)		Exits: 5		LoopDispositions: { %3: Computable }
+  %6 = sext i32 %.0 to i64
+  -->  {0,+,1}<nuw><nsw><%3> U: [0,6) S: [0,6)		Exits: 5		LoopDispositions: { %3: Computable }
+  %7 = getelementptr inbounds i32, i32* %0, i64 %6
+  -->  {%0,+,4}<nsw><%3> U: full-set S: full-set		Exits: (20 + %0)		LoopDispositions: { %3: Computable }
+  %8 = load i32, i32* %7, align 4
+  -->  %8 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %3: Variant }
+  %9 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZNSolsEi(%"class.std::basic_ostream"* @_ZSt4cout, i32 %8)
+  -->  %9 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %3: Variant }
+  %10 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%"class.std::basic_ostream"* dereferenceable(272) %9, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.2, i32 0, i32 0))
+  -->  %10 U: full-set S: full-set		Exits: <<Unknown>>		LoopDispositions: { %3: Variant }
+  %12 = add nsw i32 %.0, 1
+  -->  {1,+,1}<nuw><nsw><%3> U: [1,7) S: [1,7)		Exits: 6		LoopDispositions: { %3: Computable }
+  %14 = getelementptr inbounds i32, i32* %0, i64 0
+  -->  %0 U: full-set S: full-set
+  %15 = load i32, i32* %14, align 4
+  -->  %15 U: full-set S: full-set
+  %16 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZNSolsEi(%"class.std::basic_ostream"* @_ZSt4cout, i32 %15)
+  -->  %16 U: full-set S: full-set
+  %17 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%"class.std::basic_ostream"* dereferenceable(272) %16, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.2, i32 0, i32 0))
+  -->  %17 U: full-set S: full-set
+  %18 = call dereferenceable(272) %"class.std::basic_ostream"* @_ZNSolsEPFRSoS_E(%"class.std::basic_ostream"* @_ZSt4cout, %"class.std::basic_ostream"* (%"class.std::basic_ostream"*)* @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_)
+  -->  %18 U: full-set S: full-set
+Determining loop execution counts for: @_Z13printSolutionPi
+Loop %3: backedge-taken count is 5
+Loop %3: max backedge-taken count is 5
+Loop %3: Predicated backedge-taken count is 5
+ Predicates:
+
+Loop %3: Trip multiple is 6
+Printing analysis 'Scalar Evolution Analysis' for function 'main':
+Classifying expressions for: @main
+  %1 = alloca [5 x [5 x i8]], align 16
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %2 = alloca [5 x [5 x i8]], align 16
+  -->  %2 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %3 = bitcast [5 x [5 x i8]]* %1 to i8*
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %4 = getelementptr inbounds [5 x [5 x i8]], [5 x [5 x i8]]* %1, i32 0, i32 0
+  -->  %1 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %5 = call zeroext i1 @_Z8hamCyclePA5_b([5 x i8]* %4)
+  -->  %5 U: full-set S: full-set
+  %6 = bitcast [5 x [5 x i8]]* %2 to i8*
+  -->  %2 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %7 = getelementptr inbounds [5 x [5 x i8]], [5 x [5 x i8]]* %2, i32 0, i32 0
+  -->  %2 U: [0,-15) S: [-9223372036854775808,9223372036854775793)
+  %8 = call zeroext i1 @_Z8hamCyclePA5_b([5 x i8]* %7)
+  -->  %8 U: full-set S: full-set
+Determining loop execution counts for: @main
+Printing analysis 'Scalar Evolution Analysis' for function '_GLOBAL__sub_I_hamiltonian_cycle_backtracking.cpp':
+Classifying expressions for: @_GLOBAL__sub_I_hamiltonian_cycle_backtracking.cpp
+Determining loop execution counts for: @_GLOBAL__sub_I_hamiltonian_cycle_backtracking.cpp

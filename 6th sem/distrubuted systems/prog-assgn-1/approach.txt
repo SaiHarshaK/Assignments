@@ -1,0 +1,8 @@
+In main, create n threads which would represent the n time servers.
+Now in each thread:
+  Spawn three threads.
+    1. Send(), ask other server for time diff. This will run sequencially and ask rest n-1 servers as update can occur once at a time.
+    2. Recv(), an inf loop which reports current time to everyone to asked.
+    3. This is also an inf which updates drift time accordingly
+
+Now each time server will be updated as some linear combination of other servers which would result in synchronization of error factor at some point.

@@ -1,0 +1,41 @@
+Materials used:
+  * Classroom shared slides on llvm passes
+  * http://llvm.org/docs/ProgrammersManual.html#creating-and-inserting-new-instructions
+  * https://lists.llvm.org/pipermail/llvm-dev/2018-August/125133.html
+  * #define DEBUG_TYPE "looprev"
+  * #include "llvm/Pass.h"
+  * #include "llvm/ADT/DepthFirstIterator.h"
+  * #include "llvm/IR/Instruction.h"
+  * #include "llvm/IR/Constants.h"
+  * #include "llvm/IR/Instructions.h"
+  * #include "llvm/IR/Metadata.h"
+  * #include "llvm/IR/DebugLoc.h"
+  * #include "llvm/IR/LLVMContext.h"
+  * #include "llvm/Analysis/LoopInfo.h"
+  * #include "llvm/Analysis/LoopInfo.h"
+  * #include "llvm/IR/InstrTypes.h"
+  * #include "llvm/Support/raw_ostream.h"
+  * #include "llvm/IR/InstIterator.h"
+  * #include "llvm/IR/InstrTypes.h"
+  * #include "llvm/IR/IRBuilder.h"
+  * #include "llvm/IR/NoFolder.h"
+  * #include "llvm/ADT/iterator_range.h"
+  * #include "llvm/IR/DebugInfoMetadata.h"
+  * #include "llvm/IR/IntrinsicInst.h"
+  * #include "llvm/IR/BasicBlock.h"
+  * #include "llvm/IR/Function.h"
+  * #include "llvm/Analysis/AliasAnalysis.h"
+  * #include "llvm/IR/SymbolTableListTraits.h"
+  * #include "llvm/Analysis/ScalarEvolutionExpressions.h"
+  * #include "llvm/Analysis/ScalarEvolution.h"
+  * #include "llvm/IR/Use.h"
+  * #include "llvm/IR/Value.h"
+  * #include <iterator>
+  * #include <string>
+  * #include <sstream>
+  * #include <utility>
+
+Status of Submission and assumptions:
+  The pass supports all four arithmetic operations: add, sub, mul, div.
+  5 testcases were made (1 for each of the above operationo with different conditions) and last one as nested loop.
+  For multiplication and division loops(step value), i have assumed that the factor is a postive integer, while the init value can be positive or negative.

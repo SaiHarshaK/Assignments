@@ -1,0 +1,2 @@
+# Lab Assignment 4
+Given two linked lists each of which is in increasing order, find their intersection. The intersection should be saved in a separate linked list. Your program must have (a) a function to enter items in the two linked lists, (b) a function to perform the intersection and (c) function for displaying linked lists. You can assume that the user inputs the linked-list-items in ascending order only (your code need not perform any sorting).
