@@ -1,0 +1,80 @@
+1st CS Entry at 13:35:56 by thread 2
+1st CS Exit Request at 13:35:56 by thread 2
+1st CS Entry at 13:35:56 by thread 1
+1st CS Exit Request at 13:35:56 by thread 1
+1st CS Entry at 13:35:56 by thread 3
+1st CS Exit Request at 13:35:58 by thread 3
+1st CS Entry at 13:35:58 by thread 4
+1st CS Exit Request at 13:35:58 by thread 4
+2nd CS Entry at 13:35:58 by thread 2
+2nd CS Exit Request at 13:35:58 by thread 2
+2nd CS Entry at 13:35:58 by thread 1
+2nd CS Exit Request at 13:35:59 by thread 1
+3rd CS Entry at 13:35:59 by thread 2
+3rd CS Exit Request at 13:35:59 by thread 2
+2nd CS Entry at 13:35:59 by thread 3
+2nd CS Exit Request at 13:36:00 by thread 3
+2nd CS Entry at 13:36:00 by thread 4
+2nd CS Exit Request at 13:36:00 by thread 4
+3rd CS Entry at 13:36:00 by thread 4
+3rd CS Exit Request at 13:36:01 by thread 4
+4th CS Entry at 13:36:01 by thread 2
+4th CS Exit Request at 13:36:05 by thread 2
+4th CS Entry at 13:36:05 by thread 4
+4th CS Exit Request at 13:36:05 by thread 4
+3rd CS Entry at 13:36:05 by thread 3
+3rd CS Exit Request at 13:36:05 by thread 3
+3rd CS Entry at 13:36:05 by thread 1
+3rd CS Exit Request at 13:36:05 by thread 1
+4th CS Entry at 13:36:05 by thread 1
+4th CS Exit Request at 13:36:07 by thread 1
+4th CS Entry at 13:36:07 by thread 3
+4th CS Exit Request at 13:36:07 by thread 3
+5th CS Entry at 13:36:07 by thread 2
+5th CS Exit Request at 13:36:07 by thread 2
+5th CS Entry at 13:36:07 by thread 1
+5th CS Exit Request at 13:36:07 by thread 1
+5th CS Entry at 13:36:07 by thread 3
+5th CS Exit Request at 13:36:09 by thread 3
+6th CS Entry at 13:36:09 by thread 2
+6th CS Exit Request at 13:36:09 by thread 2
+6th CS Entry at 13:36:09 by thread 1
+6th CS Exit Request at 13:36:09 by thread 1
+5th CS Entry at 13:36:09 by thread 4
+5th CS Exit Request at 13:36:09 by thread 4
+6th CS Entry at 13:36:10 by thread 3
+6th CS Exit Request at 13:36:12 by thread 3
+7th CS Entry at 13:36:12 by thread 2
+7th CS Exit Request at 13:36:12 by thread 2
+7th CS Entry at 13:36:12 by thread 1
+7th CS Exit Request at 13:36:13 by thread 1
+6th CS Entry at 13:36:13 by thread 4
+6th CS Exit Request at 13:36:13 by thread 4
+7th CS Entry at 13:36:13 by thread 3
+7th CS Exit Request at 13:36:13 by thread 3
+7th CS Entry at 13:36:13 by thread 4
+7th CS Exit Request at 13:36:13 by thread 4
+8th CS Entry at 13:36:13 by thread 3
+8th CS Exit Request at 13:36:15 by thread 3
+8th CS Entry at 13:36:15 by thread 1
+8th CS Exit Request at 13:36:15 by thread 1
+8th CS Entry at 13:36:15 by thread 2
+8th CS Exit Request at 13:36:15 by thread 2
+8th CS Entry at 13:36:15 by thread 4
+8th CS Exit Request at 13:36:16 by thread 4
+9th CS Entry at 13:36:16 by thread 1
+9th CS Exit Request at 13:36:16 by thread 1
+9th CS Entry at 13:36:16 by thread 2
+9th CS Exit Request at 13:36:17 by thread 2
+9th CS Entry at 13:36:17 by thread 4
+9th CS Exit Request at 13:36:17 by thread 4
+10th CS Entry at 13:36:17 by thread 2
+10th CS Exit Request at 13:36:20 by thread 2
+9th CS Entry at 13:36:20 by thread 3
+9th CS Exit Request at 13:36:20 by thread 3
+10th CS Entry at 13:36:20 by thread 1
+10th CS Exit Request at 13:36:20 by thread 1
+10th CS Entry at 13:36:20 by thread 4
+10th CS Exit Request at 13:36:20 by thread 4
+10th CS Entry at 13:36:21 by thread 3
+10th CS Exit Request at 13:36:22 by thread 3

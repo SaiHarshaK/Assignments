@@ -1,0 +1,3840 @@
+1 thread is going to do dequeue at 22:41:25
+2 thread is going to do enqueue 77 at 22:41:25
+3 thread is going to do enqueue 93 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 62 at 22:41:25
+2 thread is doing enqueue 77 at 22:41:25
+5 thread is going to do enqueue 49 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue but queue is empty at 22:41:25
+7 thread is going to do enqueue 90 at 22:41:25
+4 thread is doing dequeue 77 at 22:41:25
+6 thread is doing enqueue 62 at 22:41:25
+12 thread is going to do enqueue 62 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 93 at 22:41:25
+5 thread is doing enqueue 49 at 22:41:25
+3 thread is going to do enqueue 29 at 22:41:25
+9 thread is doing dequeue 93 at 22:41:25
+9 thread is going to do enqueue 84 at 22:41:25
+1 thread is going to do enqueue 67 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+7 thread is doing enqueue 90 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+4 thread is going to do enqueue 67 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 62 at 22:41:25
+15 thread is going to do enqueue 69 at 22:41:25
+15 thread is doing enqueue 69 at 22:41:25
+12 thread is doing enqueue 62 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 62 at 22:41:25
+12 thread is going to do enqueue 84 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue 67 at 22:41:25
+12 thread is doing enqueue 84 at 22:41:25
+17 thread is going to do enqueue 24 at 22:41:25
+3 thread is doing enqueue 29 at 22:41:25
+12 thread is going to do enqueue 82 at 22:41:25
+17 thread is doing enqueue 24 at 22:41:25
+1 thread is doing enqueue 67 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+23 thread is going to do enqueue 56 at 22:41:25
+6 thread is doing dequeue 29 at 22:41:25
+31 thread is going to do enqueue 54 at 22:41:25
+15 thread is going to do enqueue 96 at 22:41:25
+15 thread is doing enqueue 96 at 22:41:25
+25 thread is going to do enqueue 5 at 22:41:25
+16 thread is doing dequeue 84 at 22:41:25
+26 thread is going to do enqueue 36 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 36 at 22:41:25
+16 thread is doing dequeue 56 at 22:41:25
+26 thread is going to do enqueue 94 at 22:41:25
+13 thread is doing dequeue 49 at 22:41:25
+26 thread is doing enqueue 94 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 67 at 22:41:25
+7 thread is doing dequeue 54 at 22:41:25
+2 thread is doing dequeue 67 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 90 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 5 at 22:41:25
+17 thread is doing dequeue 36 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 84 at 22:41:25
+10 thread is doing dequeue 67 at 22:41:25
+30 thread is doing dequeue 24 at 22:41:25
+22 thread is doing dequeue 82 at 22:41:25
+29 thread is going to do enqueue 65 at 22:41:25
+11 thread is going to do enqueue 3 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 56 at 22:41:25
+14 thread is doing dequeue 65 at 22:41:25
+31 thread is doing enqueue 54 at 22:41:25
+14 thread is going to do enqueue 81 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 81 at 22:41:25
+25 thread is doing enqueue 5 at 22:41:25
+15 thread is doing dequeue 3 at 22:41:25
+5 thread is going to do enqueue 21 at 22:41:25
+15 thread is going to do enqueue 97 at 22:41:25
+5 thread is doing enqueue 21 at 22:41:25
+9 thread is doing enqueue 84 at 22:41:25
+28 thread is going to do enqueue 14 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+7 thread is doing dequeue 96 at 22:41:25
+13 thread is doing dequeue 81 at 22:41:25
+28 thread is doing enqueue 14 at 22:41:25
+7 thread is going to do enqueue 28 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 21 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+1 thread is going to do enqueue 32 at 22:41:25
+12 thread is doing enqueue 82 at 22:41:25
+3 thread is doing dequeue 94 at 22:41:25
+2 thread is doing dequeue 97 at 22:41:25
+17 thread is going to do enqueue 86 at 22:41:25
+22 thread is going to do enqueue 40 at 22:41:25
+11 thread is doing enqueue 3 at 22:41:25
+22 thread is doing enqueue 40 at 22:41:25
+3 thread is going to do enqueue 3 at 22:41:25
+19 thread is going to do enqueue 8 at 22:41:25
+3 thread is doing enqueue 3 at 22:41:25
+31 thread is going to do enqueue 9 at 22:41:25
+8 thread is going to do enqueue 46 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+31 thread is doing enqueue 9 at 22:41:25
+14 thread is going to do enqueue 86 at 22:41:25
+15 thread is doing enqueue 97 at 22:41:25
+5 thread is going to do enqueue 6 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+15 thread is doing dequeue 28 at 22:41:25
+2 thread is doing dequeue 14 at 22:41:25
+9 thread is doing dequeue 86 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 67 at 22:41:25
+7 thread is doing enqueue 28 at 22:41:25
+19 thread is doing enqueue 8 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+21 thread is doing dequeue 69 at 22:41:25
+10 thread is going to do enqueue 31 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+15 thread is going to do enqueue 27 at 22:41:25
+18 thread is doing dequeue 86 at 22:41:25
+23 thread is going to do enqueue 97 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 97 at 22:41:25
+3 thread is going to do enqueue 21 at 22:41:25
+32 thread is doing dequeue 8 at 22:41:25
+3 thread is doing enqueue 21 at 22:41:25
+23 thread is going to do enqueue 75 at 22:41:25
+32 thread is going to do enqueue 74 at 22:41:25
+9 thread is doing dequeue 31 at 22:41:25
+32 thread is doing enqueue 74 at 22:41:25
+23 thread is doing enqueue 75 at 22:41:25
+9 thread is going to do enqueue 58 at 22:41:25
+23 thread is going to do enqueue 35 at 22:41:25
+32 thread is going to do enqueue 29 at 22:41:25
+9 thread is doing enqueue 58 at 22:41:25
+32 thread is doing enqueue 29 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 43 at 22:41:25
+9 thread is doing dequeue 32 at 22:41:25
+32 thread is doing enqueue 43 at 22:41:25
+9 thread is going to do enqueue 28 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+9 thread is doing enqueue 28 at 22:41:25
+32 thread is doing dequeue 27 at 22:41:25
+9 thread is going to do enqueue 43 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 35 at 22:41:25
+32 thread is doing dequeue 97 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 21 at 22:41:25
+32 thread is doing dequeue 74 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 69 at 22:41:25
+9 thread is doing enqueue 43 at 22:41:25
+32 thread is doing enqueue 69 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 24 at 22:41:25
+9 thread is doing dequeue 75 at 22:41:25
+32 thread is doing enqueue 24 at 22:41:25
+9 thread is going to do enqueue 70 at 22:41:25
+32 thread is going to do enqueue 90 at 22:41:25
+27 thread is going to do enqueue 13 at 22:41:25
+27 thread is doing enqueue 13 at 22:41:25
+5 thread is doing enqueue 6 at 22:41:25
+26 thread is doing enqueue 67 at 22:41:25
+5 thread is going to do enqueue 5 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+29 thread is doing enqueue 65 at 22:41:25
+17 thread is doing enqueue 86 at 22:41:25
+10 thread is doing enqueue 31 at 22:41:25
+5 thread is doing enqueue 5 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 29 at 22:41:25
+1 thread is doing enqueue 32 at 22:41:25
+10 thread is going to do enqueue 97 at 22:41:25
+6 thread is doing dequeue 9 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+1 thread is going to do enqueue 48 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 43 at 22:41:25
+17 thread is doing dequeue 28 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 99 at 22:41:25
+29 thread is doing dequeue 43 at 22:41:25
+6 thread is doing enqueue 99 at 22:41:25
+27 thread is doing dequeue 35 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+27 thread is going to do enqueue 5 at 22:41:25
+1 thread is doing enqueue 48 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+27 thread is doing enqueue 5 at 22:41:25
+20 thread is doing dequeue 6 at 22:41:25
+15 thread is doing enqueue 27 at 22:41:25
+4 thread is doing dequeue 46 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 46 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 58 at 22:41:25
+9 thread is doing enqueue 70 at 22:41:25
+30 thread is going to do enqueue 44 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 70 at 22:41:25
+27 thread is going to do enqueue 22 at 22:41:25
+9 thread is doing dequeue 90 at 22:41:25
+12 thread is going to do enqueue 43 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 43 at 22:41:25
+9 thread is going to do enqueue 24 at 22:41:25
+6 thread is doing dequeue 69 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+1 thread is going to do enqueue 78 at 22:41:25
+26 thread is going to do enqueue 52 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+5 thread is doing dequeue 24 at 22:41:25
+11 thread is going to do enqueue 40 at 22:41:25
+14 thread is doing enqueue 86 at 22:41:25
+25 thread is doing dequeue 99 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+18 thread is going to do enqueue 32 at 22:41:25
+28 thread is going to do enqueue 18 at 22:41:25
+32 thread is doing enqueue 90 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+3 thread is going to do enqueue 72 at 22:41:25
+2 thread is doing dequeue 40 at 22:41:25
+30 thread is doing enqueue 44 at 22:41:25
+2 thread is going to do enqueue 73 at 22:41:25
+26 thread is doing enqueue 52 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 60 at 22:41:25
+30 thread is doing dequeue 97 at 22:41:25
+19 thread is doing dequeue 3 at 22:41:25
+10 thread is doing enqueue 97 at 22:41:25
+19 thread is going to do enqueue 99 at 22:41:25
+7 thread is doing dequeue 13 at 22:41:25
+19 thread is doing enqueue 99 at 22:41:25
+6 thread is doing dequeue 5 at 22:41:25
+1 thread is doing enqueue 78 at 22:41:25
+13 thread is going to do enqueue 46 at 22:41:25
+15 thread is doing dequeue 48 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 5 at 22:41:25
+15 thread is doing dequeue 78 at 22:41:25
+28 thread is doing enqueue 18 at 22:41:25
+32 thread is going to do enqueue 68 at 22:41:25
+23 thread is doing dequeue 44 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 60 at 22:41:25
+29 thread is doing dequeue 43 at 22:41:25
+32 thread is doing enqueue 68 at 22:41:25
+28 thread is doing dequeue 32 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue 18 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 52 at 22:41:25
+1 thread is going to do enqueue 90 at 22:41:25
+11 thread is doing enqueue 40 at 22:41:25
+1 thread is doing enqueue 90 at 22:41:25
+32 thread is doing dequeue 60 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+1 thread is going to do enqueue 59 at 22:41:25
+20 thread is doing dequeue 24 at 22:41:25
+1 thread is doing enqueue 59 at 22:41:25
+19 thread is going to do enqueue 59 at 22:41:25
+31 thread is doing dequeue 99 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 72 at 22:41:25
+19 thread is doing enqueue 59 at 22:41:25
+20 thread is doing dequeue 46 at 22:41:25
+19 thread is going to do enqueue 42 at 22:41:25
+18 thread is doing enqueue 32 at 22:41:25
+19 thread is doing enqueue 42 at 22:41:25
+20 thread is going to do enqueue 6 at 22:41:25
+19 thread is going to do enqueue 21 at 22:41:25
+23 thread is going to do enqueue 36 at 22:41:25
+22 thread is going to do enqueue 96 at 22:41:25
+23 thread is doing enqueue 36 at 22:41:25
+20 thread is doing enqueue 6 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue 68 at 22:41:25
+15 thread is doing dequeue 40 at 22:41:25
+4 thread is doing dequeue 90 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+13 thread is doing enqueue 46 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+21 thread is doing dequeue 59 at 22:41:25
+32 thread is going to do enqueue 39 at 22:41:25
+23 thread is going to do enqueue 19 at 22:41:25
+9 thread is doing enqueue 24 at 22:41:25
+22 thread is doing enqueue 96 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+4 thread is doing dequeue 72 at 22:41:25
+32 thread is doing enqueue 39 at 22:41:25
+9 thread is going to do enqueue 40 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 59 at 22:41:25
+26 thread is doing dequeue 42 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 36 at 22:41:25
+2 thread is doing enqueue 73 at 22:41:25
+26 thread is going to do enqueue 22 at 22:41:25
+9 thread is doing enqueue 40 at 22:41:25
+6 thread is doing dequeue 96 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 22 at 22:41:25
+7 thread is doing dequeue 39 at 22:41:25
+9 thread is doing dequeue 40 at 22:41:25
+18 thread is doing dequeue 73 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+2 thread is going to do enqueue 96 at 22:41:25
+11 thread is doing dequeue 22 at 22:41:25
+22 thread is doing dequeue 6 at 22:41:25
+26 thread is going to do enqueue 25 at 22:41:25
+7 thread is going to do enqueue 22 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 25 at 22:41:25
+2 thread is doing enqueue 96 at 22:41:25
+7 thread is doing enqueue 22 at 22:41:25
+22 thread is doing dequeue 96 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 98 at 22:41:25
+4 thread is going to do enqueue 9 at 22:41:25
+26 thread is doing enqueue 98 at 22:41:25
+7 thread is doing dequeue 25 at 22:41:25
+4 thread is doing enqueue 9 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+4 thread is going to do enqueue 32 at 22:41:25
+5 thread is going to do enqueue 79 at 22:41:25
+16 thread is doing dequeue 98 at 22:41:25
+22 thread is doing dequeue 9 at 22:41:25
+5 thread is doing enqueue 79 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+7 thread is doing dequeue 22 at 22:41:25
+22 thread is doing dequeue 79 at 22:41:25
+7 thread is going to do enqueue 93 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+22 thread is going to do enqueue 21 at 22:41:25
+7 thread is doing enqueue 93 at 22:41:25
+22 thread is doing enqueue 21 at 22:41:25
+5 thread is going to do enqueue 50 at 22:41:25
+7 thread is going to do enqueue 4 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+5 thread is doing enqueue 50 at 22:41:25
+7 thread is doing enqueue 4 at 22:41:25
+22 thread is doing dequeue 93 at 22:41:25
+7 thread is going to do enqueue 26 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+7 thread is doing enqueue 26 at 22:41:25
+22 thread is doing dequeue 50 at 22:41:25
+12 thread is doing dequeue 22 at 22:41:25
+7 thread is going to do enqueue 84 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 4 at 22:41:25
+7 thread is doing enqueue 84 at 22:41:25
+32 thread is going to do enqueue 28 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 26 at 22:41:25
+27 thread is doing enqueue 22 at 22:41:25
+1 thread is doing dequeue 21 at 22:41:25
+32 thread is doing enqueue 28 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 3 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+32 thread is doing enqueue 3 at 22:41:25
+14 thread is doing dequeue 28 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 84 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 3 at 22:41:25
+14 thread is doing dequeue but queue is empty at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 88 at 22:41:25
+6 thread is doing dequeue but queue is empty at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+9 thread is doing enqueue 88 at 22:41:25
+14 thread is doing dequeue but queue is empty at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+14 thread is going to do enqueue 86 at 22:41:25
+6 thread is going to do enqueue 3 at 22:41:25
+9 thread is going to do enqueue 63 at 22:41:25
+5 thread is doing dequeue 88 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue but queue is empty at 22:41:25
+16 thread is doing dequeue but queue is empty at 22:41:25
+26 thread is going to do enqueue 57 at 22:41:25
+8 thread is doing dequeue but queue is empty at 22:41:25
+1 thread is going to do enqueue 14 at 22:41:25
+26 thread is doing enqueue 57 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+16 thread is doing dequeue 57 at 22:41:25
+1 thread is doing enqueue 14 at 22:41:25
+16 thread is going to do enqueue 28 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 14 at 22:41:25
+16 thread is doing enqueue 28 at 22:41:25
+1 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing dequeue 28 at 22:41:25
+16 thread is going to do enqueue 94 at 22:41:25
+25 thread is going to do enqueue 99 at 22:41:25
+23 thread is doing enqueue 19 at 22:41:25
+25 thread is doing enqueue 99 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+16 thread is doing enqueue 94 at 22:41:25
+25 thread is going to do enqueue 28 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 94 at 22:41:25
+16 thread is going to do enqueue 0 at 22:41:25
+25 thread is doing enqueue 28 at 22:41:25
+25 thread is going to do enqueue 59 at 22:41:25
+16 thread is doing enqueue 0 at 22:41:25
+25 thread is doing enqueue 59 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+25 thread is going to do enqueue 15 at 22:41:25
+22 thread is doing dequeue 19 at 22:41:25
+3 thread is doing dequeue 99 at 22:41:25
+22 thread is going to do enqueue 4 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 4 at 22:41:25
+3 thread is doing dequeue 28 at 22:41:25
+22 thread is going to do enqueue 85 at 22:41:25
+3 thread is going to do enqueue 43 at 22:41:25
+22 thread is doing enqueue 85 at 22:41:25
+3 thread is doing enqueue 43 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+3 thread is going to do enqueue 38 at 22:41:25
+22 thread is doing dequeue 0 at 22:41:25
+11 thread is going to do enqueue 49 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 49 at 22:41:25
+22 thread is doing dequeue 59 at 22:41:25
+11 thread is going to do enqueue 92 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 92 at 22:41:25
+22 thread is doing dequeue 4 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 85 at 22:41:25
+22 thread is doing dequeue 43 at 22:41:25
+11 thread is going to do enqueue 41 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+16 thread is doing dequeue 49 at 22:41:25
+22 thread is doing dequeue 92 at 22:41:25
+18 thread is doing dequeue but queue is empty at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+7 thread is doing dequeue but queue is empty at 22:41:25
+22 thread is doing dequeue 32 at 22:41:25
+20 thread is doing dequeue but queue is empty at 22:41:25
+15 thread is going to do enqueue 81 at 22:41:25
+4 thread is doing enqueue 32 at 22:41:25
+22 thread is going to do enqueue 90 at 22:41:25
+7 thread is going to do enqueue 23 at 22:41:25
+18 thread is going to do enqueue 60 at 22:41:25
+22 thread is doing enqueue 90 at 22:41:25
+20 thread is going to do enqueue 96 at 22:41:25
+22 thread is going to do enqueue 24 at 22:41:25
+15 thread is doing enqueue 81 at 22:41:25
+3 thread is doing enqueue 38 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 81 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 90 at 22:41:25
+2 thread is doing dequeue 38 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 3 at 22:41:25
+23 thread is doing dequeue 86 at 22:41:25
+14 thread is doing enqueue 86 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 78 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 3 at 22:41:25
+2 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing enqueue 15 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 78 at 22:41:25
+23 thread is doing dequeue 78 at 22:41:25
+2 thread is going to do enqueue 31 at 22:41:25
+6 thread is going to do enqueue 57 at 22:41:25
+2 thread is doing enqueue 31 at 22:41:25
+6 thread is doing enqueue 57 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 14 at 22:41:25
+2 thread is doing dequeue 15 at 22:41:25
+6 thread is doing enqueue 14 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 12 at 22:41:25
+2 thread is doing dequeue 31 at 22:41:25
+12 thread is doing dequeue 57 at 22:41:25
+6 thread is doing enqueue 12 at 22:41:25
+2 thread is going to do enqueue 10 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+4 thread is doing dequeue 12 at 22:41:25
+1 thread is doing dequeue but queue is empty at 22:41:25
+6 thread is going to do enqueue 55 at 22:41:25
+4 thread is going to do enqueue 20 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 20 at 22:41:25
+8 thread is doing dequeue but queue is empty at 22:41:25
+5 thread is doing dequeue 55 at 22:41:25
+6 thread is doing enqueue 55 at 22:41:25
+27 thread is doing dequeue 14 at 22:41:25
+14 thread is doing dequeue 20 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+14 thread is going to do enqueue 56 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 49 at 22:41:25
+14 thread is doing enqueue 56 at 22:41:25
+25 thread is doing dequeue 56 at 22:41:25
+30 thread is going to do enqueue 5 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+25 thread is going to do enqueue 45 at 22:41:25
+18 thread is doing enqueue 60 at 22:41:25
+25 thread is doing enqueue 45 at 22:41:25
+18 thread is going to do enqueue 73 at 22:41:25
+22 thread is doing enqueue 24 at 22:41:25
+25 thread is going to do enqueue 89 at 22:41:25
+18 thread is doing enqueue 73 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+25 thread is doing enqueue 89 at 22:41:25
+31 thread is going to do enqueue 71 at 22:41:25
+29 thread is going to do enqueue 0 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+31 thread is doing enqueue 71 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+22 thread is doing dequeue 60 at 22:41:25
+18 thread is doing dequeue 45 at 22:41:25
+5 thread is going to do enqueue 74 at 22:41:25
+18 thread is going to do enqueue 57 at 22:41:25
+5 thread is doing enqueue 74 at 22:41:25
+29 thread is doing enqueue 0 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+18 thread is doing enqueue 57 at 22:41:25
+5 thread is doing dequeue 24 at 22:41:25
+18 thread is going to do enqueue 17 at 22:41:25
+29 thread is going to do enqueue 70 at 22:41:25
+18 thread is doing enqueue 17 at 22:41:25
+5 thread is going to do enqueue 69 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 73 at 22:41:25
+5 thread is doing enqueue 69 at 22:41:25
+28 thread is going to do enqueue 73 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+28 thread is doing enqueue 73 at 22:41:25
+5 thread is doing dequeue 71 at 22:41:25
+31 thread is doing dequeue 89 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 5 at 22:41:25
+28 thread is doing dequeue 0 at 22:41:25
+30 thread is going to do enqueue 92 at 22:41:25
+28 thread is going to do enqueue 57 at 22:41:25
+30 thread is doing enqueue 92 at 22:41:25
+28 thread is doing enqueue 57 at 22:41:25
+30 thread is going to do enqueue 21 at 22:41:25
+28 thread is going to do enqueue 74 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 21 at 22:41:25
+18 thread is doing dequeue 74 at 22:41:25
+30 thread is going to do enqueue 47 at 22:41:25
+18 thread is going to do enqueue 31 at 22:41:25
+30 thread is doing enqueue 47 at 22:41:25
+18 thread is doing enqueue 31 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+30 thread is doing dequeue 57 at 22:41:25
+18 thread is doing dequeue 17 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+16 thread is going to do enqueue 98 at 22:41:25
+17 thread is doing dequeue 69 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+18 thread is going to do enqueue 31 at 22:41:25
+30 thread is doing dequeue 73 at 22:41:25
+16 thread is doing enqueue 98 at 22:41:25
+27 thread is doing dequeue 5 at 22:41:25
+18 thread is doing enqueue 31 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+18 thread is going to do enqueue 18 at 22:41:25
+16 thread is doing dequeue 92 at 22:41:25
+21 thread is doing dequeue 57 at 22:41:25
+18 thread is doing enqueue 18 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+18 thread is going to do enqueue 12 at 22:41:25
+12 thread is going to do enqueue 77 at 22:41:25
+10 thread is doing dequeue 47 at 22:41:25
+18 thread is doing enqueue 12 at 22:41:25
+12 thread is doing enqueue 77 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+16 thread is doing dequeue 21 at 22:41:25
+12 thread is going to do enqueue 76 at 22:41:25
+25 thread is doing dequeue 31 at 22:41:25
+16 thread is going to do enqueue 7 at 22:41:25
+25 thread is going to do enqueue 99 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 76 at 22:41:25
+16 thread is doing enqueue 7 at 22:41:25
+25 thread is doing enqueue 99 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 98 at 22:41:25
+25 thread is doing dequeue 31 at 22:41:25
+13 thread is going to do enqueue 18 at 22:41:25
+12 thread is going to do enqueue 63 at 22:41:25
+13 thread is doing enqueue 18 at 22:41:25
+12 thread is doing enqueue 63 at 22:41:25
+13 thread is going to do enqueue 44 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 18 at 22:41:25
+19 thread is doing enqueue 21 at 22:41:25
+14 thread is going to do enqueue 91 at 22:41:25
+13 thread is doing enqueue 44 at 22:41:25
+12 thread is doing dequeue 12 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 91 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 77 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 76 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue 7 at 22:41:25
+18 thread is doing dequeue 99 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+3 thread is going to do enqueue 26 at 22:41:25
+14 thread is doing dequeue 18 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 26 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 63 at 22:41:25
+3 thread is going to do enqueue 86 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 86 at 22:41:25
+19 thread is doing dequeue 44 at 22:41:25
+3 thread is going to do enqueue 14 at 22:41:25
+19 thread is going to do enqueue 79 at 22:41:25
+3 thread is doing enqueue 14 at 22:41:25
+19 thread is doing enqueue 79 at 22:41:25
+3 thread is going to do enqueue 62 at 22:41:25
+19 thread is going to do enqueue 88 at 22:41:25
+3 thread is doing enqueue 62 at 22:41:25
+19 thread is doing enqueue 88 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+3 thread is going to do enqueue 94 at 22:41:25
+19 thread is going to do enqueue 46 at 22:41:25
+3 thread is doing enqueue 94 at 22:41:25
+19 thread is doing enqueue 46 at 22:41:25
+3 thread is going to do enqueue 37 at 22:41:25
+19 thread is going to do enqueue 53 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 37 at 22:41:25
+19 thread is doing enqueue 53 at 22:41:25
+3 thread is going to do enqueue 25 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 25 at 22:41:25
+19 thread is doing dequeue 21 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+19 thread is going to do enqueue 63 at 22:41:25
+14 thread is doing dequeue 91 at 22:41:25
+11 thread is doing enqueue 41 at 22:41:25
+19 thread is doing enqueue 63 at 22:41:25
+29 thread is doing enqueue 70 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 26 at 22:41:25
+29 thread is going to do enqueue 71 at 22:41:25
+11 thread is doing dequeue 86 at 22:41:25
+14 thread is doing dequeue 14 at 22:41:25
+11 thread is going to do enqueue 33 at 22:41:25
+20 thread is doing enqueue 96 at 22:41:25
+14 thread is going to do enqueue 89 at 22:41:25
+11 thread is doing enqueue 33 at 22:41:25
+14 thread is doing enqueue 89 at 22:41:25
+11 thread is going to do enqueue 4 at 22:41:25
+29 thread is doing enqueue 71 at 22:41:25
+2 thread is doing enqueue 10 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+13 thread is doing dequeue 79 at 22:41:25
+2 thread is going to do enqueue 68 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 62 at 22:41:25
+2 thread is doing enqueue 68 at 22:41:25
+29 thread is going to do enqueue 95 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 88 at 22:41:25
+29 thread is doing enqueue 95 at 22:41:25
+2 thread is going to do enqueue 63 at 22:41:25
+23 thread is doing dequeue 94 at 22:41:25
+2 thread is doing enqueue 63 at 22:41:25
+29 thread is going to do enqueue 96 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+29 thread is doing enqueue 96 at 22:41:25
+23 thread is doing dequeue 46 at 22:41:25
+19 thread is going to do enqueue 36 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+19 thread is doing enqueue 36 at 22:41:25
+29 thread is doing dequeue 37 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 53 at 22:41:25
+29 thread is going to do enqueue 79 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+29 thread is doing enqueue 79 at 22:41:25
+23 thread is doing dequeue 25 at 22:41:25
+14 thread is going to do enqueue 72 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 72 at 22:41:25
+23 thread is doing dequeue 70 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+23 thread is going to do enqueue 63 at 22:41:25
+14 thread is doing dequeue 41 at 22:41:25
+23 thread is doing enqueue 63 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 63 at 22:41:25
+23 thread is doing dequeue 71 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 96 at 22:41:25
+23 thread is doing dequeue 33 at 22:41:25
+14 thread is going to do enqueue 82 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 82 at 22:41:25
+23 thread is doing dequeue 89 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 54 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 68 at 22:41:25
+15 thread is doing dequeue 95 at 22:41:25
+32 thread is doing dequeue 10 at 22:41:25
+23 thread is doing dequeue 63 at 22:41:25
+11 thread is doing enqueue 4 at 22:41:25
+24 thread is doing enqueue 54 at 22:41:25
+12 thread is going to do enqueue 62 at 22:41:25
+1 thread is doing dequeue 36 at 22:41:25
+10 thread is doing dequeue 79 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 96 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 72 at 22:41:25
+10 thread is doing dequeue 63 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+10 thread is going to do enqueue 54 at 22:41:25
+1 thread is doing dequeue 82 at 22:41:25
+6 thread is doing dequeue 4 at 22:41:25
+10 thread is doing enqueue 54 at 22:41:25
+1 thread is going to do enqueue 21 at 22:41:25
+10 thread is going to do enqueue 65 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+1 thread is doing enqueue 21 at 22:41:25
+7 thread is doing enqueue 23 at 22:41:25
+10 thread is doing enqueue 65 at 22:41:25
+25 thread is doing dequeue 54 at 22:41:25
+7 thread is going to do enqueue 1 at 22:41:25
+10 thread is going to do enqueue 53 at 22:41:25
+7 thread is doing enqueue 1 at 22:41:25
+10 thread is doing enqueue 53 at 22:41:25
+30 thread is doing dequeue 54 at 22:41:25
+7 thread is going to do enqueue 7 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+7 thread is doing enqueue 7 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 21 at 22:41:25
+23 thread is doing dequeue 23 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 65 at 22:41:25
+23 thread is doing dequeue 1 at 22:41:25
+20 thread is going to do enqueue 98 at 22:41:25
+23 thread is going to do enqueue 52 at 22:41:25
+20 thread is doing enqueue 98 at 22:41:25
+23 thread is doing enqueue 52 at 22:41:25
+20 thread is going to do enqueue 89 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 89 at 22:41:25
+23 thread is doing dequeue 53 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+23 thread is going to do enqueue 9 at 22:41:25
+20 thread is doing dequeue 7 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 52 at 22:41:25
+4 thread is doing dequeue 98 at 22:41:25
+20 thread is doing dequeue 89 at 22:41:25
+23 thread is doing enqueue 9 at 22:41:25
+4 thread is going to do enqueue 9 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 9 at 22:41:25
+26 thread is doing enqueue 49 at 22:41:25
+6 thread is going to do enqueue 38 at 22:41:25
+4 thread is going to do enqueue 26 at 22:41:25
+6 thread is doing enqueue 38 at 22:41:25
+31 thread is going to do enqueue 47 at 22:41:25
+4 thread is doing enqueue 26 at 22:41:25
+25 thread is going to do enqueue 87 at 22:41:25
+4 thread is going to do enqueue 81 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+25 thread is doing enqueue 87 at 22:41:25
+4 thread is doing enqueue 81 at 22:41:25
+6 thread is doing dequeue 9 at 22:41:25
+4 thread is going to do enqueue 50 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 50 at 22:41:25
+31 thread is doing enqueue 47 at 22:41:25
+6 thread is doing dequeue 49 at 22:41:25
+31 thread is going to do enqueue 50 at 22:41:25
+6 thread is going to do enqueue 13 at 22:41:25
+31 thread is doing enqueue 50 at 22:41:25
+6 thread is doing enqueue 13 at 22:41:25
+13 thread is doing dequeue 9 at 22:41:25
+29 thread is going to do enqueue 81 at 22:41:25
+31 thread is going to do enqueue 94 at 22:41:25
+6 thread is going to do enqueue 20 at 22:41:25
+8 thread is doing dequeue 38 at 22:41:25
+14 thread is going to do enqueue 82 at 22:41:25
+31 thread is doing enqueue 94 at 22:41:25
+6 thread is doing enqueue 20 at 22:41:25
+8 thread is going to do enqueue 87 at 22:41:25
+3 thread is going to do enqueue 96 at 22:41:25
+14 thread is doing enqueue 82 at 22:41:25
+3 thread is doing enqueue 96 at 22:41:25
+8 thread is doing enqueue 87 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+14 thread is going to do enqueue 92 at 22:41:25
+3 thread is doing dequeue 26 at 22:41:25
+8 thread is going to do enqueue 34 at 22:41:25
+14 thread is doing enqueue 92 at 22:41:25
+30 thread is going to do enqueue 6 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 6 at 22:41:25
+14 thread is doing dequeue 47 at 22:41:25
+30 thread is going to do enqueue 95 at 22:41:25
+14 thread is going to do enqueue 62 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 95 at 22:41:25
+14 thread is doing enqueue 62 at 22:41:25
+12 thread is doing enqueue 62 at 22:41:25
+30 thread is going to do enqueue 54 at 22:41:25
+12 thread is going to do enqueue 9 at 22:41:25
+30 thread is doing enqueue 54 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 9 at 22:41:25
+22 thread is doing dequeue 87 at 22:41:25
+29 thread is doing enqueue 81 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+30 thread is doing dequeue 81 at 22:41:25
+22 thread is doing dequeue 50 at 22:41:25
+30 thread is going to do enqueue 82 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+22 thread is going to do enqueue 90 at 22:41:25
+31 thread is doing dequeue 50 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 90 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 82 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+30 thread is going to do enqueue 92 at 22:41:25
+22 thread is doing dequeue 13 at 22:41:25
+30 thread is doing enqueue 92 at 22:41:25
+9 thread is doing enqueue 63 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+22 thread is going to do enqueue 28 at 22:41:25
+15 thread is going to do enqueue 18 at 22:41:25
+30 thread is doing dequeue 94 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 28 at 22:41:25
+15 thread is doing enqueue 18 at 22:41:25
+9 thread is doing dequeue 20 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+15 thread is going to do enqueue 82 at 22:41:25
+9 thread is going to do enqueue 10 at 22:41:25
+15 thread is doing enqueue 82 at 22:41:25
+9 thread is doing enqueue 10 at 22:41:25
+15 thread is going to do enqueue 88 at 22:41:25
+21 thread is doing dequeue 82 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+16 thread is going to do enqueue 37 at 22:41:25
+9 thread is doing dequeue 87 at 22:41:25
+16 thread is doing enqueue 37 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 96 at 22:41:25
+16 thread is doing dequeue 92 at 22:41:25
+9 thread is going to do enqueue 57 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+5 thread is doing dequeue 6 at 22:41:25
+2 thread is doing dequeue 95 at 22:41:25
+5 thread is going to do enqueue 69 at 22:41:25
+2 thread is going to do enqueue 51 at 22:41:25
+9 thread is doing enqueue 57 at 22:41:25
+5 thread is doing enqueue 69 at 22:41:25
+2 thread is doing enqueue 51 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+5 thread is doing dequeue 62 at 22:41:25
+2 thread is doing dequeue 62 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 93 at 22:41:25
+7 thread is doing dequeue 54 at 22:41:25
+24 thread is doing enqueue 93 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 9 at 22:41:25
+32 thread is doing dequeue 81 at 22:41:25
+24 thread is going to do enqueue 31 at 22:41:25
+11 thread is going to do enqueue 77 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+24 thread is doing enqueue 31 at 22:41:25
+11 thread is doing enqueue 77 at 22:41:25
+23 thread is doing dequeue 82 at 22:41:25
+24 thread is going to do enqueue 52 at 22:41:25
+11 thread is going to do enqueue 41 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 41 at 22:41:25
+23 thread is doing dequeue 90 at 22:41:25
+28 thread is doing enqueue 74 at 22:41:25
+23 thread is going to do enqueue 84 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+3 thread is going to do enqueue 76 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 84 at 22:41:25
+10 thread is doing dequeue 63 at 22:41:25
+16 thread is doing dequeue 92 at 22:41:25
+23 thread is going to do enqueue 8 at 22:41:25
+8 thread is doing enqueue 34 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+16 thread is going to do enqueue 78 at 22:41:25
+14 thread is going to do enqueue 74 at 22:41:25
+23 thread is doing enqueue 8 at 22:41:25
+16 thread is doing enqueue 78 at 22:41:25
+8 thread is doing dequeue 28 at 22:41:25
+14 thread is doing enqueue 74 at 22:41:25
+8 thread is going to do enqueue 0 at 22:41:25
+7 thread is doing dequeue 18 at 22:41:25
+14 thread is going to do enqueue 97 at 22:41:25
+8 thread is doing enqueue 0 at 22:41:25
+14 thread is doing enqueue 97 at 22:41:25
+8 thread is going to do enqueue 12 at 22:41:25
+21 thread is doing dequeue 82 at 22:41:25
+14 thread is going to do enqueue 82 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 82 at 22:41:25
+6 thread is doing dequeue 10 at 22:41:25
+14 thread is going to do enqueue 21 at 22:41:25
+20 thread is doing dequeue 37 at 22:41:25
+11 thread is going to do enqueue 85 at 22:41:25
+3 thread is doing enqueue 76 at 22:41:25
+20 thread is going to do enqueue 54 at 22:41:25
+14 thread is doing enqueue 21 at 22:41:25
+20 thread is doing enqueue 54 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 85 at 22:41:25
+14 thread is doing dequeue 57 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 69 at 22:41:25
+13 thread is going to do enqueue 99 at 22:41:25
+14 thread is doing dequeue 51 at 22:41:25
+11 thread is going to do enqueue 54 at 22:41:25
+13 thread is doing enqueue 99 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+16 thread is doing dequeue 93 at 22:41:25
+13 thread is doing dequeue 31 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 90 at 22:41:25
+16 thread is doing dequeue 77 at 22:41:25
+13 thread is doing dequeue 41 at 22:41:25
+17 thread is going to do enqueue 37 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+7 thread is doing enqueue 90 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 90 at 22:41:25
+13 thread is doing dequeue 74 at 22:41:25
+7 thread is doing enqueue 90 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 65 at 22:41:25
+13 thread is doing dequeue 84 at 22:41:25
+10 thread is going to do enqueue 69 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+30 thread is going to do enqueue 61 at 22:41:25
+7 thread is doing enqueue 65 at 22:41:25
+10 thread is doing enqueue 69 at 22:41:25
+30 thread is doing enqueue 61 at 22:41:25
+10 thread is going to do enqueue 38 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 38 at 22:41:25
+22 thread is doing dequeue 34 at 22:41:25
+7 thread is doing dequeue 8 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 4 at 22:41:25
+30 thread is going to do enqueue 64 at 22:41:25
+7 thread is doing enqueue 4 at 22:41:25
+22 thread is doing dequeue 78 at 22:41:25
+30 thread is doing enqueue 64 at 22:41:25
+22 thread is going to do enqueue 79 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 79 at 22:41:25
+30 thread is doing dequeue 74 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+22 thread is doing dequeue 0 at 22:41:25
+30 thread is doing dequeue 97 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+22 thread is doing dequeue 82 at 22:41:25
+30 thread is doing dequeue 21 at 22:41:25
+1 thread is doing dequeue 76 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 85 at 22:41:25
+20 thread is doing dequeue 54 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+20 thread is going to do enqueue 83 at 22:41:25
+28 thread is doing dequeue 99 at 22:41:25
+20 thread is doing enqueue 83 at 22:41:25
+28 thread is going to do enqueue 69 at 22:41:25
+20 thread is going to do enqueue 52 at 22:41:25
+20 thread is doing enqueue 52 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+28 thread is doing enqueue 69 at 22:41:25
+11 thread is doing enqueue 54 at 22:41:25
+20 thread is going to do enqueue 89 at 22:41:25
+18 thread is going to do enqueue 31 at 22:41:25
+20 thread is doing enqueue 89 at 22:41:25
+15 thread is doing enqueue 88 at 22:41:25
+18 thread is doing enqueue 31 at 22:41:25
+15 thread is going to do enqueue 48 at 22:41:25
+20 thread is going to do enqueue 64 at 22:41:25
+18 thread is going to do enqueue 77 at 22:41:25
+20 thread is doing enqueue 64 at 22:41:25
+21 thread is doing dequeue 90 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+16 thread is doing dequeue 90 at 22:41:25
+18 thread is doing enqueue 77 at 22:41:25
+16 thread is going to do enqueue 55 at 22:41:25
+21 thread is going to do enqueue 49 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+30 thread is going to do enqueue 60 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 60 at 22:41:25
+25 thread is doing dequeue 69 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue 65 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+3 thread is going to do enqueue 45 at 22:41:25
+25 thread is doing dequeue 61 at 22:41:25
+3 thread is doing enqueue 45 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+16 thread is doing enqueue 55 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 4 at 22:41:25
+25 thread is doing dequeue 38 at 22:41:25
+11 thread is doing dequeue 64 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+11 thread is going to do enqueue 59 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+24 thread is doing enqueue 52 at 22:41:25
+26 thread is doing dequeue 83 at 22:41:25
+11 thread is doing enqueue 59 at 22:41:25
+20 thread is doing dequeue 69 at 22:41:25
+11 thread is going to do enqueue 83 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+21 thread is doing enqueue 49 at 22:41:25
+15 thread is doing enqueue 48 at 22:41:25
+26 thread is doing dequeue 52 at 22:41:25
+21 thread is going to do enqueue 33 at 22:41:25
+29 thread is doing dequeue 79 at 22:41:25
+21 thread is doing enqueue 33 at 22:41:25
+13 thread is doing dequeue 54 at 22:41:25
+29 thread is going to do enqueue 81 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 66 at 22:41:25
+29 thread is doing enqueue 81 at 22:41:25
+13 thread is doing enqueue 66 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 92 at 22:41:25
+29 thread is doing dequeue 88 at 22:41:25
+13 thread is doing enqueue 92 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+16 thread is doing dequeue 89 at 22:41:25
+32 thread is going to do enqueue 74 at 22:41:25
+29 thread is doing dequeue 64 at 22:41:25
+13 thread is doing dequeue 31 at 22:41:25
+32 thread is doing enqueue 74 at 22:41:25
+29 thread is going to do enqueue 83 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+29 thread is doing enqueue 83 at 22:41:25
+13 thread is doing dequeue 77 at 22:41:25
+29 thread is going to do enqueue 73 at 22:41:25
+13 thread is going to do enqueue 62 at 22:41:25
+29 thread is doing enqueue 73 at 22:41:25
+24 thread is doing dequeue 55 at 22:41:25
+29 thread is going to do enqueue 33 at 22:41:25
+29 thread is doing enqueue 33 at 22:41:25
+15 thread is going to do enqueue 41 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 80 at 22:41:25
+15 thread is doing enqueue 41 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+5 thread is doing dequeue 60 at 22:41:25
+29 thread is doing enqueue 80 at 22:41:25
+1 thread is doing dequeue 45 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 48 at 22:41:25
+29 thread is doing dequeue 52 at 22:41:25
+1 thread is going to do enqueue 29 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 59 at 22:41:25
+1 thread is doing enqueue 29 at 22:41:25
+23 thread is doing dequeue 49 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 33 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 81 at 22:41:25
+1 thread is going to do enqueue 26 at 22:41:25
+22 thread is going to do enqueue 8 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 8 at 22:41:25
+23 thread is doing dequeue 66 at 22:41:25
+1 thread is doing enqueue 26 at 22:41:25
+22 thread is going to do enqueue 38 at 22:41:25
+23 thread is going to do enqueue 93 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 38 at 22:41:25
+23 thread is doing enqueue 93 at 22:41:25
+24 thread is doing dequeue 92 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 21 at 22:41:25
+22 thread is doing dequeue 83 at 22:41:25
+12 thread is going to do enqueue 13 at 22:41:25
+1 thread is doing dequeue 74 at 22:41:25
+24 thread is doing enqueue 21 at 22:41:25
+3 thread is doing dequeue 33 at 22:41:25
+14 thread is doing dequeue 73 at 22:41:25
+7 thread is going to do enqueue 29 at 22:41:25
+14 thread is going to do enqueue 80 at 22:41:25
+7 thread is doing enqueue 29 at 22:41:25
+14 thread is doing enqueue 80 at 22:41:25
+7 thread is going to do enqueue 95 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 80 at 22:41:25
+17 thread is doing enqueue 37 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 29 at 22:41:25
+9 thread is doing dequeue 26 at 22:41:25
+7 thread is doing enqueue 95 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 8 at 22:41:25
+7 thread is going to do enqueue 33 at 22:41:25
+14 thread is doing dequeue 41 at 22:41:25
+7 thread is doing enqueue 33 at 22:41:25
+6 thread is doing dequeue 38 at 22:41:25
+2 thread is going to do enqueue 87 at 22:41:25
+6 thread is going to do enqueue 94 at 22:41:25
+2 thread is doing enqueue 87 at 22:41:25
+15 thread is going to do enqueue 99 at 22:41:25
+6 thread is doing enqueue 94 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 93 at 22:41:25
+28 thread is going to do enqueue 86 at 22:41:25
+15 thread is doing enqueue 99 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 13 at 22:41:25
+2 thread is doing dequeue 29 at 22:41:25
+12 thread is going to do enqueue 86 at 22:41:25
+12 thread is doing enqueue 86 at 22:41:25
+15 thread is going to do enqueue 49 at 22:41:25
+12 thread is going to do enqueue 33 at 22:41:25
+28 thread is doing enqueue 86 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 49 at 22:41:25
+6 thread is doing dequeue 21 at 22:41:25
+2 thread is doing dequeue 80 at 22:41:25
+15 thread is going to do enqueue 73 at 22:41:25
+28 thread is going to do enqueue 22 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+28 thread is doing enqueue 22 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 95 at 22:41:25
+28 thread is going to do enqueue 24 at 22:41:25
+2 thread is going to do enqueue 59 at 22:41:25
+13 thread is doing enqueue 62 at 22:41:25
+2 thread is doing enqueue 59 at 22:41:25
+13 thread is going to do enqueue 18 at 22:41:25
+28 thread is doing enqueue 24 at 22:41:25
+2 thread is going to do enqueue 12 at 22:41:25
+21 thread is going to do enqueue 33 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+2 thread is doing enqueue 12 at 22:41:25
+21 thread is doing enqueue 33 at 22:41:25
+2 thread is going to do enqueue 34 at 22:41:25
+23 thread is going to do enqueue 87 at 22:41:25
+21 thread is going to do enqueue 15 at 22:41:25
+2 thread is doing enqueue 34 at 22:41:25
+21 thread is doing enqueue 15 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 37 at 22:41:25
+21 thread is doing dequeue 33 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 87 at 22:41:25
+21 thread is doing dequeue 94 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 57 at 22:41:25
+2 thread is doing dequeue 99 at 22:41:25
+6 thread is going to do enqueue 4 at 22:41:25
+16 thread is going to do enqueue 92 at 22:41:25
+2 thread is going to do enqueue 22 at 22:41:25
+29 thread is doing enqueue 57 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+16 thread is doing enqueue 92 at 22:41:25
+2 thread is doing enqueue 22 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 43 at 22:41:25
+16 thread is doing dequeue 13 at 22:41:25
+2 thread is going to do enqueue 78 at 22:41:25
+29 thread is doing enqueue 43 at 22:41:25
+13 thread is doing enqueue 18 at 22:41:25
+7 thread is going to do enqueue 82 at 22:41:25
+16 thread is going to do enqueue 0 at 22:41:25
+29 thread is going to do enqueue 99 at 22:41:25
+7 thread is doing enqueue 82 at 22:41:25
+29 thread is doing enqueue 99 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+7 thread is doing dequeue 86 at 22:41:25
+29 thread is doing dequeue 86 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 49 at 22:41:25
+12 thread is doing enqueue 33 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 22 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 24 at 22:41:25
+29 thread is doing dequeue 62 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 59 at 22:41:25
+29 thread is doing dequeue 12 at 22:41:25
+20 thread is going to do enqueue 23 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 23 at 22:41:25
+12 thread is doing dequeue 33 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+12 thread is going to do enqueue 31 at 22:41:25
+31 thread is doing dequeue 34 at 22:41:25
+12 thread is doing enqueue 31 at 22:41:25
+31 thread is going to do enqueue 9 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+31 thread is doing enqueue 9 at 22:41:25
+12 thread is doing dequeue 15 at 22:41:25
+31 thread is going to do enqueue 69 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+10 thread is going to do enqueue 71 at 22:41:25
+31 thread is doing enqueue 69 at 22:41:25
+12 thread is doing dequeue 57 at 22:41:25
+10 thread is doing enqueue 71 at 22:41:25
+12 thread is going to do enqueue 69 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+7 thread is doing dequeue 92 at 22:41:25
+24 thread is going to do enqueue 52 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 73 at 22:41:25
+1 thread is doing dequeue 22 at 22:41:25
+10 thread is going to do enqueue 40 at 22:41:25
+12 thread is doing enqueue 69 at 22:41:25
+10 thread is doing enqueue 40 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 24 at 22:41:25
+21 thread is doing dequeue 18 at 22:41:25
+9 thread is doing dequeue 43 at 22:41:25
+29 thread is doing enqueue 24 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 82 at 22:41:25
+24 thread is doing enqueue 52 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+15 thread is going to do enqueue 91 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 15 at 22:41:25
+29 thread is doing dequeue 33 at 22:41:25
+15 thread is doing enqueue 91 at 22:41:25
+3 thread is going to do enqueue 37 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 42 at 22:41:25
+9 thread is doing dequeue 99 at 22:41:25
+3 thread is doing enqueue 37 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 23 at 22:41:25
+15 thread is doing dequeue 31 at 22:41:25
+24 thread is doing enqueue 15 at 22:41:25
+3 thread is going to do enqueue 13 at 22:41:25
+12 thread is going to do enqueue 28 at 22:41:25
+15 thread is going to do enqueue 4 at 22:41:25
+12 thread is doing enqueue 28 at 22:41:25
+18 thread is doing dequeue 9 at 22:41:25
+3 thread is doing enqueue 13 at 22:41:25
+15 thread is doing enqueue 4 at 22:41:25
+24 thread is going to do enqueue 46 at 22:41:25
+12 thread is going to do enqueue 38 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 38 at 22:41:25
+10 thread is doing dequeue 69 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+24 thread is doing enqueue 46 at 22:41:25
+10 thread is going to do enqueue 58 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 58 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue 71 at 22:41:25
+12 thread is doing dequeue 69 at 22:41:25
+15 thread is doing dequeue 73 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+4 thread is doing dequeue 52 at 22:41:25
+3 thread is going to do enqueue 46 at 22:41:25
+3 thread is doing enqueue 46 at 22:41:25
+10 thread is doing dequeue 40 at 22:41:25
+12 thread is going to do enqueue 11 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+4 thread is going to do enqueue 3 at 22:41:25
+3 thread is going to do enqueue 16 at 22:41:25
+12 thread is doing enqueue 11 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 16 at 22:41:25
+19 thread is doing dequeue 24 at 22:41:25
+3 thread is going to do enqueue 13 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 13 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 91 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 15 at 22:41:25
+3 thread is doing dequeue 37 at 22:41:25
+28 thread is doing dequeue 13 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue 28 at 22:41:25
+28 thread is doing dequeue 4 at 22:41:25
+3 thread is going to do enqueue 53 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 53 at 22:41:25
+28 thread is doing dequeue 46 at 22:41:25
+3 thread is going to do enqueue 7 at 22:41:25
+29 thread is doing enqueue 42 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 84 at 22:41:25
+3 thread is doing enqueue 7 at 22:41:25
+29 thread is doing enqueue 84 at 22:41:25
+28 thread is doing dequeue 38 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+28 thread is going to do enqueue 92 at 22:41:25
+3 thread is doing dequeue 58 at 22:41:25
+6 thread is doing enqueue 4 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 39 at 22:41:25
+3 thread is doing dequeue 46 at 22:41:25
+6 thread is doing enqueue 39 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue 11 at 22:41:25
+19 thread is going to do enqueue 64 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 16 at 22:41:25
+19 thread is doing enqueue 64 at 22:41:25
+14 thread is going to do enqueue 51 at 22:41:25
+3 thread is doing dequeue 13 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 53 at 22:41:25
+3 thread is doing dequeue 42 at 22:41:25
+19 thread is going to do enqueue 2 at 22:41:25
+3 thread is going to do enqueue 79 at 22:41:25
+15 thread is going to do enqueue 47 at 22:41:25
+25 thread is going to do enqueue 84 at 22:41:25
+3 thread is doing enqueue 79 at 22:41:25
+25 thread is doing enqueue 84 at 22:41:25
+3 thread is going to do enqueue 61 at 22:41:25
+25 thread is going to do enqueue 31 at 22:41:25
+3 thread is doing enqueue 61 at 22:41:25
+25 thread is doing enqueue 31 at 22:41:25
+15 thread is doing enqueue 47 at 22:41:25
+3 thread is going to do enqueue 28 at 22:41:25
+15 thread is going to do enqueue 94 at 22:41:25
+28 thread is doing enqueue 92 at 22:41:25
+3 thread is doing enqueue 28 at 22:41:25
+28 thread is going to do enqueue 43 at 22:41:25
+15 thread is doing enqueue 94 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+30 thread is doing dequeue 7 at 22:41:25
+3 thread is doing dequeue 84 at 22:41:25
+30 thread is going to do enqueue 87 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 87 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 4 at 22:41:25
+24 thread is doing dequeue 39 at 22:41:25
+14 thread is doing enqueue 51 at 22:41:25
+16 thread is doing enqueue 0 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 79 at 22:41:25
+16 thread is doing dequeue 47 at 22:41:25
+12 thread is doing dequeue 64 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+14 thread is going to do enqueue 5 at 22:41:25
+7 thread is doing dequeue 84 at 22:41:25
+16 thread is doing dequeue 61 at 22:41:25
+12 thread is going to do enqueue 98 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 98 at 22:41:25
+7 thread is doing dequeue 31 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 28 at 22:41:25
+11 thread is doing enqueue 83 at 22:41:25
+7 thread is doing dequeue 94 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 92 at 22:41:25
+7 thread is going to do enqueue 12 at 22:41:25
+20 thread is going to do enqueue 53 at 22:41:25
+21 thread is going to do enqueue 32 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+21 thread is doing enqueue 32 at 22:41:25
+20 thread is doing enqueue 53 at 22:41:25
+21 thread is going to do enqueue 35 at 22:41:25
+12 thread is doing dequeue 87 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+7 thread is doing enqueue 12 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 51 at 22:41:25
+7 thread is doing dequeue 0 at 22:41:25
+12 thread is going to do enqueue 34 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 34 at 22:41:25
+9 thread is doing dequeue 83 at 22:41:25
+7 thread is doing dequeue 98 at 22:41:25
+12 thread is going to do enqueue 28 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 63 at 22:41:25
+22 thread is doing dequeue 12 at 22:41:25
+7 thread is doing dequeue 53 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 28 at 22:41:25
+7 thread is going to do enqueue 85 at 22:41:25
+12 thread is going to do enqueue 0 at 22:41:25
+28 thread is doing enqueue 43 at 22:41:25
+7 thread is doing enqueue 85 at 22:41:25
+28 thread is going to do enqueue 8 at 22:41:25
+7 thread is going to do enqueue 49 at 22:41:25
+12 thread is doing enqueue 0 at 22:41:25
+28 thread is doing enqueue 8 at 22:41:25
+7 thread is doing enqueue 49 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 32 at 22:41:25
+7 thread is doing dequeue 34 at 22:41:25
+28 thread is going to do enqueue 85 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 28 at 22:41:25
+7 thread is doing dequeue 85 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 29 at 22:41:25
+20 thread is doing dequeue 43 at 22:41:25
+26 thread is doing dequeue 0 at 22:41:25
+4 thread is doing enqueue 3 at 22:41:25
+20 thread is going to do enqueue 52 at 22:41:25
+4 thread is going to do enqueue 95 at 22:41:25
+7 thread is doing enqueue 29 at 22:41:25
+20 thread is doing enqueue 52 at 22:41:25
+26 thread is going to do enqueue 66 at 22:41:25
+14 thread is doing enqueue 5 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 66 at 22:41:25
+16 thread is doing dequeue 49 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+14 thread is going to do enqueue 47 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 29 at 22:41:25
+20 thread is doing dequeue 8 at 22:41:25
+26 thread is doing dequeue 3 at 22:41:25
+20 thread is going to do enqueue 29 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 29 at 22:41:25
+26 thread is doing dequeue 52 at 22:41:25
+14 thread is doing enqueue 47 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 5 at 22:41:25
+26 thread is doing dequeue 66 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 47 at 22:41:25
+26 thread is doing dequeue 29 at 22:41:25
+20 thread is going to do enqueue 18 at 22:41:25
+26 thread is going to do enqueue 94 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 94 at 22:41:25
+19 thread is doing enqueue 2 at 22:41:25
+8 thread is doing enqueue 12 at 22:41:25
+17 thread is going to do enqueue 62 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 8 at 22:41:25
+8 thread is doing dequeue 94 at 22:41:25
+17 thread is doing enqueue 62 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 8 at 22:41:25
+32 thread is doing dequeue 2 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 12 at 22:41:25
+32 thread is going to do enqueue 34 at 22:41:25
+19 thread is going to do enqueue 96 at 22:41:25
+32 thread is doing enqueue 34 at 22:41:25
+19 thread is doing enqueue 96 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+19 thread is going to do enqueue 65 at 22:41:25
+18 thread is doing dequeue 62 at 22:41:25
+19 thread is doing enqueue 65 at 22:41:25
+18 thread is going to do enqueue 16 at 22:41:25
+2 thread is doing enqueue 78 at 22:41:25
+18 thread is doing enqueue 16 at 22:41:25
+2 thread is going to do enqueue 43 at 22:41:25
+18 thread is going to do enqueue 87 at 22:41:25
+6 thread is going to do enqueue 2 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+2 thread is doing enqueue 43 at 22:41:25
+18 thread is doing enqueue 87 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 41 at 22:41:25
+2 thread is doing dequeue 34 at 22:41:25
+5 thread is doing dequeue 8 at 22:41:25
+24 thread is doing enqueue 41 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 2 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+18 thread is doing dequeue 96 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+24 thread is doing dequeue 78 at 22:41:25
+5 thread is doing dequeue 65 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 43 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+18 thread is doing dequeue 16 at 22:41:25
+5 thread is doing dequeue 2 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 41 at 22:41:25
+18 thread is going to do enqueue 93 at 22:41:25
+1 thread is going to do enqueue 94 at 22:41:25
+5 thread is doing dequeue 95 at 22:41:25
+31 thread is going to do enqueue 15 at 22:41:25
+24 thread is doing dequeue 87 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 95 at 22:41:25
+18 thread is doing enqueue 93 at 22:41:25
+16 thread is doing dequeue 93 at 22:41:25
+31 thread is doing enqueue 15 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+31 thread is going to do enqueue 51 at 22:41:25
+30 thread is doing dequeue 15 at 22:41:25
+16 thread is going to do enqueue 38 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+4 thread is going to do enqueue 75 at 22:41:25
+5 thread is doing dequeue 51 at 22:41:25
+4 thread is doing enqueue 75 at 22:41:25
+30 thread is going to do enqueue 11 at 22:41:25
+25 thread is going to do enqueue 99 at 22:41:25
+4 thread is going to do enqueue 13 at 22:41:25
+30 thread is doing enqueue 11 at 22:41:25
+24 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing enqueue 99 at 22:41:25
+5 thread is going to do enqueue 68 at 22:41:25
+25 thread is going to do enqueue 64 at 22:41:25
+5 thread is doing enqueue 68 at 22:41:25
+11 thread is going to do enqueue 46 at 22:41:25
+5 thread is going to do enqueue 72 at 22:41:25
+15 thread is going to do enqueue 40 at 22:41:25
+5 thread is doing enqueue 72 at 22:41:25
+3 thread is doing dequeue 38 at 22:41:25
+31 thread is doing enqueue 51 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 13 at 22:41:25
+5 thread is going to do enqueue 23 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+31 thread is going to do enqueue 93 at 22:41:25
+11 thread is doing enqueue 46 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+31 thread is doing enqueue 93 at 22:41:25
+4 thread is doing dequeue 75 at 22:41:25
+13 thread is going to do enqueue 14 at 22:41:25
+16 thread is doing enqueue 38 at 22:41:25
+17 thread is going to do enqueue 67 at 22:41:25
+13 thread is doing enqueue 14 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+16 thread is going to do enqueue 0 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 11 at 22:41:25
+13 thread is going to do enqueue 74 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+13 thread is doing enqueue 74 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 13 at 22:41:25
+7 thread is doing dequeue 68 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 46 at 22:41:25
+7 thread is going to do enqueue 49 at 22:41:25
+6 thread is going to do enqueue 92 at 22:41:25
+19 thread is doing dequeue 72 at 22:41:25
+6 thread is doing enqueue 92 at 22:41:25
+2 thread is going to do enqueue 29 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 40 at 22:41:25
+1 thread is doing enqueue 94 at 22:41:25
+15 thread is going to do enqueue 43 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 40 at 22:41:25
+1 thread is doing dequeue 93 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+4 thread is doing dequeue 99 at 22:41:25
+9 thread is doing enqueue 63 at 22:41:25
+8 thread is doing dequeue 14 at 22:41:25
+1 thread is doing dequeue 74 at 22:41:25
+9 thread is going to do enqueue 87 at 22:41:25
+1 thread is going to do enqueue 40 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+9 thread is doing enqueue 87 at 22:41:25
+4 thread is doing dequeue 94 at 22:41:25
+1 thread is doing enqueue 40 at 22:41:25
+25 thread is doing enqueue 64 at 22:41:25
+1 thread is going to do enqueue 26 at 22:41:25
+25 thread is going to do enqueue 5 at 22:41:25
+1 thread is doing enqueue 26 at 22:41:25
+25 thread is doing enqueue 5 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 92 at 22:41:25
+25 thread is doing dequeue 63 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+25 thread is going to do enqueue 20 at 22:41:25
+21 thread is doing enqueue 35 at 22:41:25
+1 thread is doing dequeue 87 at 22:41:25
+25 thread is doing enqueue 20 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 18 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 40 at 22:41:25
+25 thread is doing dequeue 64 at 22:41:25
+1 thread is going to do enqueue 67 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+1 thread is doing enqueue 67 at 22:41:25
+25 thread is doing dequeue 26 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+16 thread is doing enqueue 0 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 53 at 22:41:25
+25 thread is doing dequeue 20 at 22:41:25
+31 thread is doing dequeue 35 at 22:41:25
+8 thread is going to do enqueue 68 at 22:41:25
+1 thread is going to do enqueue 11 at 22:41:25
+27 thread is doing dequeue 18 at 22:41:25
+8 thread is doing enqueue 68 at 22:41:25
+27 thread is going to do enqueue 9 at 22:41:25
+1 thread is doing enqueue 11 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+29 thread is doing enqueue 53 at 22:41:25
+7 thread is doing enqueue 49 at 22:41:25
+30 thread is doing dequeue 67 at 22:41:25
+3 thread is going to do enqueue 3 at 22:41:25
+28 thread is doing enqueue 85 at 22:41:25
+22 thread is doing dequeue 5 at 22:41:25
+3 thread is doing enqueue 3 at 22:41:25
+28 thread is going to do enqueue 57 at 22:41:25
+22 thread is going to do enqueue 23 at 22:41:25
+28 thread is doing enqueue 57 at 22:41:25
+2 thread is doing enqueue 29 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 54 at 22:41:25
+22 thread is doing enqueue 23 at 22:41:25
+15 thread is doing enqueue 43 at 22:41:25
+6 thread is doing dequeue 85 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+7 thread is doing enqueue 54 at 22:41:25
+3 thread is doing dequeue 0 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 34 at 22:41:25
+7 thread is doing dequeue 53 at 22:41:25
+6 thread is going to do enqueue 55 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+9 thread is doing enqueue 34 at 22:41:25
+15 thread is going to do enqueue 12 at 22:41:25
+6 thread is doing enqueue 55 at 22:41:25
+15 thread is doing enqueue 12 at 22:41:25
+9 thread is going to do enqueue 38 at 22:41:25
+7 thread is going to do enqueue 73 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+7 thread is doing enqueue 73 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 87 at 22:41:25
+15 thread is doing dequeue 68 at 22:41:25
+23 thread is going to do enqueue 84 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 84 at 22:41:25
+24 thread is doing dequeue 11 at 22:41:25
+23 thread is going to do enqueue 80 at 22:41:25
+24 thread is going to do enqueue 23 at 22:41:25
+23 thread is doing enqueue 80 at 22:41:25
+24 thread is doing enqueue 23 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 67 at 22:41:25
+11 thread is doing dequeue 49 at 22:41:25
+23 thread is doing dequeue 3 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 29 at 22:41:25
+4 thread is doing dequeue 57 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 23 at 22:41:25
+4 thread is doing dequeue 43 at 22:41:25
+8 thread is going to do enqueue 14 at 22:41:25
+4 thread is going to do enqueue 37 at 22:41:25
+29 thread is going to do enqueue 48 at 22:41:25
+17 thread is going to do enqueue 4 at 22:41:25
+6 thread is doing dequeue 54 at 22:41:25
+27 thread is doing enqueue 9 at 22:41:25
+6 thread is going to do enqueue 20 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 14 at 22:41:25
+6 thread is doing enqueue 20 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 4 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 4 at 22:41:25
+8 thread is doing dequeue 34 at 22:41:25
+21 thread is doing dequeue 55 at 22:41:25
+20 thread is doing dequeue 12 at 22:41:25
+6 thread is going to do enqueue 68 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 68 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 84 at 22:41:25
+16 thread is doing dequeue 87 at 22:41:25
+21 thread is doing dequeue 73 at 22:41:25
+6 thread is going to do enqueue 1 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+20 thread is going to do enqueue 89 at 22:41:25
+16 thread is doing dequeue 23 at 22:41:25
+6 thread is doing enqueue 1 at 22:41:25
+14 thread is doing dequeue 80 at 22:41:25
+4 thread is doing enqueue 37 at 22:41:25
+5 thread is doing enqueue 23 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 48 at 22:41:25
+9 thread is doing enqueue 38 at 22:41:25
+4 thread is doing dequeue 9 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 17 at 22:41:25
+18 thread is doing dequeue 67 at 22:41:25
+9 thread is doing enqueue 17 at 22:41:25
+1 thread is going to do enqueue 99 at 22:41:25
+18 thread is going to do enqueue 69 at 22:41:25
+19 thread is doing dequeue 14 at 22:41:25
+18 thread is doing enqueue 69 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+19 thread is going to do enqueue 28 at 22:41:25
+9 thread is doing dequeue 20 at 22:41:25
+19 thread is doing enqueue 28 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 4 at 22:41:25
+19 thread is doing dequeue 68 at 22:41:25
+9 thread is going to do enqueue 54 at 22:41:25
+19 thread is going to do enqueue 7 at 22:41:25
+31 thread is doing dequeue 1 at 22:41:25
+9 thread is doing enqueue 54 at 22:41:25
+20 thread is doing enqueue 89 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 38 at 22:41:25
+20 thread is going to do enqueue 21 at 22:41:25
+7 thread is doing dequeue 23 at 22:41:25
+6 thread is doing dequeue 37 at 22:41:25
+9 thread is going to do enqueue 34 at 22:41:25
+6 thread is going to do enqueue 25 at 22:41:25
+9 thread is doing enqueue 34 at 22:41:25
+6 thread is doing enqueue 25 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 17 at 22:41:25
+6 thread is doing dequeue 69 at 22:41:25
+9 thread is going to do enqueue 91 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+22 thread is doing dequeue 28 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 54 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 89 at 22:41:25
+22 thread is doing dequeue 34 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+6 thread is doing dequeue 25 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue but queue is empty at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue 7 at 22:41:25
+6 thread is doing dequeue but queue is empty at 22:41:25
+19 thread is doing enqueue 7 at 22:41:25
+17 thread is doing enqueue 4 at 22:41:25
+29 thread is doing enqueue 48 at 22:41:25
+19 thread is going to do enqueue 22 at 22:41:25
+22 thread is going to do enqueue 34 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+17 thread is going to do enqueue 25 at 22:41:25
+27 thread is doing dequeue 48 at 22:41:25
+19 thread is doing enqueue 22 at 22:41:25
+22 thread is doing enqueue 34 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 25 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 34 at 22:41:25
+16 thread is doing dequeue 22 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+22 thread is doing dequeue 4 at 22:41:25
+2 thread is doing dequeue 25 at 22:41:25
+23 thread is doing dequeue but queue is empty at 22:41:25
+17 thread is doing dequeue but queue is empty at 22:41:25
+19 thread is going to do enqueue 49 at 22:41:25
+18 thread is doing dequeue but queue is empty at 22:41:25
+16 thread is doing dequeue but queue is empty at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+17 thread is going to do enqueue 76 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 76 at 22:41:25
+25 thread is doing dequeue 76 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+3 thread is doing dequeue but queue is empty at 22:41:25
+29 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is going to do enqueue 23 at 22:41:25
+17 thread is doing dequeue but queue is empty at 22:41:25
+3 thread is going to do enqueue 36 at 22:41:25
+25 thread is doing enqueue 23 at 22:41:25
+3 thread is doing enqueue 36 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+3 thread is going to do enqueue 53 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 53 at 22:41:25
+8 thread is doing dequeue 36 at 22:41:25
+13 thread is doing dequeue 23 at 22:41:25
+18 thread is going to do enqueue 64 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 41 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+13 thread is doing enqueue 41 at 22:41:25
+2 thread is going to do enqueue 11 at 22:41:25
+18 thread is doing enqueue 64 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+13 thread is doing dequeue 53 at 22:41:25
+18 thread is doing dequeue 64 at 22:41:25
+13 thread is going to do enqueue 55 at 22:41:25
+7 thread is going to do enqueue 81 at 22:41:25
+18 thread is going to do enqueue 16 at 22:41:25
+13 thread is doing enqueue 55 at 22:41:25
+7 thread is doing enqueue 81 at 22:41:25
+13 thread is going to do enqueue 58 at 22:41:25
+28 thread is going to do enqueue 1 at 22:41:25
+7 thread is going to do enqueue 6 at 22:41:25
+28 thread is doing enqueue 1 at 22:41:25
+13 thread is doing enqueue 58 at 22:41:25
+7 thread is doing enqueue 6 at 22:41:25
+10 thread is doing dequeue 41 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+10 thread is going to do enqueue 65 at 22:41:25
+7 thread is doing dequeue 55 at 22:41:25
+10 thread is doing enqueue 65 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+24 thread is doing dequeue 81 at 22:41:25
+7 thread is doing dequeue 1 at 22:41:25
+16 thread is going to do enqueue 34 at 22:41:25
+7 thread is going to do enqueue 36 at 22:41:25
+16 thread is doing enqueue 34 at 22:41:25
+7 thread is doing enqueue 36 at 22:41:25
+32 thread is doing dequeue 58 at 22:41:25
+12 thread is doing dequeue 6 at 22:41:25
+16 thread is going to do enqueue 6 at 22:41:25
+12 thread is going to do enqueue 70 at 22:41:25
+8 thread is doing dequeue 65 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 60 at 22:41:25
+15 thread is doing dequeue 36 at 22:41:25
+16 thread is doing enqueue 6 at 22:41:25
+7 thread is doing dequeue 34 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 36 at 22:41:25
+4 thread is going to do enqueue 8 at 22:41:25
+7 thread is doing enqueue 36 at 22:41:25
+10 thread is going to do enqueue 69 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+32 thread is doing enqueue 60 at 22:41:25
+18 thread is doing enqueue 16 at 22:41:25
+18 thread is going to do enqueue 93 at 22:41:25
+4 thread is doing enqueue 8 at 22:41:25
+15 thread is doing dequeue 6 at 22:41:25
+18 thread is doing enqueue 93 at 22:41:25
+16 thread is doing dequeue 16 at 22:41:25
+1 thread is doing enqueue 99 at 22:41:25
+23 thread is going to do enqueue 46 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+1 thread is going to do enqueue 50 at 22:41:25
+16 thread is doing dequeue 60 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+1 thread is doing enqueue 50 at 22:41:25
+31 thread is doing dequeue 36 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+18 thread is going to do enqueue 40 at 22:41:25
+15 thread is doing dequeue 99 at 22:41:25
+18 thread is doing enqueue 40 at 22:41:25
+5 thread is doing enqueue 48 at 22:41:25
+1 thread is going to do enqueue 30 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 8 at 22:41:25
+15 thread is doing dequeue 93 at 22:41:25
+18 thread is going to do enqueue 90 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+15 thread is going to do enqueue 34 at 22:41:25
+13 thread is going to do enqueue 95 at 22:41:25
+18 thread is doing enqueue 90 at 22:41:25
+32 thread is doing dequeue 50 at 22:41:25
+13 thread is doing enqueue 95 at 22:41:25
+18 thread is going to do enqueue 35 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+18 thread is doing enqueue 35 at 22:41:25
+19 thread is doing enqueue 49 at 22:41:25
+18 thread is going to do enqueue 20 at 22:41:25
+18 thread is doing enqueue 20 at 22:41:25
+3 thread is doing dequeue 48 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 46 at 22:41:25
+19 thread is doing dequeue 40 at 22:41:25
+6 thread is going to do enqueue 74 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+23 thread is going to do enqueue 14 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 14 at 22:41:25
+6 thread is doing enqueue 74 at 22:41:25
+12 thread is doing enqueue 70 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 95 at 22:41:25
+12 thread is doing dequeue 35 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+12 thread is going to do enqueue 77 at 22:41:25
+19 thread is doing dequeue 90 at 22:41:25
+8 thread is doing dequeue 49 at 22:41:25
+1 thread is doing enqueue 30 at 22:41:25
+15 thread is doing enqueue 34 at 22:41:25
+10 thread is doing enqueue 69 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 51 at 22:41:25
+19 thread is doing dequeue 20 at 22:41:25
+15 thread is going to do enqueue 99 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 99 at 22:41:25
+19 thread is doing dequeue 46 at 22:41:25
+8 thread is doing enqueue 51 at 22:41:25
+1 thread is doing dequeue 74 at 22:41:25
+24 thread is going to do enqueue 28 at 22:41:25
+19 thread is going to do enqueue 89 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 76 at 22:41:25
+11 thread is doing dequeue 14 at 22:41:25
+24 thread is doing enqueue 28 at 22:41:25
+8 thread is doing enqueue 76 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+24 thread is doing dequeue 70 at 22:41:25
+8 thread is doing dequeue 30 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 71 at 22:41:25
+26 thread is doing dequeue 51 at 22:41:25
+8 thread is doing dequeue 34 at 22:41:25
+5 thread is doing enqueue 71 at 22:41:25
+24 thread is doing dequeue 69 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 84 at 22:41:25
+8 thread is doing dequeue 99 at 22:41:25
+9 thread is doing enqueue 91 at 22:41:25
+8 thread is going to do enqueue 90 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 90 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 28 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 71 at 22:41:25
+13 thread is doing dequeue 76 at 22:41:25
+9 thread is going to do enqueue 64 at 22:41:25
+32 thread is going to do enqueue 58 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 91 at 22:41:25
+32 thread is doing enqueue 58 at 22:41:25
+8 thread is going to do enqueue 69 at 22:41:25
+31 thread is going to do enqueue 77 at 22:41:25
+8 thread is doing enqueue 69 at 22:41:25
+31 thread is doing enqueue 77 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 90 at 22:41:25
+6 thread is going to do enqueue 72 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 58 at 22:41:25
+20 thread is doing enqueue 21 at 22:41:25
+8 thread is doing dequeue 69 at 22:41:25
+31 thread is going to do enqueue 49 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+31 thread is doing enqueue 49 at 22:41:25
+10 thread is going to do enqueue 58 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 58 at 22:41:25
+8 thread is doing dequeue 21 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 38 at 22:41:25
+10 thread is doing dequeue 49 at 22:41:25
+31 thread is doing dequeue 58 at 22:41:25
+17 thread is doing dequeue 77 at 22:41:25
+8 thread is doing enqueue 38 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 38 at 22:41:25
+8 thread is doing dequeue but queue is empty at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 69 at 22:41:25
+10 thread is doing dequeue but queue is empty at 22:41:25
+8 thread is doing enqueue 69 at 22:41:25
+10 thread is going to do enqueue 59 at 22:41:25
+8 thread is going to do enqueue 95 at 22:41:25
+10 thread is doing enqueue 59 at 22:41:25
+8 thread is doing enqueue 95 at 22:41:25
+10 thread is going to do enqueue 13 at 22:41:25
+6 thread is doing enqueue 72 at 22:41:25
+10 thread is doing enqueue 13 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+10 thread is going to do enqueue 29 at 22:41:25
+6 thread is doing dequeue 69 at 22:41:25
+10 thread is doing enqueue 29 at 22:41:25
+6 thread is going to do enqueue 92 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 92 at 22:41:25
+10 thread is doing dequeue 59 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+21 thread is going to do enqueue 7 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+21 thread is doing enqueue 7 at 22:41:25
+6 thread is doing dequeue 95 at 22:41:25
+18 thread is going to do enqueue 96 at 22:41:25
+15 thread is doing dequeue 72 at 22:41:25
+21 thread is going to do enqueue 99 at 22:41:25
+18 thread is doing enqueue 96 at 22:41:25
+19 thread is doing enqueue 89 at 22:41:25
+21 thread is doing enqueue 99 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+18 thread is doing dequeue 13 at 22:41:25
+15 thread is going to do enqueue 69 at 22:41:25
+19 thread is doing dequeue 29 at 22:41:25
+15 thread is doing enqueue 69 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 92 at 22:41:25
+15 thread is doing dequeue 7 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+15 thread is going to do enqueue 95 at 22:41:25
+19 thread is doing dequeue 96 at 22:41:25
+15 thread is doing enqueue 95 at 22:41:25
+19 thread is going to do enqueue 14 at 22:41:25
+15 thread is going to do enqueue 64 at 22:41:25
+19 thread is doing enqueue 14 at 22:41:25
+15 thread is doing enqueue 64 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 99 at 22:41:25
+15 thread is doing dequeue 89 at 22:41:25
+19 thread is going to do enqueue 38 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+19 thread is doing enqueue 38 at 22:41:25
+15 thread is doing dequeue 69 at 22:41:25
+16 thread is going to do enqueue 45 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+19 thread is going to do enqueue 26 at 22:41:25
+15 thread is going to do enqueue 6 at 22:41:25
+16 thread is doing enqueue 45 at 22:41:25
+15 thread is doing enqueue 6 at 22:41:25
+31 thread is doing dequeue 95 at 22:41:25
+16 thread is going to do enqueue 56 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+16 thread is doing enqueue 56 at 22:41:25
+15 thread is doing dequeue 14 at 22:41:25
+16 thread is going to do enqueue 84 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+16 thread is doing enqueue 84 at 22:41:25
+15 thread is doing dequeue 64 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 38 at 22:41:25
+8 thread is doing dequeue 45 at 22:41:25
+16 thread is going to do enqueue 82 at 22:41:25
+20 thread is going to do enqueue 66 at 22:41:25
+12 thread is doing enqueue 77 at 22:41:25
+16 thread is doing enqueue 82 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 6 at 22:41:25
+16 thread is doing dequeue 56 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+16 thread is going to do enqueue 61 at 22:41:25
+12 thread is doing dequeue 84 at 22:41:25
+16 thread is doing enqueue 61 at 22:41:25
+12 thread is going to do enqueue 93 at 22:41:25
+17 thread is going to do enqueue 1 at 22:41:25
+21 thread is going to do enqueue 51 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 93 at 22:41:25
+21 thread is doing enqueue 51 at 22:41:25
+17 thread is doing enqueue 1 at 22:41:25
+12 thread is going to do enqueue 88 at 22:41:25
+11 thread is going to do enqueue 75 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+12 thread is doing enqueue 88 at 22:41:25
+11 thread is doing enqueue 75 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+11 thread is going to do enqueue 29 at 22:41:25
+12 thread is doing dequeue 77 at 22:41:25
+11 thread is doing enqueue 29 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 82 at 22:41:25
+11 thread is doing dequeue 61 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+11 thread is going to do enqueue 64 at 22:41:25
+12 thread is doing dequeue 93 at 22:41:25
+11 thread is doing enqueue 64 at 22:41:25
+12 thread is going to do enqueue 72 at 22:41:25
+11 thread is going to do enqueue 11 at 22:41:25
+12 thread is doing enqueue 72 at 22:41:25
+11 thread is doing enqueue 11 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 1 at 22:41:25
+19 thread is doing enqueue 26 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+19 thread is going to do enqueue 97 at 22:41:25
+12 thread is doing dequeue 88 at 22:41:25
+30 thread is doing dequeue 75 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 51 at 22:41:25
+12 thread is doing dequeue 29 at 22:41:25
+11 thread is going to do enqueue 25 at 22:41:25
+23 thread is going to do enqueue 71 at 22:41:25
+12 thread is going to do enqueue 53 at 22:41:25
+11 thread is doing enqueue 25 at 22:41:25
+12 thread is doing enqueue 53 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+15 thread is doing dequeue 64 at 22:41:25
+11 thread is doing dequeue 72 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 11 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue 26 at 22:41:25
+12 thread is going to do dequeue at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+12 thread is doing dequeue 53 at 22:41:25
+11 thread is doing dequeue 25 at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is going to do enqueue 94 at 22:41:25
+13 thread is doing dequeue 64 at 22:41:25
+9 thread is doing enqueue 64 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 98 at 22:41:25
+17 thread is going to do enqueue 30 at 22:41:25
+16 thread is doing dequeue but queue is empty at 22:41:25
+11 thread is doing dequeue but queue is empty at 22:41:25
+9 thread is doing enqueue 98 at 22:41:25
+25 thread is doing enqueue 94 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 98 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 53 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 94 at 22:41:25
+3 thread is doing dequeue but queue is empty at 22:41:25
+11 thread is going to do enqueue 47 at 22:41:25
+18 thread is doing dequeue but queue is empty at 22:41:25
+13 thread is doing dequeue but queue is empty at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+25 thread is going to do enqueue 78 at 22:41:25
+3 thread is doing dequeue but queue is empty at 22:41:25
+18 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing enqueue 78 at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+25 thread is going to do enqueue 86 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+25 thread is doing enqueue 86 at 22:41:25
+3 thread is doing dequeue 78 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 86 at 22:41:25
+3 thread is going to do enqueue 51 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 30 at 22:41:25
+25 thread is doing dequeue 30 at 22:41:25
+17 thread is going to do enqueue 1 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 1 at 22:41:25
+25 thread is doing dequeue 1 at 22:41:25
+17 thread is going to do enqueue 0 at 22:41:25
+26 thread is going to do enqueue 92 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 92 at 22:41:25
+25 thread is doing dequeue 92 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+7 thread is doing dequeue but queue is empty at 22:41:25
+26 thread is doing dequeue 84 at 22:41:25
+2 thread is doing enqueue 11 at 22:41:25
+26 thread is going to do enqueue 51 at 22:41:25
+10 thread is doing dequeue but queue is empty at 22:41:25
+24 thread is doing enqueue 84 at 22:41:25
+13 thread is doing dequeue but queue is empty at 22:41:25
+12 thread is going to do enqueue 18 at 22:41:25
+13 thread is going to do enqueue 7 at 22:41:25
+2 thread is going to do enqueue 23 at 22:41:25
+26 thread is doing enqueue 51 at 22:41:25
+13 thread is doing enqueue 7 at 22:41:25
+32 thread is going to do enqueue 14 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+4 thread is doing dequeue 11 at 22:41:25
+32 thread is doing enqueue 14 at 22:41:25
+12 thread is doing enqueue 18 at 22:41:25
+27 thread is going to do enqueue 29 at 22:41:25
+23 thread is doing enqueue 71 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+13 thread is doing dequeue 7 at 22:41:25
+18 thread is doing dequeue 51 at 22:41:25
+10 thread is doing dequeue 18 at 22:41:25
+18 thread is going to do enqueue 86 at 22:41:25
+4 thread is going to do enqueue 44 at 22:41:25
+11 thread is doing enqueue 47 at 22:41:25
+32 thread is going to do enqueue 78 at 22:41:25
+27 thread is doing enqueue 29 at 22:41:25
+20 thread is doing enqueue 66 at 22:41:25
+27 thread is going to do enqueue 84 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+20 thread is going to do enqueue 82 at 22:41:25
+22 thread is going to do enqueue 39 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 82 at 22:41:25
+13 thread is doing dequeue 71 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 44 at 22:41:25
+20 thread is doing dequeue 14 at 22:41:25
+13 thread is doing enqueue 44 at 22:41:25
+20 thread is going to do enqueue 85 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 85 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 55 at 22:41:25
+16 thread is doing dequeue 29 at 22:41:25
+5 thread is doing dequeue 47 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 55 at 22:41:25
+17 thread is doing enqueue 0 at 22:41:25
+26 thread is going to do enqueue 50 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 56 at 22:41:25
+5 thread is doing dequeue 66 at 22:41:25
+26 thread is doing enqueue 50 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 56 at 22:41:25
+29 thread is doing dequeue 82 at 22:41:25
+15 thread is going to do enqueue 42 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+27 thread is doing enqueue 84 at 22:41:25
+8 thread is doing dequeue 44 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 42 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 85 at 22:41:25
+14 thread is doing dequeue 0 at 22:41:25
+15 thread is doing dequeue 55 at 22:41:25
+8 thread is going to do enqueue 81 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 81 at 22:41:25
+15 thread is doing dequeue 50 at 22:41:25
+8 thread is going to do enqueue 60 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 60 at 22:41:25
+15 thread is doing dequeue 56 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+17 thread is going to do enqueue 77 at 22:41:25
+31 thread is going to do enqueue 70 at 22:41:25
+9 thread is doing enqueue 53 at 22:41:25
+17 thread is doing enqueue 77 at 22:41:25
+8 thread is doing dequeue 42 at 22:41:25
+15 thread is going to do enqueue 99 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 17 at 22:41:25
+10 thread is doing dequeue 84 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 17 at 22:41:25
+9 thread is doing dequeue 81 at 22:41:25
+23 thread is doing dequeue 60 at 22:41:25
+9 thread is going to do enqueue 79 at 22:41:25
+23 thread is going to do enqueue 79 at 22:41:25
+9 thread is doing enqueue 79 at 22:41:25
+6 thread is going to do enqueue 37 at 22:41:25
+19 thread is doing enqueue 97 at 22:41:25
+9 thread is going to do enqueue 47 at 22:41:25
+23 thread is doing enqueue 79 at 22:41:25
+9 thread is doing enqueue 47 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 37 at 22:41:25
+9 thread is going to do enqueue 24 at 22:41:25
+3 thread is doing enqueue 51 at 22:41:25
+2 thread is doing enqueue 23 at 22:41:25
+19 thread is doing dequeue 53 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 77 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+3 thread is doing dequeue 17 at 22:41:25
+9 thread is doing enqueue 24 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 96 at 22:41:25
+3 thread is going to do enqueue 18 at 22:41:25
+5 thread is doing dequeue 79 at 22:41:25
+2 thread is going to do enqueue 32 at 22:41:25
+5 thread is going to do enqueue 41 at 22:41:25
+19 thread is doing dequeue 79 at 22:41:25
+5 thread is doing enqueue 41 at 22:41:25
+3 thread is doing enqueue 18 at 22:41:25
+2 thread is doing enqueue 32 at 22:41:25
+26 thread is doing enqueue 96 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 97 at 22:41:25
+22 thread is doing enqueue 39 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+27 thread is going to do enqueue 94 at 22:41:25
+22 thread is going to do enqueue 35 at 22:41:25
+27 thread is doing enqueue 94 at 22:41:25
+22 thread is doing enqueue 35 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+22 thread is going to do enqueue 37 at 22:41:25
+27 thread is doing dequeue 37 at 22:41:25
+22 thread is doing enqueue 37 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 15 at 22:41:25
+16 thread is doing dequeue 47 at 22:41:25
+27 thread is doing dequeue 51 at 22:41:25
+6 thread is doing enqueue 15 at 22:41:25
+18 thread is doing enqueue 86 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+27 thread is going to do enqueue 23 at 22:41:25
+4 thread is doing enqueue 44 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+22 thread is going to do enqueue 80 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue 96 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+17 thread is going to do enqueue 56 at 22:41:25
+4 thread is going to do enqueue 9 at 22:41:25
+18 thread is doing dequeue 18 at 22:41:25
+17 thread is doing enqueue 56 at 22:41:25
+16 thread is doing dequeue 24 at 22:41:25
+28 thread is doing dequeue 23 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+23 thread is going to do enqueue 85 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 80 at 22:41:25
+17 thread is doing dequeue 41 at 22:41:25
+23 thread is doing enqueue 85 at 22:41:25
+22 thread is going to do enqueue 88 at 22:41:25
+16 thread is doing dequeue 32 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 88 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 9 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 94 at 22:41:25
+28 thread is doing dequeue 39 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 35 at 22:41:25
+28 thread is doing dequeue 37 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 44 at 22:41:25
+3 thread is going to do enqueue 84 at 22:41:25
+28 thread is doing dequeue 86 at 22:41:25
+29 thread is going to do enqueue 88 at 22:41:25
+29 thread is doing enqueue 88 at 22:41:25
+19 thread is doing dequeue 15 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 80 at 22:41:25
+19 thread is going to do enqueue 13 at 22:41:25
+18 thread is doing dequeue 9 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 99 at 22:41:25
+19 thread is doing enqueue 13 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 88 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+13 thread is doing dequeue 56 at 22:41:25
+22 thread is going to do enqueue 40 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+11 thread is going to do enqueue 86 at 22:41:25
+18 thread is doing dequeue 99 at 22:41:25
+17 thread is doing dequeue 13 at 22:41:25
+20 thread is doing dequeue 85 at 22:41:25
+28 thread is doing dequeue 88 at 22:41:25
+11 thread is doing enqueue 86 at 22:41:25
+17 thread is going to do enqueue 46 at 22:41:25
+18 thread is going to do enqueue 89 at 22:41:25
+5 thread is doing dequeue 86 at 22:41:25
+18 thread is doing enqueue 89 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 46 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 46 at 22:41:25
+5 thread is going to do enqueue 68 at 22:41:25
+14 thread is going to do enqueue 76 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+28 thread is going to do enqueue 53 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+29 thread is doing dequeue 89 at 22:41:25
+1 thread is going to do enqueue 63 at 22:41:25
+21 thread is doing dequeue but queue is empty at 22:41:25
+1 thread is doing enqueue 63 at 22:41:25
+16 thread is going to do enqueue 69 at 22:41:25
+21 thread is going to do enqueue 19 at 22:41:25
+1 thread is going to do enqueue 9 at 22:41:25
+16 thread is doing enqueue 69 at 22:41:25
+1 thread is doing enqueue 9 at 22:41:25
+32 thread is doing enqueue 78 at 22:41:25
+1 thread is going to do enqueue 80 at 22:41:25
+1 thread is doing enqueue 80 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 63 at 22:41:25
+32 thread is going to do enqueue 32 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+32 thread is doing enqueue 32 at 22:41:25
+1 thread is doing dequeue 69 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+3 thread is doing enqueue 84 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 9 at 22:41:25
+32 thread is doing dequeue 78 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+3 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 32 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 80 at 22:41:25
+32 thread is doing dequeue but queue is empty at 22:41:25
+23 thread is going to do enqueue 39 at 22:41:25
+32 thread is going to do enqueue 93 at 22:41:25
+23 thread is doing enqueue 39 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue but queue is empty at 22:41:25
+4 thread is doing dequeue 39 at 22:41:25
+3 thread is doing dequeue 84 at 22:41:25
+32 thread is doing enqueue 93 at 22:41:25
+23 thread is going to do enqueue 50 at 22:41:25
+4 thread is going to do enqueue 29 at 22:41:25
+23 thread is doing enqueue 50 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 29 at 22:41:25
+26 thread is going to do enqueue 47 at 22:41:25
+20 thread is doing dequeue 93 at 22:41:25
+26 thread is doing enqueue 47 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 88 at 22:41:25
+20 thread is doing dequeue 50 at 22:41:25
+26 thread is doing enqueue 88 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 29 at 22:41:25
+26 thread is doing dequeue 47 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 3 at 22:41:25
+20 thread is doing dequeue 88 at 22:41:25
+26 thread is doing enqueue 3 at 22:41:25
+20 thread is going to do enqueue 70 at 22:41:25
+26 thread is going to do enqueue 11 at 22:41:25
+6 thread is going to do enqueue 26 at 22:41:25
+26 thread is doing enqueue 11 at 22:41:25
+16 thread is doing dequeue 3 at 22:41:25
+6 thread is doing enqueue 26 at 22:41:25
+26 thread is going to do enqueue 40 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 40 at 22:41:25
+6 thread is doing dequeue 11 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+6 thread is going to do enqueue 41 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+31 thread is doing enqueue 70 at 22:41:25
+23 thread is doing dequeue 40 at 22:41:25
+9 thread is doing dequeue 26 at 22:41:25
+26 thread is doing dequeue 70 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 65 at 22:41:25
+31 thread is doing dequeue but queue is empty at 22:41:25
+9 thread is doing enqueue 65 at 22:41:25
+26 thread is going to do enqueue 4 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 4 at 22:41:25
+31 thread is doing dequeue 65 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+31 thread is going to do enqueue 8 at 22:41:25
+26 thread is doing dequeue 4 at 22:41:25
+31 thread is doing enqueue 8 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+31 thread is going to do enqueue 94 at 22:41:25
+26 thread is doing dequeue 8 at 22:41:25
+31 thread is doing enqueue 94 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 94 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 93 at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+31 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue 93 at 22:41:25
+32 thread is doing enqueue 93 at 22:41:25
+31 thread is going to do enqueue 9 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+25 thread is going to do enqueue 68 at 22:41:25
+14 thread is doing enqueue 76 at 22:41:25
+23 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is doing enqueue 68 at 22:41:25
+5 thread is doing enqueue 68 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+23 thread is doing dequeue 76 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue 68 at 22:41:25
+29 thread is doing dequeue 68 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+29 thread is doing dequeue but queue is empty at 22:41:25
+25 thread is going to do enqueue 54 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing enqueue 54 at 22:41:25
+29 thread is doing dequeue 54 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 35 at 22:41:25
+25 thread is doing dequeue but queue is empty at 22:41:25
+29 thread is doing enqueue 35 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 83 at 22:41:25
+25 thread is doing dequeue 35 at 22:41:25
+29 thread is doing enqueue 83 at 22:41:25
+25 thread is going to do enqueue 3 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing enqueue 3 at 22:41:25
+29 thread is doing dequeue 83 at 22:41:25
+25 thread is going to do enqueue 48 at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing enqueue 48 at 22:41:25
+29 thread is doing dequeue 3 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 49 at 22:41:25
+25 thread is doing dequeue 48 at 22:41:25
+29 thread is doing enqueue 49 at 22:41:25
+25 thread is going to do enqueue 21 at 22:41:25
+29 thread is going to do enqueue 3 at 22:41:25
+25 thread is doing enqueue 21 at 22:41:25
+29 thread is doing enqueue 3 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 43 at 22:41:25
+25 thread is doing dequeue 49 at 22:41:25
+29 thread is doing enqueue 43 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue 21 at 22:41:25
+29 thread is doing dequeue 3 at 22:41:25
+25 thread is going to do enqueue 70 at 22:41:25
+29 thread is going to do enqueue 93 at 22:41:25
+25 thread is doing enqueue 70 at 22:41:25
+29 thread is doing enqueue 93 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do enqueue 24 at 22:41:25
+25 thread is doing dequeue 43 at 22:41:25
+29 thread is doing enqueue 24 at 22:41:25
+25 thread is going to do dequeue at 22:41:25
+29 thread is going to do dequeue at 22:41:25
+25 thread is doing dequeue 70 at 22:41:25
+29 thread is doing dequeue 93 at 22:41:25
+29 thread is going to do enqueue 93 at 22:41:25
+29 thread is doing enqueue 93 at 22:41:25
+9 thread is going to do enqueue 86 at 22:41:25
+14 thread is going to do enqueue 57 at 22:41:25
+28 thread is doing enqueue 53 at 22:41:25
+9 thread is doing enqueue 86 at 22:41:25
+14 thread is doing enqueue 57 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 93 at 22:41:25
+15 thread is going to do enqueue 96 at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 24 at 22:41:25
+19 thread is doing dequeue 86 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+9 thread is doing dequeue 57 at 22:41:25
+23 thread is doing dequeue 53 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+6 thread is doing enqueue 41 at 22:41:25
+15 thread is doing enqueue 96 at 22:41:25
+10 thread is doing dequeue 96 at 22:41:25
+23 thread is going to do enqueue 63 at 22:41:25
+15 thread is going to do enqueue 34 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 34 at 22:41:25
+32 thread is doing dequeue 41 at 22:41:25
+10 thread is doing dequeue 34 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+14 thread is going to do enqueue 4 at 22:41:25
+1 thread is going to do enqueue 4 at 22:41:25
+14 thread is doing enqueue 4 at 22:41:25
+15 thread is going to do enqueue 49 at 22:41:25
+24 thread is doing dequeue but queue is empty at 22:41:25
+18 thread is doing dequeue but queue is empty at 22:41:25
+1 thread is doing enqueue 4 at 22:41:25
+32 thread is doing dequeue but queue is empty at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+15 thread is doing enqueue 49 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+18 thread is going to do enqueue 4 at 22:41:25
+1 thread is going to do enqueue 56 at 22:41:25
+18 thread is doing enqueue 4 at 22:41:25
+8 thread is doing dequeue 4 at 22:41:25
+1 thread is doing enqueue 56 at 22:41:25
+18 thread is going to do enqueue 54 at 22:41:25
+8 thread is going to do enqueue 96 at 22:41:25
+18 thread is doing enqueue 54 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 44 at 22:41:25
+8 thread is doing enqueue 96 at 22:41:25
+1 thread is going to do enqueue 45 at 22:41:25
+14 thread is doing dequeue 4 at 22:41:25
+15 thread is doing dequeue 49 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 4 at 22:41:25
+8 thread is doing dequeue 56 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 57 at 22:41:25
+11 thread is doing dequeue 54 at 22:41:25
+8 thread is doing enqueue 57 at 22:41:25
+11 thread is going to do enqueue 46 at 22:41:25
+11 thread is doing enqueue 46 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+13 thread is doing dequeue 96 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+27 thread is doing enqueue 23 at 22:41:25
+13 thread is going to do enqueue 53 at 22:41:25
+9 thread is going to do enqueue 40 at 22:41:25
+8 thread is doing dequeue 57 at 22:41:25
+13 thread is doing enqueue 53 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 10 at 22:41:25
+8 thread is doing dequeue 23 at 22:41:25
+13 thread is doing enqueue 10 at 22:41:25
+8 thread is going to do enqueue 48 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+8 thread is doing enqueue 48 at 22:41:25
+13 thread is doing dequeue 46 at 22:41:25
+1 thread is doing enqueue 45 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 77 at 22:41:25
+14 thread is doing dequeue 53 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+13 thread is doing dequeue 10 at 22:41:25
+8 thread is doing enqueue 77 at 22:41:25
+14 thread is going to do enqueue 54 at 22:41:25
+21 thread is doing enqueue 19 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 54 at 22:41:25
+16 thread is going to do enqueue 42 at 22:41:25
+8 thread is doing dequeue 48 at 22:41:25
+16 thread is doing enqueue 42 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 45 at 22:41:25
+14 thread is doing dequeue 77 at 22:41:25
+9 thread is doing enqueue 40 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 19 at 22:41:25
+9 thread is doing dequeue 54 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+14 thread is doing dequeue 42 at 22:41:25
+9 thread is doing dequeue 40 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 96 at 22:41:25
+14 thread is doing dequeue but queue is empty at 22:41:25
+1 thread is doing dequeue 96 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+9 thread is doing enqueue 96 at 22:41:25
+14 thread is going to do enqueue 93 at 22:41:25
+13 thread is doing dequeue but queue is empty at 22:41:25
+9 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 93 at 22:41:25
+9 thread is doing dequeue 93 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 24 at 22:41:25
+14 thread is doing dequeue but queue is empty at 22:41:25
+9 thread is doing enqueue 24 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+9 thread is going to do enqueue 6 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+9 thread is doing enqueue 6 at 22:41:25
+14 thread is doing dequeue 6 at 22:41:25
+27 thread is doing dequeue 24 at 22:41:25
+6 thread is doing dequeue but queue is empty at 22:41:25
+6 thread is going to do enqueue 36 at 22:41:25
+15 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue 44 at 22:41:25
+15 thread is doing dequeue but queue is empty at 22:41:25
+24 thread is doing enqueue 44 at 22:41:25
+15 thread is going to do enqueue 25 at 22:41:25
+24 thread is going to do enqueue 57 at 22:41:25
+17 thread is going to do enqueue 9 at 22:41:25
+15 thread is doing enqueue 25 at 22:41:25
+28 thread is doing dequeue 25 at 22:41:25
+32 thread is doing dequeue 57 at 22:41:25
+24 thread is doing enqueue 57 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 83 at 22:41:25
+16 thread is doing dequeue but queue is empty at 22:41:25
+19 thread is doing dequeue but queue is empty at 22:41:25
+8 thread is doing dequeue but queue is empty at 22:41:25
+24 thread is doing enqueue 83 at 22:41:25
+4 thread is going to do enqueue 52 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue but queue is empty at 22:41:25
+8 thread is going to do enqueue 32 at 22:41:25
+24 thread is going to do enqueue 30 at 22:41:25
+32 thread is going to do enqueue 66 at 22:41:25
+24 thread is doing enqueue 30 at 22:41:25
+4 thread is doing enqueue 52 at 22:41:25
+24 thread is going to do enqueue 4 at 22:41:25
+32 thread is doing enqueue 66 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+24 thread is doing enqueue 4 at 22:41:25
+4 thread is doing dequeue 83 at 22:41:25
+32 thread is going to do enqueue 94 at 22:41:25
+13 thread is doing dequeue 52 at 22:41:25
+4 thread is going to do enqueue 75 at 22:41:25
+17 thread is doing enqueue 9 at 22:41:25
+32 thread is doing enqueue 94 at 22:41:25
+4 thread is doing enqueue 75 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+23 thread is doing enqueue 63 at 22:41:25
+4 thread is going to do enqueue 7 at 22:41:25
+32 thread is doing dequeue 30 at 22:41:25
+31 thread is doing enqueue 9 at 22:41:25
+4 thread is doing enqueue 7 at 22:41:25
+32 thread is going to do enqueue 73 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+4 thread is going to do enqueue 57 at 22:41:25
+27 thread is doing dequeue 66 at 22:41:25
+4 thread is doing enqueue 57 at 22:41:25
+27 thread is going to do enqueue 50 at 22:41:25
+32 thread is doing enqueue 73 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 60 at 22:41:25
+20 thread is doing enqueue 70 at 22:41:25
+4 thread is doing dequeue 4 at 22:41:25
+32 thread is doing enqueue 60 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+20 thread is going to do enqueue 26 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 26 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 9 at 22:41:25
+17 thread is going to do enqueue 77 at 22:41:25
+4 thread is doing dequeue 94 at 22:41:25
+32 thread is going to do enqueue 60 at 22:41:25
+17 thread is doing enqueue 77 at 22:41:25
+4 thread is going to do enqueue 90 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 90 at 22:41:25
+23 thread is doing dequeue 75 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+23 thread is going to do enqueue 79 at 22:41:25
+4 thread is doing dequeue 63 at 22:41:25
+7 thread is doing dequeue 7 at 22:41:25
+8 thread is doing enqueue 32 at 22:41:25
+6 thread is doing enqueue 36 at 22:41:25
+23 thread is doing enqueue 79 at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 24 at 22:41:25
+27 thread is doing enqueue 50 at 22:41:25
+23 thread is going to do enqueue 66 at 22:41:25
+22 thread is doing enqueue 40 at 22:41:25
+4 thread is doing dequeue 9 at 22:41:25
+23 thread is doing enqueue 66 at 22:41:25
+4 thread is going to do enqueue 29 at 22:41:25
+23 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 29 at 22:41:25
+23 thread is doing dequeue 73 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+4 thread is doing dequeue 57 at 22:41:25
+26 thread is doing dequeue 70 at 22:41:25
+4 thread is going to do enqueue 73 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 73 at 22:41:25
+26 thread is doing dequeue 60 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+16 thread is going to do enqueue 45 at 22:41:25
+4 thread is doing dequeue 26 at 22:41:25
+16 thread is doing enqueue 45 at 22:41:25
+6 thread is going to do dequeue at 22:41:25
+4 thread is going to do enqueue 3 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 3 at 22:41:25
+16 thread is doing dequeue 77 at 22:41:25
+27 thread is going to do enqueue 36 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+16 thread is going to do enqueue 71 at 22:41:25
+27 thread is doing enqueue 36 at 22:41:25
+4 thread is doing dequeue 90 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+4 thread is going to do enqueue 76 at 22:41:25
+27 thread is doing dequeue 79 at 22:41:25
+4 thread is doing enqueue 76 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+32 thread is doing enqueue 60 at 22:41:25
+24 thread is doing dequeue 50 at 22:41:25
+4 thread is doing dequeue 36 at 22:41:25
+32 thread is going to do enqueue 27 at 22:41:25
+27 thread is doing dequeue 32 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+32 thread is doing enqueue 27 at 22:41:25
+24 thread is doing dequeue 40 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 82 at 22:41:25
+32 thread is doing dequeue 66 at 22:41:25
+24 thread is doing enqueue 82 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+32 thread is doing dequeue 29 at 22:41:25
+21 thread is doing dequeue 45 at 22:41:25
+24 thread is doing dequeue 73 at 22:41:25
+21 thread is going to do enqueue 14 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+21 thread is doing enqueue 14 at 22:41:25
+32 thread is going to do enqueue 54 at 22:41:25
+24 thread is doing dequeue 3 at 22:41:25
+32 thread is doing enqueue 54 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+19 thread is doing dequeue 36 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 83 at 22:41:25
+19 thread is going to do enqueue 7 at 22:41:25
+24 thread is doing dequeue 76 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 96 at 22:41:25
+32 thread is doing enqueue 83 at 22:41:25
+14 thread is doing dequeue 60 at 22:41:25
+14 thread is going to do enqueue 49 at 22:41:25
+22 thread is going to do enqueue 50 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 49 at 22:41:25
+7 thread is doing enqueue 24 at 22:41:25
+1 thread is going to do enqueue 2 at 22:41:25
+7 thread is going to do dequeue at 22:41:25
+1 thread is doing enqueue 2 at 22:41:25
+32 thread is doing dequeue 27 at 22:41:25
+7 thread is doing dequeue 82 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+7 thread is going to do enqueue 5 at 22:41:25
+32 thread is doing dequeue 14 at 22:41:25
+7 thread is doing enqueue 5 at 22:41:25
+32 thread is going to do enqueue 35 at 22:41:25
+32 thread is doing enqueue 35 at 22:41:25
+30 thread is doing dequeue 54 at 22:41:25
+32 thread is going to do enqueue 11 at 22:41:25
+30 thread is going to do enqueue 88 at 22:41:25
+30 thread is doing enqueue 88 at 22:41:25
+4 thread is doing dequeue 83 at 22:41:25
+24 thread is doing enqueue 96 at 22:41:25
+30 thread is going to do enqueue 83 at 22:41:25
+4 thread is going to do enqueue 36 at 22:41:25
+6 thread is doing dequeue 24 at 22:41:25
+32 thread is doing enqueue 11 at 22:41:25
+30 thread is doing enqueue 83 at 22:41:25
+11 thread is doing dequeue 49 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+11 thread is going to do enqueue 2 at 22:41:25
+30 thread is doing dequeue 2 at 22:41:25
+11 thread is doing enqueue 2 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 35 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 5 at 22:41:25
+30 thread is doing dequeue 88 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+18 thread is doing dequeue 11 at 22:41:25
+11 thread is going to do enqueue 61 at 22:41:25
+18 thread is going to do enqueue 40 at 22:41:25
+20 thread is doing dequeue 96 at 22:41:25
+11 thread is doing enqueue 61 at 22:41:25
+18 thread is doing enqueue 40 at 22:41:25
+11 thread is going to do enqueue 41 at 22:41:25
+18 thread is going to do enqueue 41 at 22:41:25
+11 thread is doing enqueue 41 at 22:41:25
+18 thread is doing enqueue 41 at 22:41:25
+14 thread is going to do enqueue 23 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 23 at 22:41:25
+18 thread is doing dequeue 83 at 22:41:25
+14 thread is going to do enqueue 52 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+14 thread is doing enqueue 52 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 2 at 22:41:25
+14 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 61 at 22:41:25
+18 thread is doing dequeue 40 at 22:41:25
+14 thread is doing dequeue 41 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 41 at 22:41:25
+20 thread is going to do enqueue 38 at 22:41:25
+31 thread is going to do enqueue 71 at 22:41:25
+20 thread is doing enqueue 38 at 22:41:25
+31 thread is doing enqueue 71 at 22:41:25
+11 thread is going to do enqueue 19 at 22:41:25
+20 thread is going to do enqueue 79 at 22:41:25
+11 thread is doing enqueue 19 at 22:41:25
+20 thread is doing enqueue 79 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+20 thread is going to do enqueue 17 at 22:41:25
+11 thread is doing dequeue 23 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+20 thread is doing enqueue 17 at 22:41:25
+31 thread is doing dequeue 52 at 22:41:25
+30 thread is going to do enqueue 28 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 38 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+18 thread is doing dequeue 71 at 22:41:25
+16 thread is doing enqueue 71 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+5 thread is doing dequeue 19 at 22:41:25
+20 thread is going to do enqueue 66 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+18 thread is doing dequeue 79 at 22:41:25
+5 thread is going to do enqueue 18 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+16 thread is doing dequeue 17 at 22:41:25
+18 thread is doing dequeue 71 at 22:41:25
+30 thread is doing enqueue 28 at 22:41:25
+19 thread is doing enqueue 7 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 18 at 22:41:25
+19 thread is going to do enqueue 90 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+19 thread is doing enqueue 90 at 22:41:25
+16 thread is going to do dequeue at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue but queue is empty at 22:41:25
+5 thread is doing enqueue 18 at 22:41:25
+22 thread is doing enqueue 50 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+22 thread is going to do enqueue 57 at 22:41:25
+1 thread is going to do enqueue 81 at 22:41:25
+22 thread is doing enqueue 57 at 22:41:25
+1 thread is doing enqueue 81 at 22:41:25
+22 thread is going to do enqueue 23 at 22:41:25
+1 thread is going to do enqueue 36 at 22:41:25
+11 thread is doing dequeue 50 at 22:41:25
+22 thread is doing enqueue 23 at 22:41:25
+1 thread is doing enqueue 36 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+1 thread is going to do enqueue 27 at 22:41:25
+22 thread is doing dequeue 57 at 22:41:25
+1 thread is doing enqueue 27 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+18 thread is doing dequeue 7 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 22 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 23 at 22:41:25
+5 thread is doing enqueue 22 at 22:41:25
+16 thread is doing dequeue 28 at 22:41:25
+22 thread is doing dequeue 81 at 22:41:25
+31 thread is doing dequeue but queue is empty at 22:41:25
+27 thread is going to do enqueue 5 at 22:41:25
+22 thread is going to do enqueue 55 at 22:41:25
+2 thread is going to do enqueue 4 at 22:41:25
+21 thread is doing dequeue 22 at 22:41:25
+8 thread is doing dequeue 27 at 22:41:25
+18 thread is doing dequeue 36 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 55 at 22:41:25
+2 thread is doing enqueue 4 at 22:41:25
+19 thread is doing dequeue 90 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+8 thread is going to do enqueue 97 at 22:41:25
+21 thread is doing dequeue 55 at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 4 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+31 thread is going to do enqueue 29 at 22:41:25
+22 thread is doing dequeue 97 at 22:41:25
+31 thread is doing enqueue 29 at 22:41:25
+26 thread is doing dequeue but queue is empty at 22:41:25
+31 thread is going to do enqueue 31 at 22:41:25
+8 thread is doing enqueue 97 at 22:41:25
+31 thread is doing enqueue 31 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+8 thread is going to do dequeue at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+8 thread is doing dequeue 31 at 22:41:25
+31 thread is going to do enqueue 70 at 22:41:25
+19 thread is doing dequeue but queue is empty at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+22 thread is doing dequeue but queue is empty at 22:41:25
+32 thread is doing dequeue 29 at 22:41:25
+26 thread is doing dequeue 70 at 22:41:25
+19 thread is going to do dequeue at 22:41:25
+22 thread is going to do dequeue at 22:41:25
+31 thread is doing enqueue 70 at 22:41:25
+19 thread is doing dequeue but queue is empty at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+19 thread is going to do enqueue 75 at 22:41:25
+31 thread is doing dequeue but queue is empty at 22:41:25
+19 thread is doing enqueue 75 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 75 at 22:41:25
+31 thread is doing dequeue but queue is empty at 22:41:25
+10 thread is going to do enqueue 59 at 22:41:25
+31 thread is going to do enqueue 49 at 22:41:25
+10 thread is doing enqueue 59 at 22:41:25
+31 thread is doing enqueue 49 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 59 at 22:41:25
+31 thread is doing dequeue 49 at 22:41:25
+10 thread is going to do enqueue 35 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 35 at 22:41:25
+31 thread is doing dequeue 35 at 22:41:25
+10 thread is going to do enqueue 20 at 22:41:25
+31 thread is going to do enqueue 74 at 22:41:25
+10 thread is doing enqueue 20 at 22:41:25
+31 thread is doing enqueue 74 at 22:41:25
+10 thread is going to do enqueue 45 at 22:41:25
+31 thread is going to do enqueue 15 at 22:41:25
+10 thread is doing enqueue 45 at 22:41:25
+31 thread is doing enqueue 15 at 22:41:25
+10 thread is going to do enqueue 47 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 47 at 22:41:25
+31 thread is doing dequeue 20 at 22:41:25
+10 thread is going to do enqueue 80 at 22:41:25
+31 thread is going to do enqueue 4 at 22:41:25
+10 thread is doing enqueue 80 at 22:41:25
+31 thread is doing enqueue 4 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 74 at 22:41:25
+31 thread is doing dequeue 45 at 22:41:25
+10 thread is going to do enqueue 89 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 89 at 22:41:25
+31 thread is doing dequeue 15 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 47 at 22:41:25
+31 thread is doing dequeue 80 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+31 thread is going to do enqueue 72 at 22:41:25
+10 thread is doing dequeue 4 at 22:41:25
+31 thread is doing enqueue 72 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 89 at 22:41:25
+31 thread is doing dequeue 72 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue but queue is empty at 22:41:25
+2 thread is going to do enqueue 5 at 22:41:25
+31 thread is doing dequeue but queue is empty at 22:41:25
+2 thread is doing enqueue 5 at 22:41:25
+31 thread is going to do dequeue at 22:41:25
+32 thread is going to do enqueue 67 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+31 thread is doing dequeue 5 at 22:41:25
+22 thread is doing dequeue but queue is empty at 22:41:25
+32 thread is doing enqueue 67 at 22:41:25
+22 thread is going to do enqueue 65 at 22:41:25
+5 thread is doing dequeue 67 at 22:41:25
+32 thread is going to do dequeue at 22:41:25
+22 thread is doing enqueue 65 at 22:41:25
+5 thread is going to do enqueue 58 at 22:41:25
+32 thread is doing dequeue 65 at 22:41:25
+5 thread is doing enqueue 58 at 22:41:25
+22 thread is going to do enqueue 20 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue 58 at 22:41:25
+22 thread is doing enqueue 20 at 22:41:25
+17 thread is going to do enqueue 79 at 22:41:25
+22 thread is going to do enqueue 28 at 22:41:25
+17 thread is doing enqueue 79 at 22:41:25
+22 thread is doing enqueue 28 at 22:41:25
+17 thread is going to do enqueue 90 at 22:41:25
+17 thread is doing enqueue 90 at 22:41:25
+4 thread is doing enqueue 36 at 22:41:25
+18 thread is going to do dequeue at 22:41:25
+17 thread is going to do enqueue 59 at 22:41:25
+15 thread is going to do enqueue 97 at 22:41:25
+20 thread is doing enqueue 66 at 22:41:25
+15 thread is doing enqueue 97 at 22:41:25
+17 thread is doing enqueue 59 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+20 thread is going to do enqueue 66 at 22:41:25
+15 thread is going to do enqueue 0 at 22:41:25
+21 thread is going to do enqueue 14 at 22:41:25
+15 thread is doing enqueue 0 at 22:41:25
+17 thread is going to do enqueue 1 at 22:41:25
+27 thread is doing enqueue 5 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+5 thread is doing dequeue 20 at 22:41:25
+21 thread is doing enqueue 14 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+15 thread is going to do enqueue 38 at 22:41:25
+21 thread is doing dequeue 90 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 1 at 22:41:25
+24 thread is doing dequeue 28 at 22:41:25
+5 thread is going to do enqueue 18 at 22:41:25
+4 thread is doing dequeue 79 at 22:41:25
+4 thread is going to do enqueue 46 at 22:41:25
+15 thread is doing enqueue 38 at 22:41:25
+20 thread is doing enqueue 66 at 22:41:25
+21 thread is going to do enqueue 93 at 22:41:25
+10 thread is doing dequeue 36 at 22:41:25
+1 thread is going to do enqueue 49 at 22:41:25
+10 thread is going to do enqueue 48 at 22:41:25
+1 thread is doing enqueue 49 at 22:41:25
+21 thread is doing enqueue 93 at 22:41:25
+10 thread is doing enqueue 48 at 22:41:25
+5 thread is doing enqueue 18 at 22:41:25
+4 thread is doing enqueue 46 at 22:41:25
+24 thread is going to do enqueue 7 at 22:41:25
+5 thread is going to do enqueue 76 at 22:41:25
+10 thread is going to do enqueue 39 at 22:41:25
+18 thread is doing dequeue 66 at 22:41:25
+4 thread is going to do enqueue 77 at 22:41:25
+2 thread is going to do enqueue 73 at 22:41:25
+4 thread is doing enqueue 77 at 22:41:25
+5 thread is doing enqueue 76 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 22 at 22:41:25
+30 thread is doing dequeue 59 at 22:41:25
+5 thread is doing enqueue 22 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+30 thread is doing dequeue 97 at 22:41:25
+5 thread is doing dequeue 66 at 22:41:25
+30 thread is going to do enqueue 69 at 22:41:25
+5 thread is going to do enqueue 40 at 22:41:25
+30 thread is doing enqueue 69 at 22:41:25
+5 thread is doing enqueue 40 at 22:41:25
+30 thread is going to do enqueue 81 at 22:41:25
+5 thread is going to do enqueue 92 at 22:41:25
+30 thread is doing enqueue 81 at 22:41:25
+5 thread is doing enqueue 92 at 22:41:25
+30 thread is going to do enqueue 69 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 69 at 22:41:25
+5 thread is doing dequeue 0 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+30 thread is doing dequeue 14 at 22:41:25
+5 thread is doing dequeue 5 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+30 thread is doing dequeue 1 at 22:41:25
+5 thread is doing dequeue 38 at 22:41:25
+2 thread is doing enqueue 73 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 95 at 22:41:25
+2 thread is going to do enqueue 69 at 22:41:25
+30 thread is doing dequeue 18 at 22:41:25
+16 thread is going to do enqueue 76 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+5 thread is doing enqueue 95 at 22:41:25
+2 thread is doing enqueue 69 at 22:41:25
+16 thread is doing enqueue 76 at 22:41:25
+17 thread is doing dequeue 46 at 22:41:25
+2 thread is going to do enqueue 55 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+2 thread is doing enqueue 55 at 22:41:25
+17 thread is doing dequeue 93 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 49 at 22:41:25
+26 thread is doing dequeue 48 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 49 at 22:41:25
+2 thread is doing dequeue 76 at 22:41:25
+26 thread is doing enqueue 49 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+26 thread is going to do enqueue 16 at 22:41:25
+5 thread is doing dequeue 77 at 22:41:25
+27 thread is going to do enqueue 72 at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 61 at 22:41:25
+26 thread is doing enqueue 16 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+1 thread is doing dequeue 22 at 22:41:25
+27 thread is doing enqueue 72 at 22:41:25
+5 thread is doing enqueue 61 at 22:41:25
+11 thread is going to do enqueue 40 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 40 at 22:41:25
+5 thread is doing dequeue 69 at 22:41:25
+11 thread is going to do enqueue 66 at 22:41:25
+5 thread is going to do enqueue 96 at 22:41:25
+11 thread is doing enqueue 66 at 22:41:25
+5 thread is doing enqueue 96 at 22:41:25
+11 thread is going to do enqueue 48 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 48 at 22:41:25
+5 thread is doing dequeue 40 at 22:41:25
+11 thread is going to do enqueue 96 at 22:41:25
+5 thread is going to do enqueue 77 at 22:41:25
+11 thread is doing enqueue 96 at 22:41:25
+5 thread is doing enqueue 77 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 81 at 22:41:25
+5 thread is doing dequeue 92 at 22:41:25
+11 thread is going to do enqueue 72 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 72 at 22:41:25
+5 thread is doing dequeue 69 at 22:41:25
+11 thread is going to do enqueue 72 at 22:41:25
+5 thread is going to do dequeue at 22:41:25
+11 thread is doing enqueue 72 at 22:41:25
+5 thread is doing dequeue 73 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 26 at 22:41:25
+11 thread is doing dequeue 95 at 22:41:25
+5 thread is doing enqueue 26 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+5 thread is going to do enqueue 70 at 22:41:25
+11 thread is doing dequeue 69 at 22:41:25
+5 thread is doing enqueue 70 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 76 at 22:41:25
+24 thread is doing enqueue 7 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 55 at 22:41:25
+24 thread is doing dequeue 49 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 16 at 22:41:25
+24 thread is doing dequeue 72 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 22 at 22:41:25
+28 thread is doing dequeue 61 at 22:41:25
+24 thread is doing enqueue 22 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 40 at 22:41:25
+28 thread is doing dequeue 66 at 22:41:25
+24 thread is doing dequeue 96 at 22:41:25
+21 thread is going to do enqueue 47 at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue 48 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+11 thread is doing dequeue 96 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+11 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 39 at 22:41:25
+2 thread is going to do enqueue 51 at 22:41:25
+17 thread is doing dequeue 77 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+2 thread is doing enqueue 51 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 72 at 22:41:25
+17 thread is doing dequeue 72 at 22:41:25
+13 thread is doing dequeue 70 at 22:41:25
+10 thread is going to do enqueue 98 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 26 at 22:41:25
+13 thread is going to do enqueue 29 at 22:41:25
+17 thread is doing dequeue 7 at 22:41:25
+13 thread is doing enqueue 29 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 78 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+17 thread is going to do enqueue 8 at 22:41:25
+26 thread is doing dequeue 22 at 22:41:25
+13 thread is doing enqueue 78 at 22:41:25
+10 thread is doing enqueue 98 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 51 at 22:41:25
+2 thread is doing dequeue 39 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+10 thread is going to do enqueue 64 at 22:41:25
+13 thread is doing dequeue 29 at 22:41:25
+2 thread is going to do enqueue 51 at 22:41:25
+26 thread is doing dequeue 78 at 22:41:25
+10 thread is doing enqueue 64 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+2 thread is doing enqueue 51 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+26 thread is doing dequeue 64 at 22:41:25
+10 thread is doing dequeue 51 at 22:41:25
+13 thread is doing dequeue 98 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+24 thread is doing dequeue but queue is empty at 22:41:25
+2 thread is doing dequeue but queue is empty at 22:41:25
+10 thread is going to do enqueue 7 at 22:41:25
+17 thread is doing enqueue 8 at 22:41:25
+10 thread is doing enqueue 7 at 22:41:25
+26 thread is going to do enqueue 68 at 22:41:25
+17 thread is going to do enqueue 40 at 22:41:25
+24 thread is going to do enqueue 39 at 22:41:25
+26 thread is doing enqueue 68 at 22:41:25
+24 thread is doing enqueue 39 at 22:41:25
+26 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 17 at 22:41:25
+26 thread is doing dequeue 8 at 22:41:25
+24 thread is doing enqueue 17 at 22:41:25
+26 thread is going to do enqueue 51 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+26 thread is doing enqueue 51 at 22:41:25
+24 thread is doing dequeue 7 at 22:41:25
+24 thread is going to do enqueue 55 at 22:41:25
+17 thread is doing enqueue 40 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+24 thread is doing enqueue 55 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+20 thread is doing dequeue 68 at 22:41:25
+21 thread is doing enqueue 47 at 22:41:25
+24 thread is doing dequeue 17 at 22:41:25
+17 thread is doing dequeue 39 at 22:41:25
+24 thread is going to do enqueue 26 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+24 thread is doing enqueue 26 at 22:41:25
+17 thread is going to do enqueue 16 at 22:41:25
+20 thread is doing dequeue 51 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+20 thread is going to do enqueue 10 at 22:41:25
+4 thread is doing dequeue 40 at 22:41:25
+20 thread is doing enqueue 10 at 22:41:25
+4 thread is going to do enqueue 55 at 22:41:25
+20 thread is going to do enqueue 90 at 22:41:25
+4 thread is doing enqueue 55 at 22:41:25
+20 thread is doing enqueue 90 at 22:41:25
+4 thread is going to do enqueue 42 at 22:41:25
+20 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 42 at 22:41:25
+20 thread is doing dequeue 55 at 22:41:25
+4 thread is going to do dequeue at 22:41:25
+17 thread is doing enqueue 16 at 22:41:25
+24 thread is going to do enqueue 88 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 11 at 22:41:25
+24 thread is doing enqueue 88 at 22:41:25
+17 thread is doing dequeue 47 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+24 thread is doing dequeue 26 at 22:41:25
+4 thread is doing dequeue 10 at 22:41:25
+30 thread is doing dequeue 55 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+17 thread is going to do enqueue 87 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+24 thread is going to do enqueue 36 at 22:41:25
+17 thread is doing enqueue 87 at 22:41:25
+11 thread is doing dequeue 42 at 22:41:25
+21 thread is doing dequeue 90 at 22:41:25
+10 thread is doing dequeue 16 at 22:41:25
+4 thread is going to do enqueue 34 at 22:41:25
+24 thread is doing enqueue 36 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+4 thread is doing enqueue 34 at 22:41:25
+10 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+10 thread is doing dequeue 88 at 22:41:25
+24 thread is doing dequeue 87 at 22:41:25
+10 thread is going to do enqueue 29 at 22:41:25
+24 thread is going to do enqueue 56 at 22:41:25
+10 thread is doing enqueue 29 at 22:41:25
+24 thread is doing enqueue 56 at 22:41:25
+21 thread is going to do enqueue 58 at 22:41:25
+17 thread is doing dequeue 36 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+17 thread is going to do enqueue 74 at 22:41:25
+27 thread is doing dequeue 34 at 22:41:25
+10 thread is going to do enqueue 61 at 22:41:25
+13 thread is doing enqueue 11 at 22:41:25
+2 thread is going to do enqueue 86 at 22:41:25
+17 thread is doing enqueue 74 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+2 thread is doing enqueue 86 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 29 at 22:41:25
+17 thread is doing dequeue 56 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 11 at 22:41:25
+17 thread is doing dequeue 74 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 86 at 22:41:25
+17 thread is doing dequeue but queue is empty at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+1 thread is going to do enqueue 14 at 22:41:25
+24 thread is doing dequeue but queue is empty at 22:41:25
+21 thread is doing enqueue 58 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+1 thread is doing enqueue 14 at 22:41:25
+28 thread is going to do enqueue 40 at 22:41:25
+27 thread is doing dequeue but queue is empty at 22:41:25
+1 thread is going to do enqueue 30 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+1 thread is doing enqueue 30 at 22:41:25
+2 thread is doing dequeue 58 at 22:41:25
+27 thread is doing dequeue 14 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+27 thread is going to do enqueue 62 at 22:41:25
+13 thread is doing dequeue 30 at 22:41:25
+2 thread is doing dequeue but queue is empty at 22:41:25
+1 thread is going to do dequeue at 22:41:25
+13 thread is going to do enqueue 72 at 22:41:25
+1 thread is doing dequeue 62 at 22:41:25
+13 thread is doing enqueue 72 at 22:41:25
+27 thread is doing enqueue 62 at 22:41:25
+13 thread is going to do enqueue 25 at 22:41:25
+17 thread is doing dequeue 72 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue but queue is empty at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+30 thread is doing dequeue but queue is empty at 22:41:25
+21 thread is doing dequeue but queue is empty at 22:41:25
+30 thread is going to do enqueue 9 at 22:41:25
+30 thread is doing enqueue 9 at 22:41:25
+24 thread is doing dequeue 9 at 22:41:25
+28 thread is doing enqueue 40 at 22:41:25
+21 thread is going to do enqueue 69 at 22:41:25
+2 thread is going to do enqueue 80 at 22:41:25
+21 thread is doing enqueue 69 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+10 thread is doing enqueue 61 at 22:41:25
+24 thread is doing dequeue 40 at 22:41:25
+21 thread is going to do enqueue 24 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+21 thread is doing enqueue 24 at 22:41:25
+2 thread is doing enqueue 80 at 22:41:25
+24 thread is doing dequeue 61 at 22:41:25
+2 thread is going to do dequeue at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+2 thread is doing dequeue 69 at 22:41:25
+24 thread is doing dequeue 80 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+24 thread is doing dequeue 24 at 22:41:25
+24 thread is going to do dequeue at 22:41:25
+24 thread is doing dequeue but queue is empty at 22:41:25
+28 thread is going to do enqueue 82 at 22:41:25
+17 thread is going to do enqueue 98 at 22:41:25
+27 thread is doing dequeue but queue is empty at 22:41:25
+17 thread is doing enqueue 98 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+27 thread is going to do enqueue 47 at 22:41:25
+21 thread is doing dequeue 82 at 22:41:25
+28 thread is doing enqueue 82 at 22:41:25
+27 thread is doing enqueue 47 at 22:41:25
+13 thread is doing enqueue 25 at 22:41:25
+17 thread is going to do enqueue 32 at 22:41:25
+27 thread is going to do enqueue 34 at 22:41:25
+17 thread is doing enqueue 32 at 22:41:25
+27 thread is doing enqueue 34 at 22:41:25
+17 thread is going to do enqueue 21 at 22:41:25
+27 thread is going to do enqueue 16 at 22:41:25
+17 thread is doing enqueue 21 at 22:41:25
+27 thread is doing enqueue 16 at 22:41:25
+21 thread is going to do enqueue 3 at 22:41:25
+13 thread is going to do enqueue 26 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+17 thread is doing dequeue 47 at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 98 at 22:41:25
+13 thread is doing enqueue 26 at 22:41:25
+27 thread is doing dequeue 25 at 22:41:25
+21 thread is doing enqueue 3 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 32 at 22:41:25
+17 thread is doing dequeue 34 at 22:41:25
+30 thread is doing dequeue 21 at 22:41:25
+21 thread is doing dequeue 16 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+17 thread is going to do dequeue at 22:41:25
+27 thread is going to do enqueue 48 at 22:41:25
+30 thread is going to do enqueue 32 at 22:41:25
+17 thread is doing dequeue 26 at 22:41:25
+13 thread is doing dequeue 3 at 22:41:25
+17 thread is going to do enqueue 37 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+30 thread is doing enqueue 32 at 22:41:25
+21 thread is doing dequeue 32 at 22:41:25
+13 thread is going to do enqueue 33 at 22:41:25
+27 thread is doing enqueue 48 at 22:41:25
+17 thread is doing enqueue 37 at 22:41:25
+21 thread is going to do enqueue 23 at 22:41:25
+13 thread is doing enqueue 33 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+21 thread is doing enqueue 23 at 22:41:25
+13 thread is doing dequeue 37 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+28 thread is going to do enqueue 85 at 22:41:25
+27 thread is doing dequeue 48 at 22:41:25
+21 thread is doing dequeue 33 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 23 at 22:41:25
+13 thread is doing dequeue but queue is empty at 22:41:25
+27 thread is going to do enqueue 58 at 22:41:25
+13 thread is going to do enqueue 19 at 22:41:25
+30 thread is going to do enqueue 54 at 22:41:25
+13 thread is doing enqueue 19 at 22:41:25
+30 thread is doing enqueue 54 at 22:41:25
+13 thread is going to do enqueue 60 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+13 thread is doing enqueue 60 at 22:41:25
+30 thread is doing dequeue 19 at 22:41:25
+13 thread is going to do dequeue at 22:41:25
+30 thread is going to do enqueue 97 at 22:41:25
+13 thread is doing dequeue 54 at 22:41:25
+30 thread is doing enqueue 97 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+28 thread is doing enqueue 85 at 22:41:25
+30 thread is doing dequeue 60 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+21 thread is doing dequeue 97 at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+27 thread is doing enqueue 58 at 22:41:25
+28 thread is doing dequeue 85 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+28 thread is going to do enqueue 23 at 22:41:25
+21 thread is doing dequeue 58 at 22:41:25
+28 thread is doing enqueue 23 at 22:41:25
+30 thread is doing dequeue 23 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+28 thread is going to do enqueue 25 at 22:41:25
+21 thread is doing dequeue but queue is empty at 22:41:25
+28 thread is doing enqueue 25 at 22:41:25
+30 thread is going to do enqueue 8 at 22:41:25
+21 thread is going to do enqueue 22 at 22:41:25
+28 thread is going to do enqueue 30 at 22:41:25
+27 thread is doing dequeue 25 at 22:41:25
+21 thread is doing enqueue 22 at 22:41:25
+28 thread is doing enqueue 30 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+28 thread is going to do enqueue 90 at 22:41:25
+27 thread is doing dequeue 22 at 22:41:25
+30 thread is doing enqueue 8 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+30 thread is going to do dequeue at 22:41:25
+27 thread is doing dequeue 30 at 22:41:25
+30 thread is doing dequeue 8 at 22:41:25
+27 thread is going to do enqueue 7 at 22:41:25
+30 thread is going to do enqueue 83 at 22:41:25
+27 thread is doing enqueue 7 at 22:41:25
+30 thread is doing enqueue 83 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+30 thread is going to do enqueue 43 at 22:41:25
+27 thread is doing dequeue 7 at 22:41:25
+30 thread is doing enqueue 43 at 22:41:25
+27 thread is going to do enqueue 26 at 22:41:25
+30 thread is going to do enqueue 35 at 22:41:25
+27 thread is doing enqueue 26 at 22:41:25
+30 thread is doing enqueue 35 at 22:41:25
+27 thread is going to do enqueue 18 at 22:41:25
+30 thread is going to do enqueue 77 at 22:41:25
+27 thread is doing enqueue 18 at 22:41:25
+30 thread is doing enqueue 77 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+30 thread is going to do enqueue 30 at 22:41:25
+27 thread is doing dequeue 83 at 22:41:25
+30 thread is doing enqueue 30 at 22:41:25
+27 thread is going to do enqueue 17 at 22:41:25
+27 thread is doing enqueue 17 at 22:41:25
+28 thread is doing enqueue 90 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+28 thread is going to do enqueue 55 at 22:41:25
+27 thread is doing dequeue 43 at 22:41:25
+28 thread is doing enqueue 55 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+21 thread is going to do enqueue 49 at 22:41:25
+27 thread is doing dequeue 26 at 22:41:25
+28 thread is doing dequeue 35 at 22:41:25
+27 thread is going to do dequeue at 22:41:25
+21 thread is doing enqueue 49 at 22:41:25
+27 thread is doing dequeue 18 at 22:41:25
+21 thread is going to do enqueue 1 at 22:41:25
+27 thread is going to do enqueue 50 at 22:41:25
+21 thread is doing enqueue 1 at 22:41:25
+27 thread is doing enqueue 50 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+27 thread is going to do enqueue 38 at 22:41:25
+21 thread is doing dequeue 77 at 22:41:25
+27 thread is doing enqueue 38 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+21 thread is doing dequeue 30 at 22:41:25
+28 thread is going to do enqueue 2 at 22:41:25
+21 thread is going to do enqueue 3 at 22:41:25
+28 thread is doing enqueue 2 at 22:41:25
+21 thread is doing enqueue 3 at 22:41:25
+28 thread is going to do enqueue 93 at 22:41:25
+21 thread is going to do enqueue 75 at 22:41:25
+28 thread is doing enqueue 93 at 22:41:25
+21 thread is doing enqueue 75 at 22:41:25
+28 thread is going to do enqueue 98 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+28 thread is doing enqueue 98 at 22:41:25
+21 thread is doing dequeue 17 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+21 thread is going to do enqueue 74 at 22:41:25
+28 thread is doing dequeue 90 at 22:41:25
+21 thread is doing enqueue 74 at 22:41:25
+28 thread is going to do enqueue 47 at 22:41:25
+21 thread is going to do enqueue 23 at 22:41:25
+28 thread is doing enqueue 47 at 22:41:25
+21 thread is doing enqueue 23 at 22:41:25
+28 thread is going to do enqueue 67 at 22:41:25
+21 thread is going to do enqueue 18 at 22:41:25
+28 thread is doing enqueue 67 at 22:41:25
+21 thread is doing enqueue 18 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 55 at 22:41:25
+21 thread is doing dequeue 49 at 22:41:25
+28 thread is going to do dequeue at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+28 thread is doing dequeue 1 at 22:41:25
+21 thread is doing dequeue 50 at 22:41:25
+28 thread is going to do enqueue 79 at 22:41:25
+21 thread is going to do enqueue 37 at 22:41:25
+28 thread is doing enqueue 79 at 22:41:25
+21 thread is doing enqueue 37 at 22:41:25
+21 thread is going to do dequeue at 22:41:25
+21 thread is doing dequeue 38 at 22:41:25
+21 thread is going to do enqueue 36 at 22:41:25
+21 thread is doing enqueue 36 at 22:41:25

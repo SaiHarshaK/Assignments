@@ -1,0 +1,55 @@
+Thr2's write of 584 on location 15 at 12:07:40
+Thr3's write of 591 on location 5 at 12:07:40
+Thr1's write of 632 on location 13 at 12:07:40
+Thr4's write of 85 on location 18 at 12:07:40
+Thr5's write of 441 on location 7 at 12:07:40
+Thr6's write of 860 on location 4 at 12:07:40
+Thr7's write of 441 on location 9 at 12:07:40
+Thr9's write of 406 on location 20 at 12:07:40
+Thr8's write of 717 on location 14 at 12:07:40
+Thr10's write of 247 on location 14 at 12:07:40
+Snapshot Thr's snapshot: l1--1 l2--1 l3--1 l4-860 l5-591 l6--1 l7-441 l8--1 l9-441 l10--1 l11--1 l12--1 l13-632 l14-247 l15-584 l16--1 l17--1 l18-85 l19--1 l20-406 which finished at 12:07:40 and ran for 0.000126 seconds
+Thr8's write of 611 on location 1 at 12:07:40
+Thr7's write of 347 on location 12 at 12:07:40
+Thr10's write of 578 on location 13 at 12:07:40
+Thr2's write of 681 on location 17 at 12:07:40
+Thr1's write of 163 on location 9 at 12:07:40
+Thr3's write of 892 on location 9 at 12:07:40
+Thr3's write of 854 on location 16 at 12:07:40
+Thr6's write of 360 on location 9 at 12:07:40
+Thr9's write of 665 on location 19 at 12:07:40
+Thr7's write of 724 on location 6 at 12:07:40
+Thr3's write of 800 on location 20 at 12:07:41
+Thr10's write of 579 on location 18 at 12:07:41
+Thr4's write of 356 on location 2 at 12:07:41
+Snapshot Thr's snapshot: l1-611 l2-356 l3--1 l4-860 l5-591 l6-724 l7-441 l8--1 l9-360 l10--1 l11--1 l12-347 l13-578 l14-247 l15-584 l16-854 l17-681 l18-579 l19-665 l20-800 which finished at 12:07:41 and ran for 0.000029 seconds
+Thr10's write of 727 on location 6 at 12:07:41
+Thr9's write of 231 on location 6 at 12:07:41
+Thr2's write of 657 on location 15 at 12:07:41
+Thr9's write of 757 on location 15 at 12:07:41
+Thr2's write of 146 on location 5 at 12:07:41
+Thr2's write of 993 on location 16 at 12:07:41
+Thr1's write of 975 on location 9 at 12:07:41
+Snapshot Thr's snapshot: l1-611 l2-356 l3--1 l4-860 l5-146 l6-231 l7-441 l8--1 l9-975 l10--1 l11--1 l12-347 l13-578 l14-247 l15-757 l16-993 l17-681 l18-579 l19-665 l20-800 which finished at 12:07:41 and ran for 0.000026 seconds
+Thr10's write of 668 on location 17 at 12:07:41
+Thr10's write of 952 on location 8 at 12:07:41
+Thr10's write of 695 on location 15 at 12:07:42
+Thr1's write of 672 on location 5 at 12:07:42
+Thr6's write of 109 on location 14 at 12:07:42
+Thr2's write of 172 on location 18 at 12:07:42
+Thr2's write of 334 on location 10 at 12:07:42
+Snapshot Thr's snapshot: l1-611 l2-356 l3--1 l4-860 l5-672 l6-231 l7-441 l8-952 l9-975 l10-334 l11--1 l12-347 l13-578 l14-109 l15-695 l16-993 l17-668 l18-172 l19-665 l20-800 which finished at 12:07:42 and ran for 0.000027 seconds
+Thr3's write of 503 on location 12 at 12:07:42
+Thr10's write of 89 on location 3 at 12:07:42
+Snapshot Thr's snapshot: l1-611 l2-356 l3-89 l4-860 l5-672 l6-231 l7-441 l8-952 l9-975 l10-334 l11--1 l12-503 l13-578 l14-109 l15-695 l16-993 l17-668 l18-172 l19-665 l20-800 which finished at 12:07:42 and ran for 0.000027 seconds
+Thr8's write of 820 on location 11 at 12:07:42
+Thr5's write of 556 on location 13 at 12:07:42
+Thr6's write of 866 on location 10 at 12:07:42
+Thr5's write of 834 on location 14 at 12:07:43
+Thr4's write of 0 on location 5 at 12:07:43
+Thr6's write of 544 on location 20 at 12:07:43
+Thr10's write of 335 on location 16 at 12:07:43
+Thr3's write of 194 on location 5 at 12:07:43
+Thr9's write of 439 on location 20 at 12:07:43
+Thr2's write of 303 on location 10 at 12:07:43
+Thr3's write of 602 on location 12 at 12:07:43

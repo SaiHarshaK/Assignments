@@ -1,0 +1,55 @@
+Thr1's write of 245 at 12:07:17
+Thr2's write of 64 at 12:07:17
+Thr3's write of 438 at 12:07:17
+Thr4's write of 812 at 12:07:17
+Thr5's write of 705 at 12:07:17
+Thr6's write of 570 at 12:07:17
+Thr8's write of 848 at 12:07:17
+Thr7's write of 713 at 12:07:17
+Thr9's write of 111 at 12:07:17
+Thr10's write of 846 at 12:07:17
+Snapshot Thr's snapshot: l1-245 l2-64 l3-438 l4-812 l5-705 l6-570 l7-713 l8-848 l9--1 l10--1 l11--1 l12--1 l13--1 l14--1 l15--1 l16--1 l17--1 l18--1 l19--1 l20--1 which finished at 12:07:17 and ran for 0.000072 seconds
+Thr9's write of 201 at 12:07:17
+Thr8's write of 994 at 12:07:17
+Thr10's write of 395 at 12:07:17
+Thr1's write of 323 at 12:07:17
+Thr3's write of 614 at 12:07:17
+Thr2's write of 327 at 12:07:18
+Thr2's write of 273 at 12:07:18
+Thr6's write of 63 at 12:07:18
+Thr7's write of 835 at 12:07:18
+Thr8's write of 254 at 12:07:18
+Thr2's write of 272 at 12:07:18
+Thr10's write of 29 at 12:07:18
+Thr4's write of 434 at 12:07:18
+Snapshot Thr's snapshot: l1-323 l2-272 l3-614 l4-434 l5-705 l6-63 l7-835 l8-254 l9-201 l10-29 l11--1 l12--1 l13--1 l14--1 l15--1 l16--1 l17--1 l18--1 l19--1 l20--1 which finished at 12:07:18 and ran for 0.000029 seconds
+Thr10's write of 720 at 12:07:18
+Thr7's write of 56 at 12:07:18
+Thr1's write of 264 at 12:07:18
+Thr7's write of 835 at 12:07:18
+Thr1's write of 924 at 12:07:18
+Thr1's write of 989 at 12:07:18
+Thr3's write of 500 at 12:07:19
+Snapshot Thr's snapshot: l1-989 l2-272 l3-500 l4-434 l5-705 l6-63 l7-835 l8-254 l9-201 l10-720 l11--1 l12--1 l13--1 l14--1 l15--1 l16--1 l17--1 l18--1 l19--1 l20--1 which finished at 12:07:19 and ran for 0.000027 seconds
+Thr10's write of 910 at 12:07:19
+Thr10's write of 587 at 12:07:19
+Thr10's write of 564 at 12:07:19
+Thr3's write of 700 at 12:07:19
+Thr6's write of 399 at 12:07:19
+Thr1's write of 621 at 12:07:19
+Thr1's write of 270 at 12:07:19
+Snapshot Thr's snapshot: l1-270 l2-272 l3-700 l4-434 l5-705 l6-399 l7-835 l8-254 l9-201 l10-564 l11--1 l12--1 l13--1 l14--1 l15--1 l16--1 l17--1 l18--1 l19--1 l20--1 which finished at 12:07:19 and ran for 0.000028 seconds
+Thr2's write of 248 at 12:07:19
+Thr10's write of 686 at 12:07:19
+Snapshot Thr's snapshot: l1-270 l2-248 l3-700 l4-434 l5-705 l6-399 l7-835 l8-254 l9-201 l10-686 l11--1 l12--1 l13--1 l14--1 l15--1 l16--1 l17--1 l18--1 l19--1 l20--1 which finished at 12:07:19 and ran for 0.000028 seconds
+Thr9's write of 382 at 12:07:20
+Thr5's write of 94 at 12:07:20
+Thr6's write of 887 at 12:07:20
+Thr5's write of 728 at 12:07:20
+Thr4's write of 841 at 12:07:20
+Thr6's write of 562 at 12:07:20
+Thr10's write of 343 at 12:07:20
+Thr2's write of 169 at 12:07:21
+Thr7's write of 188 at 12:07:21
+Thr1's write of 758 at 12:07:21
+Thr2's write of 4 at 12:07:21
